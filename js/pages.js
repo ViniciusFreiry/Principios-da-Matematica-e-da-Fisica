@@ -1,9 +1,21 @@
-/* ==============================
-   HOME
-============================== */
+function getSubject(subjectId) {
+    return subjects.find(
+        subject => subject.id === subjectId
+    );
+}
+
+function getAllLessons(subject) {
+    return subject.modules.flatMap(
+        module => module.lessons
+    );
+}
+
+function lessonKey(subjectId, lessonId) {
+    return `${subjectId}:${lessonId}`;
+}
+
 
 function renderHome() {
-
     return `
         <section class="hero">
 
@@ -16,35 +28,27 @@ function renderHome() {
             </h1>
 
             <p>
-                Um lugar para organizar aulas,
-                anotações e progresso.
-                A estrutura já está preparada
-                para crescer de Matemática para
-                Física e outras áreas.
+                Um lugar para organizar matérias,
+                módulos, aulas, exercícios e anotações.
             </p>
 
         </section>
 
-
         <section class="grid">
 
-            ${subjects
-                .map(createSubjectCard)
-                .join("")}
+            ${subjects.map(subject =>
+                createSubjectCard(subject)
+            ).join("")}
 
         </section>
     `;
 }
 
 
-/* ==============================
-   SUBJECT CARD
-============================== */
-
 function createSubjectCard(subject) {
 
-    const hasLessons =
-        subject.lessons.length > 0;
+    const hasModules =
+        subject.modules.length > 0;
 
     const progress =
         getSubjectProgress(subject);
@@ -63,24 +67,34 @@ function createSubjectCard(subject) {
                 </h2>
 
                 <p class="muted">
+
                     ${
-                        hasLessons
-                            ? `${subject.lessons.length} conteúdos · ${progress}% concluído`
-                            : "Área preparada para adicionar novos conteúdos."
+                        hasModules
+
+                            ? `${subject.modules.length}
+                               módulos ·
+                               ${progress}%
+                               concluído`
+
+                            : subject.description
                     }
+
                 </p>
 
             </div>
 
             ${
-                hasLessons
+                hasModules
 
                     ? `
                         <button
                             class="btn"
-                            onclick="navigate('subject-${subject.id}')"
+                            onclick="navigate(
+                                'subject-${subject.id}'
+                            )"
                         >
-                            Abrir ${subject.name.toLowerCase()}
+                            Abrir
+                            ${subject.name.toLowerCase()}
                         </button>
                     `
 
@@ -99,13 +113,10 @@ function createSubjectCard(subject) {
 }
 
 
-/* ==============================
-   SUBJECT PAGE
-============================== */
-
 function renderSubject(subjectId) {
 
-    const subject = getSubject(subjectId);
+    const subject =
+        getSubject(subjectId);
 
     if (!subject) {
         return renderHome();
@@ -122,7 +133,6 @@ function renderSubject(subjectId) {
             ← Início
         </button>
 
-
         <section class="page-head">
 
             <div>
@@ -132,30 +142,57 @@ function renderSubject(subjectId) {
                 </h1>
 
                 <p>
-                    ${subject.lessons.length}
-                    aulas organizadas para estudar
-                    em sequência.
+                    ${subject.modules.length}
+                    módulos organizados para seus estudos.
                 </p>
 
             </div>
 
-            ${createProgressBar(progress)}
+            <div class="progress-wrap">
+
+                <div class="progress-label">
+
+                    <span>
+                        Progresso
+                    </span>
+
+                    <strong>
+                        ${progress}%
+                    </strong>
+
+                </div>
+
+                <div class="progress">
+
+                    <span
+                        style="width: ${progress}%"
+                    ></span>
+
+                </div>
+
+            </div>
 
         </section>
 
-
-        <section class="lesson-list">
+        <section class="module-list">
 
             ${
-                subject.lessons.length > 0
+                subject.modules.length > 0
 
-                    ? subject.lessons
-                        .map(createLessonCard)
+                    ? subject.modules
+                        .map(
+                            (module, index) =>
+                                createModuleCard(
+                                    subject,
+                                    module,
+                                    index
+                                )
+                        )
                         .join("")
 
                     : `
                         <div class="empty">
-                            Nenhum conteúdo disponível ainda.
+                            Nenhum módulo disponível ainda.
                         </div>
                     `
             }
@@ -165,20 +202,115 @@ function renderSubject(subjectId) {
 }
 
 
-/* ==============================
-   LESSON CARD
-============================== */
+function createModuleCard(
+    subject,
+    module,
+    moduleIndex
+) {
 
-function createLessonCard(lesson) {
+    const progress =
+        getModuleProgress(
+            subject.id,
+            module
+        );
+
+    return `
+        <article class="module">
+
+            <div class="module-head">
+
+                <div class="module-title">
+
+                    <div class="module-number">
+                        ${String(
+                            moduleIndex + 1
+                        ).padStart(2, "0")}
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            ${module.title}
+                        </h2>
+
+                        <p>
+                            ${module.description}
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="module-progress">
+
+                    ${
+                        module.lessons.length > 0
+                            ? `${progress}%`
+                            : "Sem aulas"
+                    }
+
+                </div>
+
+            </div>
+
+            <section class="lesson-list">
+
+                ${
+                    module.lessons.length > 0
+
+                        ? module.lessons
+                            .map(
+                                (lesson, index) =>
+                                    createLessonCard(
+                                        subject,
+                                        lesson,
+                                        index
+                                    )
+                            )
+                            .join("")
+
+                        : `
+                            <div class="empty">
+                                Nenhuma aula adicionada ainda.
+                            </div>
+                        `
+                }
+
+            </section>
+
+        </article>
+    `;
+}
+
+
+function createLessonCard(
+    subject,
+    lesson,
+    lessonIndex
+) {
+
+    const keyId =
+        lessonKey(
+            subject.id,
+            lesson.id
+        );
 
     const completed =
-        isLessonCompleted(lesson.id);
+        isLessonCompleted(keyId);
+
+    const exerciseCount =
+        lesson.exercises
+            ? lesson.exercises.length
+            : 0;
 
     return `
         <article class="lesson">
 
-            ${createLessonNumber(lesson.id)}
-
+            <div class="number">
+                ${String(
+                    lessonIndex + 1
+                ).padStart(2, "0")}
+            </div>
 
             <div>
 
@@ -195,8 +327,9 @@ function createLessonCard(lesson) {
                     }
 
                     ${
-                        lesson.size
-                            ? ` · ${lesson.size}`
+                        exerciseCount > 0
+                            ? ` · ${exerciseCount}
+                               exercício(s)`
                             : ""
                     }
 
@@ -204,25 +337,23 @@ function createLessonCard(lesson) {
 
             </div>
 
-
             <div>
 
                 ${
                     completed
-
                         ? `
                             <span class="done">
                                 ✓ Concluída
                             </span>
                         `
-
                         : ""
                 }
 
-
                 <button
                     class="btn secondary"
-                    onclick="navigate('lesson-${lesson.id}')"
+                    onclick="navigate(
+                        'lesson-${subject.id}-${lesson.id}'
+                    )"
                 >
                     Estudar
                 </button>
@@ -234,64 +365,76 @@ function createLessonCard(lesson) {
 }
 
 
-/* ==============================
-   LESSON PAGE
-============================== */
+function renderLesson(
+    subjectId,
+    lessonId
+) {
 
-function renderLesson(lessonId) {
+    const subject =
+        getSubject(subjectId);
 
-    const subject = subjects.find(
-        subject =>
-            subject.lessons.some(
-                lesson =>
-                    lesson.id === lessonId
-            )
-    );
+    const module =
+        subject?.modules.find(
+            module =>
+                module.lessons.some(
+                    lesson =>
+                        lesson.id === lessonId
+                )
+        );
 
-    if (!subject) {
-        return renderHome();
+    const lesson =
+        module?.lessons.find(
+            lesson =>
+                lesson.id === lessonId
+        );
+
+    if (!subject || !module || !lesson) {
+
+        return subject
+            ? renderSubject(subjectId)
+            : renderHome();
     }
 
-    const lesson = subject.lessons.find(
-        lesson =>
-            lesson.id === lessonId
-    );
-
-    if (!lesson) {
-        return renderSubject(subject.id);
-    }
+    const keyId =
+        lessonKey(
+            subjectId,
+            lesson.id
+        );
 
     const completed =
-        isLessonCompleted(lesson.id);
+        isLessonCompleted(keyId);
+
+    const allLessons =
+        getAllLessons(subject);
+
+    const currentIndex =
+        allLessons.findIndex(
+            item =>
+                item.id === lesson.id
+        );
 
     const previousLesson =
-        subject.lessons.find(
-            item =>
-                item.id === lesson.id - 1
-        );
+        allLessons[currentIndex - 1];
 
     const nextLesson =
-        subject.lessons.find(
-            item =>
-                item.id === lesson.id + 1
-        );
-
+        allLessons[currentIndex + 1];
 
     return `
         <div class="detail">
 
             <button
                 class="back"
-                onclick="navigate('subject-${subject.id}')"
+                onclick="navigate(
+                    'subject-${subject.id}'
+                )"
             >
                 ← ${subject.name}
             </button>
 
-
             <section class="detail-top">
 
                 <div class="eyebrow">
-                    Aula ${String(lesson.id).padStart(2, "0")}
+                    ${module.title}
                 </div>
 
                 <h1>
@@ -299,64 +442,61 @@ function renderLesson(lessonId) {
                 </h1>
 
                 <p class="muted">
-                    Use esta página para assistir à aula,
-                    registrar suas anotações e acompanhar
-                    a conclusão.
+                    Estude o conteúdo desta aula
+                    e registre suas anotações pessoais.
                 </p>
 
             </section>
 
-
             <section class="section">
 
                 <h2>
-                    🎥 Aula
+                    📚 Conteúdo da aula
                 </h2>
 
-                <div class="video">
-
-                    <div>
-
-                        <div class="video-icon">
-                            ▶
-                        </div>
-
-                        <div class="muted">
-                            O conteúdo da aula
-                            está hospedado externamente.
-                        </div>
-
-                        ${
-                            lesson.url
-
-                                ? `
-                                    <a
-                                        class="btn"
-                                        href="${lesson.url}"
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        Abrir aula
-                                    </a>
-                                `
-
-                                : `
-                                    <div
-                                        class="muted"
-                                        style="margin-top: 14px"
-                                    >
-                                        Link da aula
-                                        ainda não informado.
-                                    </div>
-                                `
-                        }
-
-                    </div>
-
+                <div class="lesson-content">
+                    ${lesson.content}
                 </div>
 
             </section>
 
+            ${
+                lesson.exercises &&
+                lesson.exercises.length > 0
+
+                    ? `
+                        <section class="section">
+
+                            <h2>
+                                🧠 Exercícios
+                            </h2>
+
+                            ${
+                                lesson.exercises
+                                    .map(
+                                        (exercise, index) => `
+                                            <div class="exercise">
+
+                                                <strong>
+                                                    Exercício
+                                                    ${index + 1}
+                                                </strong>
+
+                                                <br>
+
+                                                ${exercise}
+
+                                            </div>
+                                        `
+                                    )
+                                    .join("")
+                            }
+
+                        </section>
+                    `
+
+                    : ""
+            }
 
             <section class="section">
 
@@ -366,18 +506,28 @@ function renderLesson(lessonId) {
 
                 <textarea
                     class="notes"
-                    placeholder="Escreva aqui o que você aprendeu, dúvidas, fórmulas e exemplos..."
-                    oninput="saveLessonNote(${lesson.id}, this.value)"
-                >${escapeHtml(getLessonNote(lesson.id))}</textarea>
+                    placeholder="Escreva suas dúvidas, observações, fórmulas e exemplos..."
+                    oninput="saveLessonNote(
+                        '${keyId}',
+                        this.value
+                    )"
+                >${escapeHtml(
+                    getLessonNote(keyId)
+                )}</textarea>
 
             </section>
-
 
             <div class="actions">
 
                 <button
-                    class="btn ${completed ? "secondary" : ""}"
-                    onclick="toggleLesson(${lesson.id})"
+                    class="btn ${
+                        completed
+                            ? "secondary"
+                            : ""
+                    }"
+                    onclick="toggleLesson(
+                        '${keyId}'
+                    )"
                 >
                     ${
                         completed
@@ -386,37 +536,35 @@ function renderLesson(lessonId) {
                     }
                 </button>
 
-
                 <div class="actions-right">
 
                     ${
                         previousLesson
-
                             ? `
                                 <button
                                     class="btn secondary"
-                                    onclick="navigate('lesson-${previousLesson.id}')"
+                                    onclick="navigate(
+                                        'lesson-${subject.id}-${previousLesson.id}'
+                                    )"
                                 >
                                     ← Anterior
                                 </button>
                             `
-
                             : ""
                     }
 
-
                     ${
                         nextLesson
-
                             ? `
                                 <button
                                     class="btn"
-                                    onclick="navigate('lesson-${nextLesson.id}')"
+                                    onclick="navigate(
+                                        'lesson-${subject.id}-${nextLesson.id}'
+                                    )"
                                 >
                                     Próxima →
                                 </button>
                             `
-
                             : ""
                     }
 
@@ -426,17 +574,4 @@ function renderLesson(lessonId) {
 
         </div>
     `;
-}
-
-
-/* ==============================
-   DATA HELPERS
-============================== */
-
-function getSubject(subjectId) {
-
-    return subjects.find(
-        subject =>
-            subject.id === subjectId
-    );
 }

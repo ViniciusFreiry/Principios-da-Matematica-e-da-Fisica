@@ -3,69 +3,156 @@ const subjects = [
         id: "math",
         name: "Matemática",
         icon: "📐",
-        description: "Conteúdos de matemática para seus estudos.",
-        lessons: [
+        description: "Conteúdos organizados por módulos, aulas e exercícios.",
+
+        modules: [
             {
-                id: 1,
+                id: "axioms",
                 title: "A Matemática e os Axiomas",
-                url: "https://drivedepobre.com/enem-e-vestibulares/Loat8r43hv4_",
-                size: "297.74 MB"
+                description: "Módulo sobre os fundamentos da matemática.",
+
+                lessons: [
+                    {
+                        id: "axioms-1",
+                        title: "Aula 01 — Introdução",
+
+                        content: `
+                            <p>
+                                Aqui você escreve o conteúdo da aula.
+                            </p>
+
+                            <h2>Exemplo de título</h2>
+
+                            <p>
+                                Você pode escrever quantos parágrafos
+                                forem necessários.
+                            </p>
+
+                            <p>
+                                Também pode utilizar <strong>negrito</strong>,
+                                <em>itálico</em> e outros elementos HTML.
+                            </p>
+                        `,
+
+                        exercises: [
+                            "Explique com suas palavras o que é um axioma.",
+                            "Dê um exemplo de uma afirmação matemática."
+                        ]
+                    },
+
+                    {
+                        id: "axioms-2",
+                        title: "Aula 02 — Axiomas",
+
+                        content: `
+                            <p>
+                                Conteúdo da segunda aula.
+                            </p>
+
+                            <h2>Conceitos importantes</h2>
+
+                            <p>
+                                Escreva aqui as explicações,
+                                exemplos e demonstrações.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-3",
+                        title: "Aula 03 — Aplicações",
+
+                        content: `
+                            <p>
+                                Conteúdo da terceira aula.
+                            </p>
+                        `,
+
+                        exercises: []
+                    }
+                ]
             },
 
             {
-                id: 2,
+                id: "decimals",
                 title: "Decimais e Porcentagem: Uma Linguagem Diferente",
-                url: "https://drivedepobre.com/enem-e-vestibulares/djvqCXNKUCJW",
-                size: "297.74 MB"
+                description: "Módulo sobre números decimais e porcentagem.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 3,
+                id: "factorization",
                 title: "Fatoração: As Regras da Multiplicação",
-                url: "https://drivedepobre.com/enem-e-vestibulares/afzxudtEE3vV",
-                size: "534.41 MB"
+                description: "Módulo sobre fatoração.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 4,
+                id: "powers",
                 title: "Potenciação e Conversão de Unidades",
-                url: "https://drivedepobre.com/enem-e-vestibulares/mUEUH-_b3BSu",
-                size: "883.92 MB"
+                description: "Módulo sobre potenciação e conversão de unidades.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 5,
+                id: "equations",
                 title: "Equações e Manipulações Algébricas",
-                url: "https://drivedepobre.com/enem-e-vestibulares/EiWBsDjrnigW",
-                size: "657.08 MB"
+                description: "Módulo sobre equações e manipulações algébricas.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 6,
+                id: "geometry",
                 title: "Noções Primitivas de Geometria e Trigonometria",
-                url: "https://drivedepobre.com/enem-e-vestibulares/iAyR1-0z4-ay",
-                size: "1.52 GB"
+                description: "Módulo sobre geometria e trigonometria.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 7,
+                id: "proportionality",
                 title: "Proporcionalidade",
-                url: "https://drivedepobre.com/enem-e-vestibulares/8pe8wN6OH4JR",
-                size: "417.02 MB"
+                description: "Módulo sobre proporcionalidade.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 8,
+                id: "curiosities",
                 title: "Curiosidades Matemáticas",
-                url: "https://drivedepobre.com/enem-e-vestibulares/iYJU3U9PI2wB",
-                size: "152.40 MB"
+                description: "Curiosidades e informações matemáticas.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             },
 
             {
-                id: 9,
+                id: "functions",
                 title: "Introdução às Funções",
-                url: "https://drivedepobre.com/enem-e-vestibulares/7-uF4zj-j4eg",
-                size: null
+                description: "Módulo introdutório sobre funções.",
+
+                lessons: [
+                    // Adicione as aulas aqui.
+                ]
             }
         ]
     },
@@ -75,6 +162,7 @@ const subjects = [
         name: "Física",
         icon: "⚛️",
         description: "Conteúdos de física.",
-        lessons: []
+
+        modules: []
     }
 ];

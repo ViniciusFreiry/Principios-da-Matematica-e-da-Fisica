@@ -4,15 +4,12 @@ const STORAGE_KEYS = {
 };
 
 
-/* ==============================
-   GENERIC STORAGE
-============================== */
-
 function loadStorage(key) {
     return JSON.parse(
         localStorage.getItem(key) || "{}"
     );
 }
+
 
 function saveStorage(key, data) {
     localStorage.setItem(
@@ -22,24 +19,34 @@ function saveStorage(key, data) {
 }
 
 
-/* ==============================
-   PROGRESS
-============================== */
+/*
+ * Lesson progress
+ */
 
-let studyProgress = loadStorage(
-    STORAGE_KEYS.progress
-);
+let studyProgress =
+    loadStorage(
+        STORAGE_KEYS.progress
+    );
 
-function isLessonCompleted(lessonId) {
+
+function isLessonCompleted(
+    lessonId
+) {
     return !!studyProgress[lessonId];
 }
 
-function toggleLessonCompleted(lessonId) {
 
+function toggleLessonCompleted(
+    lessonId
+) {
     if (studyProgress[lessonId]) {
+
         delete studyProgress[lessonId];
+
     } else {
+
         studyProgress[lessonId] = true;
+
     }
 
     saveStorage(
@@ -49,20 +56,27 @@ function toggleLessonCompleted(lessonId) {
 }
 
 
-/* ==============================
-   NOTES
-============================== */
+/*
+ * Personal notes
+ */
 
-let studyNotes = loadStorage(
-    STORAGE_KEYS.notes
-);
+let studyNotes =
+    loadStorage(
+        STORAGE_KEYS.notes
+    );
 
-function getLessonNote(lessonId) {
+
+function getLessonNote(
+    lessonId
+) {
     return studyNotes[lessonId] || "";
 }
 
-function saveLessonNote(lessonId, note) {
 
+function saveLessonNote(
+    lessonId,
+    note
+) {
     studyNotes[lessonId] = note;
 
     saveStorage(
@@ -72,21 +86,60 @@ function saveLessonNote(lessonId, note) {
 }
 
 
-/* ==============================
-   PROGRESS CALCULATION
-============================== */
+/*
+ * Subject progress
+ */
 
-function getSubjectProgress(subject) {
+function getSubjectProgress(
+    subject
+) {
+    const lessons =
+        subject.modules.flatMap(
+            module => module.lessons
+        );
 
-    if (subject.lessons.length === 0) {
+    if (lessons.length === 0) {
         return 0;
     }
 
-    const completed = subject.lessons.filter(
-        lesson => isLessonCompleted(lesson.id)
-    ).length;
+    const completed =
+        lessons.filter(
+            lesson =>
+                isLessonCompleted(
+                    `${subject.id}:${lesson.id}`
+                )
+        ).length;
 
     return Math.round(
-        completed / subject.lessons.length * 100
+        completed /
+        lessons.length *
+        100
+    );
+}
+
+/*
+ * Module progress
+ */
+
+function getModuleProgress(
+    subjectId,
+    module
+) {
+    if (module.lessons.length === 0) {
+        return 0;
+    }
+
+    const completed =
+        module.lessons.filter(
+            lesson =>
+                isLessonCompleted(
+                    `${subjectId}:${lesson.id}`
+                )
+        ).length;
+
+    return Math.round(
+        completed /
+        module.lessons.length *
+        100
     );
 }
