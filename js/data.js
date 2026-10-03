@@ -42,7 +42,7 @@ const subjects = [
                             </p>
 
                             <p>
-                                Neste livro tem um dos tratados gregos mais antigos, um tratodo sobre geometria plana. Ao enunciar os axiomas ele separa alguns, as <strong>"noções comuns"</strong> (que, como vimos, são axiomas).
+                                Neste livro tem um dos tratados gregos mais antigos, um tratado sobre geometria plana. Ao enunciar os axiomas ele separa alguns, as <strong>"noções comuns"</strong> (que, como vimos, são axiomas).
                             </p>
 
                             <h2>Noções Comuns</h2>
@@ -131,18 +131,47 @@ const subjects = [
 
                     {
                         id: "axioms-2",
-                        title: "Aula 02 — Axiomas",
+                        title: "Aula 02 — O Papiro de Rhind e a Matemática do Egito Antigo",
 
                         content: `
+                            <h2>O Papiro</h2>
+
                             <p>
-                                Conteúdo da segunda aula.
+                                O Papiro de Ahmes (Rhind) é de 1605 a.C. e foi encontrado no Egito.
                             </p>
 
-                            <h2>Conceitos importantes</h2>
+                            <h2>Exemplos de Problemas Matemáticos do Papiro</h2>
+
+                            <h3><strong>#1</strong> Qual é o número que somado à sua terça parte da 8?</h3>
 
                             <p>
-                                Escreva aqui as explicações,
-                                exemplos e demonstrações.
+                                Para resolver esse problema eles usavam a <strong>regra da falsa posição</strong>.
+                            </p>
+
+                            <p>
+                                <strong>Passo 1</strong>: chutar um resposta (vamos chutar 3)<br>
+                                Teste: 3 + 3 / 3 = 3 + 1 = 4 (ou seja, está errado)
+                            </p>
+
+                            <p>
+                                <strong>Passo 2</strong>: ver se a resposta chutada está muito distante<br>
+                                Se a resposta não for algo muito absurda eles partiam para o próximo passo.
+                            </p>
+
+                            <p>
+                                <strong>Passo 3</strong>: chutar uma resposta mais realista<br>
+                                Como no nosso teste conseguimos como resposta o número 4 que, é metade do desejado, podemos chudar um número duas vezes maior também, ou seja, o 6.<br>
+                                Teste: 6 + 6 / 3 = 6 + 2 = 8
+                            </p>
+
+                            <p>
+                                Assim descobrimos que a resposta é, de fato, 6.
+                            </p>
+
+                            <h3>Em notação matemática atual:</h3>
+
+                            <p>
+                                x + x / 3 = 8
                             </p>
                         `,
 
