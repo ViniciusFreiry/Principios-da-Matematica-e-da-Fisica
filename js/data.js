@@ -173,25 +173,118 @@ const subjects = [
                             <p>
                                 x + x / 3 = 8
                             </p>
-                        `,
 
-                        exercises: [
-                            "Explique com suas palavras o que é um axioma.",
-                            "Dê um exemplo de uma afirmação matemática."
-                        ]
-                    },
-
-                    {
-                        id: "axioms-3",
-                        title: "Aula 03 — Aplicações",
-
-                        content: `
                             <p>
-                                Conteúdo da terceira aula.
+                                Vimos na aula passada como utilizar o princípio da igualdade, então, podemos multiplicar os dois lados por 3:<br>
+                                3 * (x + x / 3) = 3 * 8<br>
+                                3x + x = 24<br>
+                                4x = 24
+                            </p>
+
+                            <p>
+                                Mais uma vez usando o princípio da igualdade, dividimos os dois lados por 4:<br>
+                                4x / 4 = 24 / 4<br>
+                                x = 6
+                            </p>
+
+                            <h3><strong>#2</strong> Qual é o número que somado ao seu triplo da 24?</h3>
+
+                            <p>
+                                Resolvendo com a <strong>regra da falsa posição</strong>
+                            </p>
+
+                            <p>
+                                <strong>Passo 1</strong>: chutar um resposta (vamos chutar 2 desta vez)<br>
+                                Teste: 2 + 2 * 3 = 2 + 6 = 8 (ou seja, está errado novamente)
+                            </p>
+
+                            <p>
+                                <strong>Passo 2</strong>: ver se a resposta chutada está muito distante<br>
+                            </p>
+
+                            <p>
+                                <strong>Passo 3</strong>: chutar uma resposta mais realista<br>
+                                No teste conseguimos 8 que, é 3 vezes menor que 24, podemos chutar então o número 6.<br>
+                                Teste: 6 + 6 * 3 = 6 + 18 = 24
+                            </p>
+
+                            <p>
+                                Chegamos mais uma vez no resultado correto.
+                            </p>
+
+                            <h3>Em notação matemática atual:</h3>
+
+                            <p>
+                                x + 3x = 24
+                            </p>
+
+                            <p>
+                                Neste caso é ainda mais rápido, pois podemos juntar o x com o 3x:<br>
+                                4x = 24
+                            </p>
+
+                            <p>
+                                E dividindo novamente os dois lados por 4:<br>
+                                4x / 4 = 24 / 4<br>
+                                x = 6
                             </p>
                         `,
 
                         exercises: []
+                    },
+
+                    {
+                        id: "axioms-3",
+                        title: "Aula 03 — Frações: Uma intuição",
+
+                        content: `
+                            <h2>O que é uma fração?</h2>
+
+                            <p>
+                                Uma fração é representação de uma parte de algo.<br>
+                                Por exemplo, um bolo, se você partir o bolo ao meio duas vezes, você terá 4 fatias. Cada fatia representa uma fração de 1 / 4 (um quarto) do bolo.
+                            </p>
+
+                            <h2>Frações são números da forma:</h2>
+
+                            <p>
+                                a   →   numerador<br>
+                                -<br>
+                                b   →   denominador
+                            </p>
+
+                            <p>
+                                No caso do exemplo do bolo:<br>
+                                <br>
+                                1<br>
+                                - = 0.25 = 25% do bolo<br>
+                                4
+                            </p>
+
+                            <p>
+                                Se o bolo for dividio ao meio 4 vezes você terá 8 fatias, se você pegar 3 fatias terá:<br>
+                                <br>
+                                3<br>
+                                - = 0,375 = 37,5% do bolo<br>
+                                8
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-4",
+                        title: "Aula 04 — Frações: Soma e Subtração",
+
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
                     }
                 ]
             },
