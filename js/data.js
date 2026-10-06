@@ -247,26 +247,30 @@ const subjects = [
 
                             <h2>Frações são números da forma:</h2>
 
-                            <p>
-                                a   →   numerador<br>
-                                -<br>
-                                b   →   denominador
+                            <p class="equation">
+                                a → numerador &nbsp<br>
+                                — &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                b → denominador
                             </p>
 
                             <p>
-                                No caso do exemplo do bolo:<br>
-                                <br>
-                                1<br>
-                                - = 0.25 = 25% do bolo<br>
-                                4
+                                No caso do exemplo do bolo:
+                            </p>
+
+                            <p class="equation">
+                                1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — = 0.25 = 25% do bolo<br>
+                                4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             </p>
 
                             <p>
-                                Se o bolo for dividio ao meio 4 vezes você terá 8 fatias, se você pegar 3 fatias terá:<br>
-                                <br>
-                                3<br>
-                                - = 0,375 = 37,5% do bolo<br>
-                                8
+                                Se o bolo for dividio ao meio 4 vezes você terá 8 fatias, se você pegar 3 fatias terá:
+                            </p>
+
+                            <p class="equation">
+                                3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — = 0,375 = 37,5% do bolo<br>
+                                8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             </p>
                         `,
 
@@ -276,6 +280,145 @@ const subjects = [
                     {
                         id: "axioms-4",
                         title: "Aula 04 — Frações: Soma e Subtração",
+
+                        content: `
+                            <h2>Soma/Subtração de Frações</h2>
+
+                            <p>
+                                Vamos começar com um exemplo símples. Se você tem metade de um bolo e adicionar mais uma metade de um bolo igual, o que você tem?<br>
+                                Nesse cenário teremos o equivalente a <strong>um</strong> bolo inteiro.
+                            </p>
+
+                            <p class="equation">
+                                1&nbsp &nbsp1 &nbsp&nbsp&nbsp<br>
+                                — + — = 1<br>
+                                2&nbsp &nbsp2 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <h2 style='color: #FF0000'>Alerta:</h2>
+
+                            <p style='color: #FF0000' class="equation">
+                                a &nbsp&nbspc &nbsp&nbspa + c<br>
+                                — + — ≠ —————<br>
+                                b &nbsp&nbspd &nbsp&nbspb + d
+                            </p>
+
+                            <h2>Como fazer a soma de frações?</h2>
+
+                            <p>
+                                Colocando ambas as bases na mesma <strong>base</strong> (denominador)<br>
+                                Vamos usar esse exemplo:
+                            </p>
+
+                            <p class="equation">
+                                1&nbsp &nbsp1<br>
+                                — + —<br>
+                                2&nbsp &nbsp3
+                            </p>
+
+                            <p>
+                                Não podemos somar as duas frações diretamente, pois elas tem bases diferentes. Precisamos encontrar uma base que mantenhas as proporções. Neste exemplo simples conseguimos usar a base 6.<br>
+                                Teremos a primeira fração assim:
+                            </p>
+
+                            <p class="equation">
+                                1&nbsp &nbsp3<br>
+                                — = —<br>
+                                2&nbsp &nbsp6
+                            </p>
+
+                            <p>
+                                Perceba que 3 / 6 continua sendo a mesma coisa que 1 / 2.<br>
+                                Agora a segunda fração ficará assim:
+                            </p>
+
+                            <p class="equation">
+                                1&nbsp &nbsp2<br>
+                                — = —<br>
+                                3&nbsp &nbsp6
+                            </p>
+
+                            <p>
+                                Nessa situação o 1 / 3 também continua sendo igual a 2 / 6.<br>
+                                Depois das bases estarem igualadas, basta somar o topo das frações:
+                            </p>
+
+                            <p class="equation result">
+                                3&nbsp &nbsp2 &nbsp&nbsp3 + 2 &nbsp&nbsp5<br>
+                                — + — = ————— = —<br>
+                                6&nbsp &nbsp6 &nbsp&nbsp&nbsp&nbsp6 &nbsp&nbsp&nbsp&nbsp6
+                            </p>
+
+                            <p>
+                                Podemos usar o princípio da igualdade nas frações.
+                            </p>
+
+                            <h2>Principio: a * 1 = a</h2>
+
+                            <p>
+                                Ou seja:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp<br>
+                                a * — = a<br>
+                                &nbsp&nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Então podemos multiplicar as frações por frações inteiras da outra base que queremos somar:
+                            </p>
+
+                            <p class="equation">
+                                1 &nbsp&nbsp1 &nbsp&nbsp1 &nbsp&nbsp<span style="color: #FFFF00;">3</span> &nbsp&nbsp1 &nbsp&nbsp<span style="color: #00FF00;">2</span> &nbsp&nbsp3 &nbsp&nbsp2<br>
+                                — + — = — * <span style="color: #FFFF00;">—</span> + — * <span style="color: #00FF00;">—</span> = — + —<br>
+                                2 &nbsp&nbsp3 &nbsp&nbsp<span style="color: #00FF00;">2</span> &nbsp&nbsp<span style="color: #FFFF00;">3</span> &nbsp&nbsp<span style="color: #FFFF00;">3</span> &nbsp&nbsp<span style="color: #00FF00;">2</span> &nbsp&nbsp6 &nbsp&nbsp6
+                            </p>
+
+                            <h2>Exemplo #01</h2>
+
+                            <p class="equation">
+                                3 &nbsp&nbsp7 &nbsp&nbsp3 &nbsp&nbsp<span style="color: #FFFF00;">2</span> &nbsp&nbsp7 &nbsp&nbsp<span style="color: #00FF00;">5</span> &nbsp&nbsp&nbsp6 &nbsp&nbsp35 &nbsp&nbsp41<br>
+                                — + — = — * <span style="color: #FFFF00;">—</span> + — * <span style="color: #00FF00;">—</span> = —— + —— = ——<br>
+                                5 &nbsp&nbsp2 &nbsp&nbsp<span style="color: #00FF00;">5</span> &nbsp&nbsp<span style="color: #FFFF00;">2</span> &nbsp&nbsp<span style="color: #FFFF00;">2</span> &nbsp&nbsp<span style="color: #00FF00;">5</span> &nbsp&nbsp10 &nbsp&nbsp10 &nbsp&nbsp10
+                            </p>
+
+                            <h2>Exemplo #02</h2>
+
+                            <p class="equation">
+                                1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp<span style="color: #0000FF;">2</span> &nbsp&nbsp2 &nbsp&nbsp<span style="color: #FF00FF;">14</span> &nbsp&nbsp1 &nbsp&nbsp<span style="color: #FF0000;">7</span> &nbsp&nbsp2 + 28 + 7 &nbsp&nbsp37<br>
+                                — + 2 + 0,5 = — * <span style="color: #0000FF;">—</span> + — * <span style="color: #FF00FF;">——</span> + — * <span style="color: #FF0000;">—</span> = —————————— = ——<br>
+                                7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color: #FF0000;">7</span> &nbsp&nbsp<span style="color: #0000FF;">2</span> &nbsp&nbsp1 &nbsp&nbsp<span style="color: #FF00FF;">14</span> &nbsp&nbsp<span style="color: #0000FF;">2</span> &nbsp&nbsp<span style="color: #FF0000;">7</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp14
+                            </p>
+
+                            <p>
+                                Nesta situação, o que fizemos foi transformar o 2 em uma fração de 2 / 1 e o nosso 0,5 em uma fração de 1 / 2.<br>
+                                Como a base de 2 / 1 não modifica o número, podemo só multiplicar as outras entre si e, depois, multiplicar o 2 / 1 pela fração do resultado, neste caso: <strong>7 * 2 = 14</strong>
+                            </p>
+
+                            <h2>Exemplo #03</h2>
+
+                            <p>
+                                Agora faremos com uma subtração, que utiliza exatamente o mesmo conseito de igualar as bases.
+                            </p>
+
+                            <p class="equation">
+                                4 &nbsp&nbsp1 &nbsp&nbsp4 &nbsp&nbsp<span style="color: #FFFF00;">3</span> &nbsp&nbsp1 &nbsp&nbsp<span style="color: #00FF00;">5</span> &nbsp&nbsp12 - 5 &nbsp&nbsp&nbsp7<br>
+                                — - — = — * <span style="color: #FFFF00;">—</span> - — * <span style="color: #00FF00;">—</span> = —————— = ——<br>
+                                5 &nbsp&nbsp3 &nbsp&nbsp<span style="color: #00FF00;">5</span> &nbsp&nbsp<span style="color: #FFFF00;">3</span> &nbsp&nbsp<span style="color: #FFFF00;">3</span> &nbsp&nbsp<span style="color: #00FF00;">5</span> &nbsp&nbsp&nbsp&nbsp15 &nbsp&nbsp&nbsp&nbsp15
+                            </p>
+
+                            <p>
+                                Vimos então que o conceito do "<strong>a * 1 = a</strong>" é muito útil, pois podemos escrever <strong>1</strong> da forma que nos beneficiar mais.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-5",
+                        title: "Aula 05 — Alerta",
 
                         content: `
                             
