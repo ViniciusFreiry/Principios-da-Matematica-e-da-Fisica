@@ -419,7 +419,54 @@ const subjects = [
                     {
                         id: "axioms-5",
                         title: "Aula 05 — Alerta",
+                        
+                        content: `
+                            <h2 style="color: #FF0000">Alerta:</h2>
 
+                            <p style="color: #FF0000" class="equation">
+                                &nbsp&nbsp&nbsp&nbspx &nbsp&nbsp&nbsp<br>
+                                x + — = 3<br>
+                                &nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <h2>Caminho 1:</h2>
+
+                            <p>
+                                Como temos uma base de número 2 podemos usar o princípio de igualdade e multiplicar os dois lados da equação por 2.
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 * x &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2 * x + ————— = 2 * 3 &nbsp→ &nbsp2x + x = 6<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h2>Caminho 2:</h2>
+
+                            <p>
+                                Podemos usar o principio da igualdade nas frações e multiplicar o x por 1, porem, 1 na forma de 2 / 2.
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp2 &nbsp&nbspx &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3x &nbsp&nbsp&nbsp<br>
+                                x * — + — = 3 &nbsp→ &nbsp—— = 3<br>
+                                &nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h2>Conclusão</h2>
+
+                            <p>
+                                Podemos usar qualquer um dos métodos para resolver uma equação, foque em utilizar o que for mais simples para você.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-6",
+                        title: "Aula 06 — Frações: Multiplicação e Divisão",
+                        
                         content: `
                             
                         `,
