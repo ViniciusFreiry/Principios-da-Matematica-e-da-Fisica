@@ -468,6 +468,110 @@ const subjects = [
                         title: "Aula 06 — Frações: Multiplicação e Divisão",
                         
                         content: `
+                            <h2>Multiplicação/Divisão de frasões</h2>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p style="color: #00FF00" class="equation">
+                                8 &nbsp&nbsp15<br>
+                                — * ——<br>
+                                2 &nbsp&nbsp&nbsp5
+                            </p>
+
+                            <p>
+                                Podemos fazer simplificando as frações, 8 / 2 é igual a 4 e 15 / 5 é igual a 3:
+                            </p>
+
+                            <p class="equation">
+                                8 &nbsp&nbsp15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — * —— = 4 * 3 = 12<br>
+                                2 &nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Podemos também multiplicar as frações como já aviamos feito antes, multiplicamos as duas partes de cima entre si e as partes da base entre si:
+                            </p>
+
+                            <p class="equation">
+                                8 * 15 &nbsp&nbsp120 &nbsp&nbsp&nbsp&nbsp<br>
+                                —————— = ——— = 12<br>
+                                &nbsp2 * 5 &nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h2>A regra das Multiplicações:</h2>
+
+                            <p class="equation">
+                                a &nbsp&nbspc &nbsp&nbspa * c<br>
+                                — * — = —————<br>
+                                b &nbsp&nbspd &nbsp&nbspb * d
+                            </p>
+
+                            <p>
+                                O motivo disso é que por que uma fração é uma divisão.<br>
+                                <strong style="color: #00FF00">Divisões</strong> e <strong style="color: #00FF00">Multiplicações</strong> são operações inversas, então não importa a ordem que são feitas, por exemplo:
+                            </p>
+
+                            <p class="equation">
+                                8 / 2 * 15 / 5 = 4 * 15 / 5 = 60 / 5 = 12<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                8 * 15 / 2 / 5 = 120 / 2 / 5 = 60 / 5 = 12
+                            </p>
+
+                            <p>
+                                Operações de <strong style="color: #00FF00">Adição</strong> e <strong style="color: #00FF00">Subtração</strong> também são inversas, então também não importa a ordem em que são calculadas. Por exemplo:
+                            </p>
+
+                            <p class="equation">
+                                4 + 6 - 2 = 10 - 2 = 8<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                4 - 2 + 6 = 2 + 6 = 8
+                            </p>
+
+                            <h2>A regra das Divisões:</h2>
+
+                            <p class="equation">
+                                &nbspa &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp— &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbspb &nbsp&nbsp&nbspa &nbsp&nbspc &nbsp&nbspa &nbsp&nbspd<br>
+                                ——— = — / — = — * —<br>
+                                &nbspc &nbsp&nbsp&nbspb &nbsp&nbspd &nbsp&nbspb &nbsp&nbspc<br>
+                                &nbsp— &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbspd &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Prova:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp11 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp— &nbsp&nbsp&nbsp&nbsp&nbsp— * —— &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp7 &nbsp&nbsp&nbsp&nbsp&nbsp7 &nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp11<br>
+                                ———— = ————————— = — * ——<br>
+                                &nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp11 &nbsp&nbsp&nbsp7 &nbsp&nbsp5&nbsp<br>
+                                &nbsp—— &nbsp&nbsp&nbsp&nbsp—— * —— &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp11 &nbsp&nbsp&nbsp&nbsp11 &nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                No exemplo a cima usamos o princípio da igualdade nas fração, multiplicamos o topo e a base por 11 / 5, como 11 / 5 dividido por 11 / 5 é 1, a expressão continua igual. Porém 5 / 11 vezes 11 / 5, também é 1, então a parte de baixo da equação é simplificada, todo número dividido por 1 é igual a ele mesmo, restando assim só a multiplicação do topo pela base inversa.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-7",
+                        title: "Aula 07 — Multiplicar Cruzado",
+                        
+                        content: `
                             
                         `,
 
