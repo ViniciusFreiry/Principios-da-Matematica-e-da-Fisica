@@ -572,6 +572,49 @@ const subjects = [
                         title: "Aula 07 — Multiplicar Cruzado",
                         
                         content: `
+                            <h2>Observação:</h2>
+
+                            <p>
+                                Multiplicar uma equação "cruzado":
+                            </p>
+
+                            <p class="equation">
+                                x &nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspx &nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — = — &nbsp&nbsp→ &nbsp&nbsp— ⤨ — &nbsp&nbsp→ &nbsp&nbsp2x = 12<br>
+                                4 &nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4 &nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+
+                            <p>
+                                Mas multiplicar cruzado não é uma das regras do jogo da matemática, e sim a consequência.<br>
+                                Uma das regras é que tudo que fazemos da mesma forma dos dois lados da equação não altera o seu resultado, ou seja, podemos multiplicar ambos os lados por 4:
+                            </p>
+
+                            <p class="equation result">
+                                x * 4 &nbsp&nbsp3 * 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp12<br>
+                                ————— = ————— &nbsp&nbsp→ &nbsp&nbspx = ——<br>
+                                &nbsp&nbsp4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2
+                            </p>
+
+                            <p>
+                                Como podemos ver, o resultado é exatamente o mesmo, ou seja, uma forma que resolver esses tipos de equações pode ser multiplicando as bases das frações pelos dois lado, dando assim o mesmo resultado que a multiplicação cruzada.<br>
+                                Perceba que se multiplicarmos ambos os lados do resultado por 2, teremos o mesmo resultado da multiplicação cruzada:
+                            </p>
+
+                            <p class="equation result">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp12 * 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x * 2 = —————— &nbsp&nbsp→ &nbsp&nbsp2x = 12<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-8",
+                        title: "Aula 08 — Aplicação Questão do ENEM",
+                        
+                        content: `
                             
                         `,
 
