@@ -615,6 +615,194 @@ const subjects = [
                         title: "Aula 08 — Aplicação Questão do ENEM",
                         
                         content: `
+                            <h2 style="color: #FF0000">ENEM 2026: Questão 150</h2>
+
+                            <p>
+                                O técnico de um time de voleibol registra o número de jogadas e de acertos, por atleta, em cada fundamento, para verificar os desempenhos dos jogadores. Para que o time tenha um melhor aproveitamento no fundamento bloqueio, ele decide substituir um dos jogadores em quadra por um dos que estão no banco de reservas. O critério a ser adotado é o de escolher o atleta que, no fundamento bloqueio, tenha apresentado o maior número de acertos em relação ao número de jogadas de que tenha participado. Os registros dos cinco atletas que se encontram no banco de reservas, nesse fundamento, estão apresentados no quadro.
+                            </p>
+
+                            <div class="table-container">
+                                <table class="study-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">Atleta</th>
+                                            <th colspan="2">Participação em bloqueios</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Número de acertos</th>
+                                            <th>Número de jogadas</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>I</td>
+                                            <td>20</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>II</td>
+                                            <td>10</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>III</td>
+                                            <td>19</td>
+                                            <td>32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IV</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>V</td>
+                                            <td>8</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p>
+                                Qual dos atletas do banco de reservas o treinador deve colocar em quadra?<br>
+                                a) I<br>
+                                b) II<br>
+                                c) III<br>
+                                d) IV<br>
+                                e) V
+                            </p>
+
+                            <h2 style="color: #00FF00">Resolução:</h2>
+
+                            <p>
+                                Vamos começar analizando os atletas:
+                            </p>
+
+                            <h2>
+                                Atleta 1:
+                            </h2>
+
+                            <p class="equation">
+                                20<br>
+                                ——<br>
+                                30
+                            </p>
+
+                            <h2>
+                                Atleta 2:
+                            </h2>
+
+                            <p class="equation">
+                                10<br>
+                                ——<br>
+                                34
+                            </p>
+
+                            <p>
+                                Ele jogou mais que o Atleta 1 e fez menos bloqueios, então descartamos.
+                            </p>
+
+                            <h2>
+                                Atleta 3:
+                            </h2>
+
+                            <p class="equation">
+                                19<br>
+                                ——<br>
+                                32
+                            </p>
+
+                            <p>
+                                Também jogou mais que o Atleta 1 e fez menos bloqueios, então descartamos.
+                            </p>
+
+                            <h2>
+                                Atleta 4:
+                            </h2>
+
+                            <p class="equation">
+                                3<br>
+                                —<br>
+                                4
+                            </p>
+
+                            <p>
+                                Vamos usar o princípio da igualdade para ver se ele é melhor que o primeiro.<br>
+                                Primeiro o atleta 1:
+                            </p>
+
+                            <p class="equation">
+                                20 &nbsp&nbsp4 &nbsp&nbsp&nbsp80<br>
+                                —— * — = ———<br>
+                                30 &nbsp&nbsp4 &nbsp&nbsp120
+                            </p>
+
+                            <p>
+                                E agora o atleta 4:
+                            </p>
+
+                            <p class="equation">
+                                3 &nbsp&nbsp30 &nbsp&nbsp&nbsp90<br>
+                                — * —— = ———<br>
+                                4 &nbsp&nbsp30 &nbsp&nbsp120<br>
+                            </p>
+
+                            <p>
+                                Vimos que o atleta 4 tem mais aproveitamento que o atleta 1, logo, descartamos o atleta 1.
+                            </p>
+
+                            <h2>
+                                Atleta 5:
+                            </h2>
+
+                            <p class="equation">
+                                8 <br>
+                                ——<br>
+                                10
+                            </p>
+
+                            <p>
+                                Agora precisamos comparar da mesma forma os atletas 4 e 5.<br>
+                                O atleta 4:
+                            </p>
+
+                            <p class="equation">
+                                3 &nbsp&nbsp10 &nbsp&nbsp30<br>
+                                — * —— = ——<br>
+                                4 &nbsp&nbsp10 &nbsp&nbsp40
+                            </p>
+
+                            <p>
+                                O atleta 5:
+                            </p>
+
+                            <p class="equation">
+                                8 &nbsp&nbsp&nbsp4 &nbsp&nbsp32<br>
+                                —— * — = ——<br>
+                                10 &nbsp&nbsp4 &nbsp&nbsp40<br>
+                            </p>
+
+                            <p>
+                                Assim vimos que o atleta 5 é o que tem o melhor aproveitamento em bloqueios.
+                            </p>
+
+                            <h2 style="color: #0000FF">Resposta:</h2>
+
+                            <p>
+                                O atleta 5 tem o maior aproveitamento.<br>
+                                A opçãos correta é a alternativa "e) V".
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "axioms-9",
+                        title: "Aula 09 — Aprofundamento: O problema das torneiras",
+                        
+                        content: `
                             
                         `,
 

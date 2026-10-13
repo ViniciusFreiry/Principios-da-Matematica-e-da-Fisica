@@ -718,3 +718,42 @@ button {
     font-weight: 700;
     color: var(--accent);
 }
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.study-table {
+    width: 100%;
+    min-width: 420px;
+    border-collapse: collapse;
+    background: var(--surface);
+    text-align: center;
+}
+
+.study-table th,
+.study-table td {
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+}
+
+.study-table thead {
+    background: var(--surface-2);
+}
+
+.study-table th {
+    font-weight: 700;
+}
+
+.study-table tbody tr:hover {
+    background: var(--surface-2);
+}
+
+.study-table th:first-child,
+.study-table td:first-child {
+    font-weight: 700;
+}
