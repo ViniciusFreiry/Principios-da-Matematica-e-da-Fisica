@@ -803,13 +803,64 @@ const subjects = [
                         title: "Aula 09 — Aprofundamento: O problema das torneiras",
                         
                         content: `
-                            
+                            <h2>O problema das torneiras</h2>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p>
+                                Torneira A: Leva 6 horas para encher o tanque<br>
+                                Torneira B: Leva 8 horas para encher o tanque<br>
+                                Quanto tempo leva com as duas ligadas?
+                            </p>
+
+                            <p>
+                                Para começar, vamos supor um valor em litros para o tanque, já que o exercício não nos da um valor específico.<br>
+                                O ideal é usar um valor que facilite as contas, um valor que seja divisível, tanto por 6, quanto por 8. A multiplicação dos dois é 48, mas como ambos são multiplos de 2, podemos usar a metade disso, ou seja, 24.<br>
+                            </p>
+
+                            <p>
+                                Depois que estipulamos um valor vamos calcular o quanto cada torneira enche por hora.
+                                A Torneira A enche 24 litros em 6 horas:
+                            </p>
+
+                            <p class="equation">
+                                24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                —— = 4 L/h<br>
+                                6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                A Torneira B enche 24 litros em 8 horas:
+                            </p>
+
+                            <p class="equation">
+                                24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                —— = 3 L/h<br>
+                                8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Com isso descobrimos a vazão das duas torneiras, então sabemos que a vazão das duas juntas é 3 + 4, ou seja, 7 L/h. A partir disso podemos usar a proporção:
+                            </p>
+
+                            <p class="equation">
+                                7L &nbsp&nbsp14L &nbsp&nbsp21L &nbsp&nbsp24L<br>
+                                —— = ——— = ——— = ———<br>
+                                1h &nbsp&nbsp&nbsp2h &nbsp&nbsp&nbsp3h &nbsp&nbsp&nbspxh
+                            </p>
+
+                            <p>
+                                Agora usamos as regras do jogo para determinar o quanto x vale:
+                            </p>
+
+                            <p class="equation">
+                                7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp7x &nbsp&nbsp24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — * x = —— * x &nbsp&nbsp→ &nbsp&nbsp7x = 24 &nbsp&nbsp→ &nbsp&nbsp—— = —— &nbsp&nbsp→ &nbsp&nbspx ≃ 3,4h<br>
+                                1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspx &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp7 &nbsp&nbsp&nbsp7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     }
                 ]
             },
@@ -820,7 +871,19 @@ const subjects = [
                 description: "Módulo sobre números decimais e porcentagem.",
 
                 lessons: [
-                    // Adicione as aulas aqui.
+                    {
+                        id: "decimals-1",
+                        title: "Aula 01 — Decimais Soma e Subtração",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    }
                 ]
             },
 
