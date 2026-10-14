@@ -873,7 +873,60 @@ const subjects = [
                 lessons: [
                     {
                         id: "decimals-1",
-                        title: "Aula 01 — Decimais Soma e Subtração",
+                        title: "Aula 01 — Decimais: Soma e Subtração",
+                        
+                        content: `
+                            <h2>Números Decimais</h2>
+
+                            <h3>Soma/Subtração</h3>
+
+                            <p>
+                                É sempre possível interpretar com uma soma de frações.
+                            </p>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p>
+                                Você pode separar a vírgula do número inteiro:
+                            </p>
+
+                            <p class="equation">
+                                4,5 + 2,5 = 4 + 2 + 0,5 + 0,5 = 6 + 1 = 7
+                            </p>
+
+                            <p>
+                                Você também pode utilizar o princípio da igualdade de frações para tirar a vírgula:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp45 &nbsp&nbsp25 &nbsp&nbsp70 &nbsp&nbsp&nbsp<br>
+                                4,5 * —— + 2,5 * —— = —— + —— = —— = 7<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp10 &nbsp&nbsp10 &nbsp&nbsp10 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #02:</h3>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp451 - 212 &nbsp&nbsp239 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                4,51 - 2,12 = 4,51 * ——— - 2,12 * ——— = ————————— = ——— = 2,39<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #03:</h3>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp738 + 110 &nbsp&nbsp848 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                7,38 + 1,1 = 7,38 * ——— + 1,1 * ——— = ————————— = ——— = 8,48<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "decimals-2",
+                        title: "Aula 02 — Decimais: Multiplicação e Divisão",
                         
                         content: `
                             
