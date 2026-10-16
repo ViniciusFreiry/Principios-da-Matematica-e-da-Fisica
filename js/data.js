@@ -929,6 +929,127 @@ const subjects = [
                         title: "Aula 02 — Decimais: Multiplicação e Divisão",
                         
                         content: `
+                            <h2>Números Decimais</h2>
+
+                            <h3>Multiplicação/Divisão</h3>
+
+                            <p>
+                                Se interpretarmos como frações é basicamente multiplicar e dividir frações.
+                            </p>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p class="equation">
+                                15,2<br>
+                                ————<br>
+                                &nbsp&nbsp5&nbsp
+                            </p>
+
+                            <p>
+                                Caminho 1:
+                            </p>
+
+                            <p class="equation">
+                                15 + 0,2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0,2 &nbsp&nbsp<strong style="color: #00FF00">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0,4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ———————— = 3 + ——— * <strong style="color: #00FF00">—</strong> = 3 + ——— = 3 + 0,04 = 3,04<br>
+                                &nbsp&nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp<strong style="color: #00FF00">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Caminho 2:
+                            </p>
+
+                            <p class="equation">
+                                15,2 &nbsp&nbsp<strong style="color: #00FF00">2</strong> &nbsp&nbsp30,4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ———— * <strong style="color: #00FF00">—</strong> = ———— = 3,04<br>
+                                &nbsp&nbsp5 &nbsp&nbsp&nbsp<strong style="color: #00FF00">2</strong> &nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Como podemos ver, podemos usar as "regras do jogo" que aprendemos para manipular qualquer conta, do melhor jeito possível que facilite para nós.
+                            </p>
+
+                            <h3>Exemplo #02:</h3>
+
+                            <p class="equation">
+                                2,08<br>
+                                ————<br>
+                                &nbsp0,4
+                            </p>
+
+                            <p>
+                                Caminho 1:
+                            </p>
+
+                            <p class="equation">
+                                2,08 &nbsp&nbsp100 &nbsp&nbsp208 &nbsp&nbsp200 + 8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ———— * ——— = ——— = ——————— = 5 + —————— = 5 + 0,2 = 5,2<br>
+                                &nbsp0,4 &nbsp&nbsp100 &nbsp&nbsp&nbsp40 &nbsp&nbsp&nbsp&nbsp&nbsp40 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4 * 10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Caminho 2:
+                            </p>
+
+                            <p class="equation">
+                                2,08 &nbsp&nbsp5 &nbsp&nbsp10,4 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ———— * — = ———— = 5,2<br>
+                                &nbsp0,4 &nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #03:</h3>
+
+                            <p class="equation">
+                                4,13 * 0,2
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">100</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">10</strong> &nbsp&nbsp413 &nbsp&nbsp2 &nbsp&nbsp&nbsp826 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                4,13 * <strong style="color: #00FF00">———</strong> * 0,2 * <strong style="color: #00FF00">——</strong> = ——— * —— = ———— = 0,826<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">100</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">10</strong> &nbsp&nbsp100 &nbsp&nbsp10 &nbsp&nbsp1000 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #04:</h3>
+
+                            <p class="equation">
+                                18,06<br>
+                                —————<br>
+                                &nbsp0,03
+                            </p>
+
+                            <p class="equation">
+                                18,06 &nbsp&nbsp<strong style="color: #00FF00">100</strong> &nbsp&nbsp1806 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ————— * <strong style="color: #00FF00">———</strong> = ———— = 602<br>
+                                &nbsp0,03 &nbsp&nbsp<strong style="color: #00FF00">100</strong> &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #05:</h3>
+
+                            <p class="equation">
+                                22,5 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ———— * 1,4<br>
+                                0,15 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p class="equation">
+                                &nbsp225 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp——— &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp15 &nbsp&nbsp&nbsp14 &nbsp&nbsp225 &nbsp&nbsp100 &nbsp&nbsp14 &nbsp&nbsp225 * 14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ————— * —— = ——— * ——— * —— = ———————— = 15 * 14 = 210<br>
+                                &nbsp15 &nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp15 &nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp——— &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "decimals-3",
+                        title: "Aula 03 — Porcentagem",
+                        
+                        content: `
                             
                         `,
 
