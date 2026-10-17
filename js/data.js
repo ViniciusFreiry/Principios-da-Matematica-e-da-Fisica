@@ -1050,6 +1050,181 @@ const subjects = [
                         title: "Aula 03 — Porcentagem",
                         
                         content: `
+                            <h2>Porcentagem</h2>
+
+                            <p>
+                                Apenas um linguagem diferente!
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp20 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                20% = ——— = 0,2<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo:</h3>
+
+                            <p>
+                                <b>Fábrica A:</b> 83 relógios com defeito a cada 415 relógios feitos.<br>
+                                <b>Fábrica B:</b> 105 relógios com defeito a cada 625 relógios feitos.
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #00FF00">Fábrica A</strong><br>
+                                <br>
+                                83 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp20 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ——— = 0,2 = ——— = 20%<br>
+                                415 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #00FF00">Fábrica B</strong><br>
+                                <br>
+                                105 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp16,8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ——— = 0,168 = ———— = 16,8%<br>
+                                625 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Desta forma vimos que a Fábrica B tem uma melhor produção, pois tem uma porcentagem menor de falhas.<br>
+                                Usamos a porcentagem como uma análise de fração em base de 100.
+                            </p>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p>
+                                Metade de 24:
+                            </p>
+
+                            <p>
+                                Método 1:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp<br>
+                                24 * — = 24<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Método 2:
+                            </p>
+
+                            <p class="equation">
+                                24 * 0,5 = 12
+                            </p>
+
+                            <p>
+                                Método 3:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp50 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                24 * ——— = 24 * 50% = 12<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Note que todos os multiplicadores que usamos são a mesma coisa:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp50 &nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                50% = ——— = — = 0,5<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100 &nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #02:</h3>
+
+                            <p>
+                                32% * 400 = ?
+                            </p>
+
+                            <p class="equation">
+                                32 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp32 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ——— * 400 = —— * 4 = 128<br>
+                                100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #03:</h3>
+
+                            <p>
+                                10% * 50% = ?
+                            </p>
+
+                            <p class="equation">
+                                10 &nbsp&nbsp&nbsp50 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp500 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ——— * ——— = ————————— = ——— = 5%<br>
+                                100 &nbsp&nbsp100 &nbsp&nbsp100 * 100 &nbsp&nbsp100 &nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #04:</h3>
+
+                            <p>
+                                40% * 120,5 / 0,1 = ?
+                            </p>
+
+                            <p class="equation">
+                                4 &nbsp&nbsp&nbsp1205 &nbsp&nbsp4820 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                —— * ———— = ———— = 482<br>
+                                10 &nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #05:</h3>
+
+                            <p>
+                                20% / 60% * 70% = ?
+                            </p>
+
+                            <p class="equation">
+                                20 &nbsp&nbsp&nbsp100 &nbsp&nbsp70 &nbsp&nbsp&nbsp20 &nbsp&nbsp70 &nbsp&nbsp&nbsp1 &nbsp&nbsp70 &nbsp&nbsp&nbsp70 &nbsp&nbsp&nbsp7&nbsp<br>
+                                ——— * ——— * ——— = —— * ——— = — * ——— = ——— = ——<br>
+                                100 &nbsp&nbsp&nbsp60 &nbsp&nbsp100 &nbsp&nbsp60 &nbsp&nbsp100 &nbsp&nbsp3 &nbsp&nbsp100 &nbsp&nbsp300 &nbsp&nbsp30
+                            </p>
+
+                            <h3>Exemplo #06:</h3>
+
+                            <p>
+                                10% * 1500 = ?
+                            </p>
+
+                            <p class="equation">
+                                10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1500 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ——— * 1500 = —— * 1500 = ———— = 150<br>
+                                100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo #07:</h3>
+
+                            <p>
+                                20% * 1500 = ?
+                            </p>
+
+                            <p class="equation">
+                                2 * 10% * 1500 = 2 * 150 = 300
+                            </p>
+
+                            <h3>Exemplo #08:</h3>
+
+                            <p>
+                                25% * 1500 = ?
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp150 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (20% + 5%) * 1500 = 300 + ——— = 300 + 75 = 375<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "decimals-4",
+                        title: "Aula 04 — Porcentagem Vestibular",
+                        
+                        content: `
                             
                         `,
 
