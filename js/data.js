@@ -1222,16 +1222,90 @@ const subjects = [
 
                     {
                         id: "decimals-4",
-                        title: "Aula 04 — Porcentagem Vestibular",
+                        title: "Aula 04 — Porcentagem: Vestibular",
                         
                         content: `
-                            
+                            <h2>Vestibulares e Concursos</h2>
+
+                            <h3>ENEM</h3>
+
+                            <p>
+                                Um contribuinte que vende mais de R$ 20 mil de ações em Bolsa de Valores em um mês deverá pagar Imposto de Renda. O pagamento para a Receita Federal consistirá em 15% do lucro obtido com a venda das ações.<br>
+                                Um contribuinte que vende por R$ 34 mil um lote de ações que custou R$ 26 mil terá de pagar de Imposto de Renda à Receita Federal o valor de:<br>
+                                <br>
+                                a) R$ 900,00<br>
+                                b) R$ 1200,00<br>
+                                c) R$ 2100,00<br>
+                                d) R$ 3900,00<br>
+                                e) R$ 5100,00
+                            </p>
+
+                            <p>
+                                Primeiro calculamos o lucro:
+                            </p>
+
+                            <p class="equation">
+                                L = 34K - 26K = 8K = 8000
+                            </p>
+
+                            <p>
+                                Agora calculamos os 15% do lucro, podemos calcular 10% e depois adicionar a metade.
+                            </p>
+
+                            <p class="equation">
+                                8000 * 10% + 8000 / 2 * 10% = 800 + 400 = 1200
+                            </p>
+
+                            <p>
+                                Ou seja, resposta "b) R$ 1200,00".
+                            </p>
+
+                            <h3>ENEM</h3>
+
+                            <p>
+                                Uma organização não governamental divulgou um levantamento de dados realizado em algumas cidades brasileiras sobre saneamento básico. Os resultados indicam que somente 36% do esgoto gerado nessas cidades é tratado, o que mostra que 8 bilhões de litros de esgoto sem nenhum tratamento são lançados todos os dias nas águas.<br>
+                                Uma campanha para melhorar o saneamento básico nessas cidades tem como meta a redução da quantidade de esgoto lançado nas águas diariamente, sem tratamento para 4 bilhões de litros nos próximos meses.<br>
+                                Se o volume de esgoto gerado permanecer o mesmo e a meta dessa campanha se concretizar, o percentual de esgoto tratado passará a ser:<br>
+                                <br>
+                                a) 72%<br>
+                                b) 68%<br>
+                                c) 64%<br>
+                                d) 54%<br>
+                                e) 18%<br>
+                            </p>
+
+                            <p>
+                                Primeiro pegamos qual a porcentagem de esgoto não tratado:
+                            </p>
+
+                            <p class="equation">
+                                100% - 36% = 64%
+                            </p>
+
+                            <p>
+                                Depois vimos qual a nova porcentagem desejada:
+                            </p>
+
+                            <p class="equation">
+                                4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — * 64% = 0,5 * 64% = 32%<br>
+                                8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Por fim, calculamos a porcentagem de esgoto que será tratado:
+                            </p>
+
+                            <p class="equation">
+                                100% - 32% = 68%
+                            </p>
+
+                            <p>
+                                Ou seja, a resposta correta é "b) 68%".
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     }
                 ]
             },
@@ -1242,7 +1316,19 @@ const subjects = [
                 description: "Módulo sobre fatoração.",
 
                 lessons: [
-                    // Adicione as aulas aqui.
+                    {
+                        id: "factorization-1",
+                        title: "Aula 01 — Os Axiomas: Soma e Subtração",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    }
                 ]
             },
 
