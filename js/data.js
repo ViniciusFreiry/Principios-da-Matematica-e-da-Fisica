@@ -1321,6 +1321,41 @@ const subjects = [
                         title: "Aula 01 — Os Axiomas: Soma e Subtração",
                         
                         content: `
+                            <h2>Fatoração: As Regras da Multiplicação</h2>
+
+                            <h2>1. Os axiomas da aritimética</h2>
+
+                            <h3>Adição/Subtração</h3>
+
+                            <p>
+                                a) <strong style="color: #0000FF">a</strong> + <strong style="color: #FF0000">b</strong> = <strong style="color: #FF0000">b</strong> + <strong style="color: #0000FF">a</strong> (Comutatividade)<br>
+                                Exemplo: <strong style="color: #0000FF">7</strong> + <strong style="color: #FF0000">11</strong> = 18 = <strong style="color: #FF0000">11</strong> + <strong style="color: #0000FF">7</strong>
+                            </p>
+
+                            <p>
+                                b) <strong style="color: #0000FF">a</strong> + (<strong style="color: #FF0000">b</strong> + <strong style="color: #00FF00">c</strong>) = (<strong style="color: #0000FF">a</strong> + <strong style="color: #FF0000">b</strong>) + <strong style="color: #00FF00">c</strong> (Associatividade)<br>
+                                Exemplo: <strong style="color: #0000FF">7</strong> + <strong style="color: #FF0000">11</strong> + <strong style="color: #00FF00">2</strong> = 18 + <strong style="color: #00FF00">2</strong> = <strong style="color: #0000FF">7</strong> + 13 = 9 + <strong style="color: #FF0000">11</strong> = 20
+                            </p>
+
+                            <p>
+                                c) <strong style="color: #0000FF">a</strong> + 0 = 0 + <strong style="color: #0000FF">a</strong> = <strong style="color: #0000FF">a</strong> (Existência do Elemento Neutro)<br>
+                                Exemplo: <strong style="color: #0000FF">17</strong> + 0 = <strong style="color: #0000FF">17</strong>
+                            </p>
+
+                            <p>
+                                d) <strong style="color: #0000FF">a</strong> + (<strong style="color: #0000FF">-a</strong>) = 0 (Existência do Elemento Oposto)<br>
+                                Exemplo: <strong style="color: #0000FF">7</strong> + (<strong style="color: #0000FF">-7</strong>) = 0
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-2",
+                        title: "Aula 02 — Fatoração e Produtos Notáveis: Exemplo Nível 01",
+                        
+                        content: `
                             
                         `,
 
