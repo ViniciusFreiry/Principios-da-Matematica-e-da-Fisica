@@ -1356,6 +1356,44 @@ const subjects = [
                         title: "Aula 02 — Fatoração e Produtos Notáveis: Exemplo Nível 01",
                         
                         content: `
+                            <h2>Exemplo (Nível 01)</h2>
+
+                            <p>
+                                Se x + y = 9 e x * y = 1, calcule o valor de x² + y².
+                            </p>
+
+                            <p>
+                                Podemos começar elevando os dois lados da primeira equação ao quadrado:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(x + y)² = 9²<br>
+                                <strong style="color: #FF0000">x² +</strong> (2 * <strong style="color: #00FF00">x * y</strong>) <strong style="color: #FF0000">+ y²</strong> = 81<br>
+                            </p>
+
+                            <p>
+                                Com isso achamos o x * y e achamos o x² + y², agora basta resolver a equação:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x² +</strong> (2 * <strong style="color: #00FF00">1</strong>) <strong style="color: #FF0000">+ y²</strong> = 81 &nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x² + y²</strong> = 81 - 2<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x² + y²</strong> = 79 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim descobrimos que x² + y² é igual a 79.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-3",
+                        title: "Aula 03 — Fatoração e Produtos Notáveis: Exemplo Nível 02",
+                        
+                        content: `
                             
                         `,
 
