@@ -80,7 +80,7 @@ const subjects = [
 
                             <p>
                                 E depois, para terminar, podemos dividir os dois lados por 4:<br>
-                                4x / 4 = 8 / 4<br>
+                                <sup>4x</sup>&frasl;<sub>4</sub> = <sup>8</sup>&frasl;<sub>4</sub><br>
                                 x = 2
                             </p>
 
@@ -102,7 +102,7 @@ const subjects = [
 
                             <p>
                                 E para finalizar dividimos os dois lados por 5:<br>
-                                5x / 5 = 10 / 5<br>
+                                <sup>5x</sup>&frasl;<sub>5</sub> = <sup>10</sup>&frasl;<sub>5</sub><br>
                                 x = 2
                             </p>
 
@@ -113,16 +113,16 @@ const subjects = [
 
                             <p>
                                 Primeiro adicionamos 1 e 1x aos dois lados, com o intúito de manter um lado apenas com um múltiplo de x e um lado com apenas um número:<br>
-                                5x - 1 + 1 + x = 2 - x + 1 + x
-                                5x + x = 3 - x + x
+                                5x - 1 + 1 + x = 2 - x + 1 + x<br>
+                                5x + x = 3 - x + x<br>
                                 6x = 3
                             </p>
 
                             <p>
                                 E chegamos novamente na etapa final, a divisão dos dois lados pelo mesmo número:
-                                6x / 6 = 3 / 6
-                                x = 3 / 6
-                                x = 1 / 2
+                                <sup>6x</sup>&frasl;<sub>6</sub> = <sup>3</sup>&frasl;<sub>6</sub><br>
+                                x = <sup>3</sup>&frasl;<sub>6</sub><br>
+                                x = <sup>1</sup>&frasl;<sub>2</sub>
                             </p>
                         `,
 
@@ -150,7 +150,7 @@ const subjects = [
 
                             <p>
                                 <strong>Passo 1</strong>: chutar um resposta (vamos chutar 3)<br>
-                                Teste: 3 + 3 / 3 = 3 + 1 = 4 (ou seja, está errado)
+                                Teste: 3 + <sup>3</sup>&frasl;<sub>3</sub> = 3 + 1 = 4 (ou seja, está errado)
                             </p>
 
                             <p>
@@ -161,7 +161,7 @@ const subjects = [
                             <p>
                                 <strong>Passo 3</strong>: chutar uma resposta mais realista<br>
                                 Como no nosso teste conseguimos como resposta o número 4 que, é metade do desejado, podemos chudar um número duas vezes maior também, ou seja, o 6.<br>
-                                Teste: 6 + 6 / 3 = 6 + 2 = 8
+                                Teste: 6 + <sup>6</sup>&frasl;<sub>3</sub> = 6 + 2 = 8
                             </p>
 
                             <p>
@@ -171,19 +171,19 @@ const subjects = [
                             <h3>Em notação matemática atual:</h3>
 
                             <p>
-                                x + x / 3 = 8
+                                x + <sup>x</sup>&frasl;<sub>3</sub> = 8
                             </p>
 
                             <p>
                                 Vimos na aula passada como utilizar o princípio da igualdade, então, podemos multiplicar os dois lados por 3:<br>
-                                3 * (x + x / 3) = 3 * 8<br>
+                                3 * (x + <sup>x</sup>&frasl;<sub>3</sub>) = 3 * 8<br>
                                 3x + x = 24<br>
                                 4x = 24
                             </p>
 
                             <p>
                                 Mais uma vez usando o princípio da igualdade, dividimos os dois lados por 4:<br>
-                                4x / 4 = 24 / 4<br>
+                                <sup>4x</sup>&frasl;<sub>4</sub> = <sup>24</sup>&frasl;<sub>4</sub><br>
                                 x = 6
                             </p>
 
@@ -225,7 +225,7 @@ const subjects = [
 
                             <p>
                                 E dividindo novamente os dois lados por 4:<br>
-                                4x / 4 = 24 / 4<br>
+                                <sup>4x</sup>&frasl;<sub>4</sub> = <sup>24</sup>&frasl;<sub>4</sub><br>
                                 x = 6
                             </p>
                         `,
@@ -242,7 +242,7 @@ const subjects = [
 
                             <p>
                                 Uma fração é representação de uma parte de algo.<br>
-                                Por exemplo, um bolo, se você partir o bolo ao meio duas vezes, você terá 4 fatias. Cada fatia representa uma fração de 1 / 4 (um quarto) do bolo.
+                                Por exemplo, um bolo, se você partir o bolo ao meio duas vezes, você terá 4 fatias. Cada fatia representa uma fração de <sup>1</sup>&frasl;<sub>4</sub> (um quarto) do bolo.
                             </p>
 
                             <h2>Frações são números da forma:</h2>
@@ -328,7 +328,7 @@ const subjects = [
                             </p>
 
                             <p>
-                                Perceba que 3 / 6 continua sendo a mesma coisa que 1 / 2.<br>
+                                Perceba que <sup>3</sup>&frasl;<sub>6</sub> continua sendo a mesma coisa que <sup>1</sup>&frasl;<sub>2</sub>.<br>
                                 Agora a segunda fração ficará assim:
                             </p>
 
@@ -339,7 +339,7 @@ const subjects = [
                             </p>
 
                             <p>
-                                Nessa situação o 1 / 3 também continua sendo igual a 2 / 6.<br>
+                                Nessa situação o <sup>1</sup>&frasl;<sub>3</sub> também continua sendo igual a <sup>2</sup>&frasl;<sub>6</sub>.<br>
                                 Depois das bases estarem igualadas, basta somar o topo das frações:
                             </p>
 
@@ -353,7 +353,7 @@ const subjects = [
                                 Podemos usar o princípio da igualdade nas frações.
                             </p>
 
-                            <h2>Principio: a * 1 = a</h2>
+                            <h2>Principio: <i>a</i> * 1 = <i>a</i></h2>
 
                             <p>
                                 Ou seja:
@@ -392,8 +392,8 @@ const subjects = [
                             </p>
 
                             <p>
-                                Nesta situação, o que fizemos foi transformar o 2 em uma fração de 2 / 1 e o nosso 0,5 em uma fração de 1 / 2.<br>
-                                Como a base de 2 / 1 não modifica o número, podemo só multiplicar as outras entre si e, depois, multiplicar o 2 / 1 pela fração do resultado, neste caso: <strong>7 * 2 = 14</strong>
+                                Nesta situação, o que fizemos foi transformar o 2 em uma fração de <sup>2</sup>&frasl;<sub>1</sub> e o nosso 0,5 em uma fração de <sup>1</sup>&frasl;<sub>2</sub>.<br>
+                                Como a base de <sup>2</sup>&frasl;<sub>1</sub> não modifica o número, podemo só multiplicar as outras entre si e, depois, multiplicar o <sup>2</sup>&frasl;<sub>1</sub> pela fração do resultado, neste caso: <strong>7 * 2 = 14</strong>
                             </p>
 
                             <h2>Exemplo #03</h2>
@@ -409,7 +409,7 @@ const subjects = [
                             </p>
 
                             <p>
-                                Vimos então que o conceito do "<strong>a * 1 = a</strong>" é muito útil, pois podemos escrever <strong>1</strong> da forma que nos beneficiar mais.
+                                Vimos então que o conceito do "<strong><i>a</i> * 1 = <i>a</i></strong>" é muito útil, pois podemos escrever <strong>1</strong> da forma que nos beneficiar mais.
                             </p>
                         `,
 
@@ -444,7 +444,7 @@ const subjects = [
                             <h2>Caminho 2:</h2>
 
                             <p>
-                                Podemos usar o principio da igualdade nas frações e multiplicar o x por 1, porem, 1 na forma de 2 / 2.
+                                Podemos usar o principio da igualdade nas frações e multiplicar o x por 1, porem, 1 na forma de <sup>2</sup>&frasl;<sub>2</sub>.
                             </p>
 
                             <p class="equation">
@@ -481,7 +481,7 @@ const subjects = [
                             </p>
 
                             <p>
-                                Podemos fazer simplificando as frações, 8 / 2 é igual a 4 e 15 / 5 é igual a 3:
+                                Podemos fazer simplificando as frações, <sup>8</sup>&frasl;<sub>2</sub> é igual a 4 e <sup>15</sup>&frasl;<sub>5</sub> é igual a 3:
                             </p>
 
                             <p class="equation">
@@ -560,7 +560,7 @@ const subjects = [
                             </p>
 
                             <p>
-                                No exemplo a cima usamos o princípio da igualdade nas fração, multiplicamos o topo e a base por 11 / 5, como 11 / 5 dividido por 11 / 5 é 1, a expressão continua igual. Porém 5 / 11 vezes 11 / 5, também é 1, então a parte de baixo da equação é simplificada, todo número dividido por 1 é igual a ele mesmo, restando assim só a multiplicação do topo pela base inversa.
+                                No exemplo a cima usamos o princípio da igualdade nas fração, multiplicamos o topo e a base por <sup>11</sup>&frasl;<sub>5</sub>, como <sup>11</sup>&frasl;<sub>5</sub> dividido por <sup>11</sup>&frasl;<sub>5</sub> é 1, a expressão continua igual. Porém <sup>5</sup>&frasl;<sub>11</sub> vezes <sup>11</sup>&frasl;<sub>5</sub>, também é 1, então a parte de baixo da equação é simplificada, todo número dividido por 1 é igual a ele mesmo, restando assim só a multiplicação do topo pela base inversa.
                             </p>
                         `,
 
@@ -1161,7 +1161,7 @@ const subjects = [
                             <h3>Exemplo #04:</h3>
 
                             <p>
-                                40% * 120,5 / 0,1 = ?
+                                40% * <sup>120,5</sup>&frasl;<sub>0,1</sub> = ?
                             </p>
 
                             <p class="equation">
@@ -1173,7 +1173,7 @@ const subjects = [
                             <h3>Exemplo #05:</h3>
 
                             <p>
-                                20% / 60% * 70% = ?
+                                <sup>20%</sup>&frasl;<sub>60%</sub> * 70% = ?
                             </p>
 
                             <p class="equation">
@@ -1359,8 +1359,10 @@ const subjects = [
                             <h2>Exemplo (Nível 01)</h2>
 
                             <p>
-                                Se x + y = 9 e x * y = 1, calcule o valor de x² + y².
+                                Se <i>x</i> + <i>y</i> = 9 e <i>x</i> * <i>y</i> = 1, calcule o valor de <i>x</i>² + <i>y</i>².
                             </p>
+
+                            <h2>Resolução</h2>
 
                             <p>
                                 Podemos começar elevando os dois lados da primeira equação ao quadrado:
@@ -1368,21 +1370,21 @@ const subjects = [
 
                             <p class="equation">
                                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(x + y)² = 9²<br>
-                                <strong style="color: #FF0000">x² +</strong> (2 * <strong style="color: #00FF00">x * y</strong>) <strong style="color: #FF0000">+ y²</strong> = 81<br>
+                                <strong style="color: #FF0000">x²</strong> + (2 * <strong style="color: #00FF00">x * y</strong>) <strong style="color: #FF0000">+ y²</strong> = 81<br>
                             </p>
 
                             <p>
-                                Com isso achamos o x * y e achamos o x² + y², agora basta resolver a equação:
+                                Com isso achamos o <i>x</i> * <i>y</i> e achamos o <i>x</i>² + <i>y</i>², agora basta resolver a equação:
                             </p>
 
                             <p class="equation">
-                                &nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x² +</strong> (2 * <strong style="color: #00FF00">1</strong>) <strong style="color: #FF0000">+ y²</strong> = 81 &nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x²</strong> + (2 * <strong style="color: #00FF00">1</strong>) <strong style="color: #FF0000">+ y²</strong> = 81 &nbsp&nbsp&nbsp<br>
                                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x² + y²</strong> = 81 - 2<br>
                                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">x² + y²</strong> = 79 &nbsp&nbsp&nbsp
                             </p>
 
                             <p>
-                                Assim descobrimos que x² + y² é igual a 79.
+                                Assim descobrimos que <i>x</i>² + <i>y</i>² é igual a 79.
                             </p>
                         `,
 
@@ -1392,6 +1394,94 @@ const subjects = [
                     {
                         id: "factorization-3",
                         title: "Aula 03 — Fatoração e Produtos Notáveis: Exemplo Nível 02",
+                        
+                        content: `
+                            <h2>Exemplo (Nível 02)<br>IME</h2>
+
+                            <p>
+                                Considere que <i>a</i> ≠ 0,<i>b</i> ≠ 0 e (<i>a</i> + <i>b</i>) ≠ 0. Sabendo-se que <sup><i>a</i></sup>&frasl;<sub><i>b</i></sub> + <sup><i>b</i></sup>&frasl;<sub><i>a</i></sub> = 3, determine o valor de <sup><i>a</i>² + <i>b</i>²</sup>&frasl;<sub>2(<i>a</i> + <i>b</i>)²</sub>.<br>
+                                a) 0,1<br>
+                                b) 0,3<br>
+                                c) 0,6<br>
+                                d) 0,8<br>
+                                e) 1,0
+                            </p>
+
+                            <h2>Resolução:</h2>
+
+                            <p>
+                                Vamos começar juntando as frações:
+                            </p>
+
+                            <p class="equation">
+                                a <strong style="color: #FF0000">* a</strong> &nbsp&nbspb <strong style="color: #0000FF">* b</strong> &nbsp&nbspa² + b² &nbsp&nbsp&nbsp<br>
+                                ————— + ————— = ——————— = 3<br>
+                                b <strong style="color: #FF0000">* a</strong> &nbsp&nbspa <strong style="color: #0000FF">* b</strong> &nbsp&nbsp&nbspa * b &nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+
+                            <p>
+                                Assim conseguimos achar o valor de <i>a</i>² + <i>b</i>²:
+                            </p>
+
+                            <p class="equation">
+                                a² + b² = <strong style="color: #00FF00">3ab</strong>
+                            </p>
+
+                            <p>
+                                Agora vamos tentar descobrir o quanto vale (<i>a</i> + <i>b</i>)²:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)² = a² + 2ab + b²
+                            </p>
+
+                            <p>
+                                Já sabemos <i>a</i>² + <i>b</i>² vale 3<i>ab</i>, então podemos substituir nesta equação:
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #FF0000">a²</strong> + 2ab <strong style="color: #FF0000">+ b²</strong> = <strong style="color: #FF0000">3ab</strong> + 2ab
+                            </p>
+
+                            <p>
+                                Assim conseguimos o valor de (<i>a</i> + <i>b</i>)²:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)² = <strong style="color: #00FF00">5ab</strong>
+                            </p>
+
+                            <p>
+                                Agora vamos inserir as informações que temos na equação <sup><i>a</i>² + <i>b</i>²</sup>&frasl;<sub>2(<i>a</i> + <i>b</i>)²</sub>:
+                            </p>
+
+                            <p class="equation">
+                                &nbspa² + b² &nbsp&nbsp&nbsp&nbsp&nbsp3ab &nbsp&nbsp&nbsp&nbsp3ab&nbsp<br>
+                                ————————— = ——————— = ————<br>
+                                2(a + b)² &nbsp&nbsp2 * 5ab &nbsp&nbsp10ab<br>
+                            </p>
+
+                            <p>
+                                E aqui temos a nossa resposta final, como temos <i>a</i> e <i>b</i> multiplicando em cima e em baixo, podemos apenas simplificar a fração:
+                            </p>
+
+                            <p class="equation">
+                                3ab &nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                ———— = —— = 0,3<br>
+                                10ab &nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Então encontramos que a resposta correta é "b) 0,3".
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-4",
+                        title: "Aula 04 — Aprofundamento Produtos Notáveis Avançados",
                         
                         content: `
                             
