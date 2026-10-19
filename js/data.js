@@ -1484,6 +1484,169 @@ const subjects = [
                         title: "Aula 04 — Aprofundamento Produtos Notáveis Avançados",
                         
                         content: `
+                            <h2>Produto Notável ao Cubo</h2>
+
+                            <h3>1. &nbsp&nbsp(a + b)³ (Cubo da Soma)</h3>
+
+                            <p>
+                                Uns dos produtos cobrados em prova é o elevado a terceira potência:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)³ = (a + b) * (a + b) * (a + b)
+                            </p>
+
+                            <p>
+                                Ele é uma multiplicação do produto da segunda potência multiplicado por um na primeira potência:
+                            </p>
+
+                            <p class="equation">
+                                (a² + 2ab + b²) * (a + b)
+                            </p>
+
+                            <p>
+                                Essa multiplicação fica assim:
+                            </p>
+
+                            <p class="equation">
+                                a³ + a²b + 2a²b + 2ab² + ab² + b³
+                            </p>
+
+                            <p>
+                                A partir daí juntamos as parte iguais:
+                            </p>
+
+                            <p class="equation">
+                                a³ + 3a²b + 3ab² + b³
+                            </p>
+
+                            <p>
+                                Então:
+                            </p>
+
+                            <p class="equation result">
+                                (a + b)³ = a³ + 3a²b + 3ab² + b³
+                            </p>
+
+                            <h3>2. &nbsp&nbsp(a - b)³ (Cubo da Diferença)</h3>
+
+                            <p>
+                                Agora vamos ver o pruduto da diferença:
+                            </p>
+
+                            <p class="equation">
+                                (a - b)³ = (a² - 2ab + b²) * (a - b)
+                            </p>
+
+                            <p>
+                                E agora fazemos a multiplicação de novo:
+                            </p>
+
+                            <p class="equation">
+                                a³ - a²b - 2a²b + 2ab² + ab² - b³
+                            </p>
+
+                            <p>
+                                Agora simplificamos e temos o resultado:
+                            </p>
+
+                            <p class="equation result">
+                                (a - b)³ = a³ - 3a²b + 3ab² - b³
+                            </p>
+
+                            <p>
+                                Parecido com a primeira não?<br>
+                                O que muda aqui é apenas o sinal ende temos potênicias ímpares no <i>b</i>, assim como ocorre no Produto Notável da segunda potência:
+                            </p>
+
+                            <p class="equation result">
+                                (a + b)² = a² + 2ab + b²<br>
+                                <br>
+                                (a - b)² = a² - 2ab + b²
+                            </p>
+
+                            <h3>3. &nbsp&nbspa³ + b³ (Soma dos Cubos)</h3>
+
+                            <p>
+                                Este em específico é um bom caso para se lembrar:
+                            </p>
+
+                            <p class="equation result">
+                                a³ + b³ = (a + b) * (a² - ab + b²)
+                            </p>
+
+                            <h3>4. &nbsp&nbspa³ - b³ (Diferença dos Cubos)</h3>
+
+                            <p>
+                                Este também é outro que é uma boa de se ter em mente:
+                            </p>
+
+                            <p class="equation result">
+                                a³ - b³ = (a - b) * (a² + ab + b²)
+                            </p>
+
+                            <h2>Exemplo</h2>
+
+                            <p>
+                                (FUVEST)<br>
+                                A diferença entre o cubo da soma de dois números inteiros e a soma de seus cubos pode ser:<br>
+                                <br>
+                                a) 4<br>
+                                b) 5<br>
+                                c) 6<br>
+                                d) 7<br>
+                                e) 8
+                            </p>
+
+                            <h3>Resolução</h3>
+
+                            <p>
+                                Vamos escrever de forma matemática:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)³ - (a³ + b³)
+                            </p>
+                            
+                            <p>
+                                Vamos substituir agora o primeiro termo em parenteses:
+                            </p>
+
+                            <p class="equation">
+                                a³ + 3a²b + 3ab² + b³ - (a³ + b³) = 3a²b + 3ab²
+                            </p>
+
+                            <p>
+                                Agora podemos fatorar:
+                            </p>
+
+                            <p class="equation">
+                                3a²b + 3ab² = 3ab * (a + b)
+                            </p>
+
+                            <p>
+                                Agora vamos chutar valores para <i>a</i> e <i>b</i>, sabemos que eles só podem ser inteiros:
+                            </p>
+
+                            <p class="equation">
+                                a = 1, b = 1: 3 * 1 * 1 * (1 + 1) = 3 * 2 = 6&nbsp&nbsp<br>
+                                a = 1, b = 2: 3 * 1 * 2 * (1 + 2) = 6 * 2 = 12&nbsp<br>
+                                a = 2, b = 2: 3 * 2 * 2 * (2 + 2) = 12 * 4 = 48
+                            </p>
+
+                            <p>
+                                Vemos assim que sempre é um número divisível por 6, logo, a resposta correta é "c) 6".
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-5",
+                        title: "Aula 05 — Os Axiomas: Multiplicação e Divisão",
+                        
+                        content: `
                             
                         `,
 
