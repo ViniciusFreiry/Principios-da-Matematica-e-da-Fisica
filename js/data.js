@@ -1647,6 +1647,49 @@ const subjects = [
                         title: "Aula 05 — Os Axiomas: Multiplicação e Divisão",
                         
                         content: `
+                            <h2>Multiplicação/Divisão</h2>
+
+                            <h3><i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> = <i style="color: #FF0000">b</i> * <i style="color: #0000FF">a</i> (Comutatividade)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000">3</strong> = <strong style="color: #FF0000">3</strong> * <strong style="color: #0000FF">7</strong> = 21
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> * <i style="color: #00FF00">c</i>) = (<i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i>) * <i style="color: #00FF00">c</i> (Associatividade)</h3>
+
+                            <p>
+                                Exemplo: <i style="color: #0000FF">5</i> * <i style="color: #FF0000">2</i> * <i style="color: #00FF00">3</i> = 10 * <i style="color: #00FF00">3</i> = 15 * <i style="color: #FF0000">2</i> = <i style="color: #0000FF">5</i> * 6 = 30
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * 1 = <i style="color: #0000FF">a</i> (Existência do Elemento Neutro)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">17,2</strong> * 1 = <strong style="color: #0000FF">17,2</strong>
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><i style="color: #FF0000"><sup>-1</sup></i> ) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000"><sup>1</sup>&frasl;</i><i style="color: #0000FF"><sub>a</sub></i> = 1 (Existência do Elemento Inverso)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #0000FF">7</strong><strong style="color: #FF0000"><sup>-1</sup></strong> = <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><strong style="color: #0000FF"><sub>7</sub></strong> = 1<br>
+                                Todo <strong style="color: #0000FF">número</strong>, <i style="color: #00FF00">exeto o zero</i>, possui <strong style="color: #FF0000">inverso</strong>.
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> + <i style="color: #00FF00">c</i>) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> + <i style="color: #0000FF">a</i> * <i style="color: #00FF00">c</i> (Distributividade)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">5</strong> * (<strong style="color: #FF0000">2</strong> + <strong style="color: #00FF00">3</strong>) = <strong style="color: #FF0000">10</strong> + <strong style="color: #00FF00">15</strong> = 25<br>
+                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #FF0000">2</strong> + <strong style="color: #00FF00">3</strong>) = <strong style="color: #0000FF">5</strong> * 5 = 25
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-6",
+                        title: "Aula 06 — Observação: Dividir vs Multiplicar",
+                        
+                        content: `
                             
                         `,
 
