@@ -1690,6 +1690,115 @@ const subjects = [
                         title: "Aula 06 — Observação: Dividir vs Multiplicar",
                         
                         content: `
+                            <h2>Observação</h2>
+
+                            <p>
+                                Vimos a comutatividade na aula passada: <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> = <i style="color: #FF0000">b</i> * <i style="color: #0000FF">a</i>
+                            </p>
+
+                            <p>
+                                Porém, quem está mais atento pode perceber que na divisão não é exatamente assim: <strong style="color: #0000FF"><sup>18</sup></strong>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> ≠ <strong style="color: #FF0000"><sup>2</sup></strong>&frasl;<strong style="color: #0000FF"><sub>18</sub></strong>
+                            </p>
+
+                            <h2>Explicação</h2>
+
+                            <p>
+                                Dividir é o mesmo que multiplicar pelo inverso!
+                            </p>
+
+                            <p>
+                                Ou seja a divisão pode ser escrita dessa forma: <strong style="color: #0000FF"><sup>18</sup></strong>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> = <strong style="color: #0000FF">18</strong> * <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong><br>
+                                Agora a comutatividade se aplica: <strong style="color: #0000FF">18</strong> * <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> = <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> * <strong style="color: #0000FF">18</strong>
+                            </p>
+
+                            <h2>Conclusão</h2>
+
+                            <p>
+                                Concluímos então que os axiomas vistos na aula passada também funcionam com a divisão, sendo que ela é uma multiplicação do valor inverso.
+                            </p>
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "factorization-7",
+                        title: "Aula 07 — Aplicando as Regras (O elemento neutro)",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "factorization-8",
+                        title: "Aula 08 — Ordem das Operações",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "factorization-9",
+                        title: "Aula 09 — Fatoração e Produtos Notáveis 01",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "factorization-10",
+                        title: "Aula 10 — Fatoração e Produtos Notáveis 02",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "factorization-11",
+                        title: "Aula 11 — Fatoração e Produtos Notáveis 03",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "factorization-12",
+                        title: "Aula 12 — Fatoração e Produtos Notáveis 03 (fazendo de trás pra frente)",
+                        
+                        content: `
                             
                         `,
 
