@@ -1801,13 +1801,21 @@ const subjects = [
                         title: "Aula 08 — Ordem das Operações",
                         
                         content: `
-                            
+                            <h2>A Ordem das Operções</h2>
+
+                            <p>
+                                Por convenção assume-se que a multiplicação/divisão devem ser feitas primeiro do que adição/subtração.
+                            </p>
+
+                            <h2>Exemplos:</h2>
+
+                            <p>
+                                i) 4 * 2 + 8, assumimos que seja (4 * 2) + 8, que é igual a 16<br>
+                                ii) 17 - 12 : 2, assumimos que seja 17 - (<sup>12</sup>&frasl;<sub>2</sub>), que é igual a 11
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
