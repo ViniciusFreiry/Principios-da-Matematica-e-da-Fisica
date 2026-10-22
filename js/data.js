@@ -1667,10 +1667,10 @@ const subjects = [
                                 Exemplo: <strong style="color: #0000FF">17,2</strong> * 1 = <strong style="color: #0000FF">17,2</strong>
                             </p>
 
-                            <h3><i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><i style="color: #FF0000"><sup>-1</sup></i> ) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000"><sup>1</sup>&frasl;</i><i style="color: #0000FF"><sub>a</sub></i> = 1 (Existência do Elemento Inverso)</h3>
+                            <h3><i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><strong style="color: #FF0000"><sup>-1</sup></strong> ) = <i style="color: #0000FF">a</i> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><i style="color: #0000FF"><sub>a</sub></i> = <strong style="color: #FF0000">1</strong> (Existência do Elemento Inverso)</h3>
 
                             <p>
-                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #0000FF">7</strong><strong style="color: #FF0000"><sup>-1</sup></strong> = <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><strong style="color: #0000FF"><sub>7</sub></strong> = 1<br>
+                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #0000FF">7</strong><strong style="color: #FF0000"><sup>-1</sup></strong> = <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><strong style="color: #0000FF"><sub>7</sub></strong> = <strong style="color: #FF0000">1</strong><br>
                                 Todo <strong style="color: #0000FF">número</strong>, <i style="color: #00FF00">exeto o zero</i>, possui <strong style="color: #FF0000">inverso</strong>.
                             </p>
 
@@ -1718,10 +1718,7 @@ const subjects = [
                             </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
@@ -1729,13 +1726,74 @@ const subjects = [
                         title: "Aula 07 — Aplicando as Regras (O elemento neutro)",
                         
                         content: `
-                            
+                            <h3>Usando as regras do jogo</h3>
+
+                            <h2>Exemplo #01:</h2>
+
+                            <p>
+                                <i style="color: #0000FF">a</i> * 1 = 1 * <i style="color: #0000FF">a</i> = <i style="color: #0000FF">a</i> (Existência do Elemento Neutro)<br>
+                                Ou seja:
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #0000FF">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">2</strong><br>
+                                <strong style="color: #0000FF">—</strong> * 1 = <strong style="color: #0000FF">—</strong><br>
+                                <strong style="color: #0000FF">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong>
+                            </p>
+
+                            <p>
+                                Este axioma já estava sendo usado até agora, quando precisávamos fazer soma ou subtração entre frações. Note que <strong style="color: #0000FF">1</strong> é a mesma coisa que <strong style="color: #0000FF"><sup>4</sup>&frasl;<sub>4</sub></strong>:
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #0000FF">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">2</strong> &nbsp&nbsp4 &nbsp&nbsp8&nbsp<br>
+                                <strong style="color: #0000FF">—</strong> * 1 = <strong style="color: #0000FF">—</strong> * — = ——<br>
+                                <strong style="color: #0000FF">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong> &nbsp&nbsp4 &nbsp&nbsp12
+                            </p>
+
+                            <h2>Exemplo #02:</h2>
+
+                            <p>
+                                <i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><strong style="color: #FF0000"><sup>-1</sup></strong> ) = <i style="color: #0000FF">a</i> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><i style="color: #0000FF"><sub>a</sub></i> = <strong style="color: #FF0000">-1</strong> (Existência do Elemento Inverso)
+                            </p>
+
+                            <p>
+                                Este axioma pode ser visto usando o elemento inverso:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">7</strong> &nbsp&nbsp1 &nbsp&nbsp22<br>
+                                7 + — = <strong style="color: #0000FF">3</strong> * <strong style="color: #FF0000">—</strong> + — = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong> &nbsp&nbsp3 &nbsp&nbsp&nbsp3
+                            </p>
+
+                            <p>
+                                Mas também pode ser visto usando o elemento neutro:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp1 &nbsp&nbsp22<br>
+                                <strong style="color: #0000FF">7</strong> * — + — = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp3 &nbsp&nbsp&nbsp3
+                            </p>
+
+                            <h2>Exemplo #03:</h2>
+
+                            <p>
+                                <i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> + <i style="color: #00FF00">c</i>) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> + <i style="color: #0000FF">a</i> * <i style="color: #00FF00">c</i> (Distributividade)<br>
+                                Vamos ver aqui a seguinte ideia: (+) * (-) = (-)
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong> + <strong style="color: #FF0000">3</strong>) = <strong style="color: #0000FF">5</strong> * 0 = 0<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong> + <strong style="color: #FF0000">3</strong>) = <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong>) + <strong style="color: #0000FF">5</strong> * <strong style="color: #FF0000">3</strong> = -15 + 15 = 0
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
