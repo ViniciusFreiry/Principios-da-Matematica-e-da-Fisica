@@ -1823,7 +1823,81 @@ const subjects = [
                         title: "Aula 09 — Fatoração e Produtos Notáveis 01",
                         
                         content: `
-                            
+                            <h2>Fatoração</h2>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p class="equation">
+                                7 * 72 + 56 * 18
+                            </p>
+
+                            <p>
+                                Podemos escrever o 72 como se fosse 18 * 4 e o 56 como 7 * 4 * 2:
+                            </p>
+
+                            <p class="equation">
+                                7 * 18 * 4 + 7 * 4 * 2 * 18
+                            </p>
+
+                            <p>
+                                Perceba que teremos uma pultiplicação de 4, 7 e 18 nos dois lados da soma, podemos então aplicar a distributiva:
+                            </p>
+
+                            <p class="equation">
+                                4 * 7 * 18 * (1 + 2) = 4 * 7 * 18 * 3
+                            </p>
+
+                            <p>
+                                Agora fica muito mais fácil fazer a multiplicação:
+                            </p>
+
+                            <p class="equation">
+                                4 * 7 * 18 * 3 = 72 * 21 = 1512
+                            </p>
+
+                            <h3>Exemplo #02:</h3>
+
+                            <p class="equation">
+                                6 * 12 + 24 * 7
+                            </p>
+
+                            <p>
+                                Novamente fatoramos os números, neste caso vamos fatorar o 6 e o 24:
+                            </p>
+
+                            <p class="equation">
+                                3 * 2 * 12 + 12 * 2 * 7
+                            </p>
+
+                            <p>
+                                E obtivemos o mesmo padrão de antes, ambos sendo multiplicados por mais de um número igual:
+                            </p>
+
+                            <p class="equation">
+                                2 * 12 * (3 + 7)
+                            </p>
+
+                            <p>
+                                E agora fica extremamente fácil de calcular:
+                            </p>
+
+                            <p class="equation">
+                                2 * 12 * (3 + 7) = 24 * 10 = 240
+                            </p>
+
+                            <h3>Exemplo #03:</h3>
+
+                            <p class="equation">
+                                6 * (x + 1) + 17y * (x + 1)
+                            </p>
+
+                            <p>
+                                É a mesma coisa, porém agora fatoramos com letras:
+                            </p>
+
+                            <p class="equation">
+                                (x + 1) * (6 + 17y)
+                            </p>
                         `,
 
                         exercises: [
