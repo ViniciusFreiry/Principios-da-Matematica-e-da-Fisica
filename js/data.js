@@ -1900,10 +1900,7 @@ const subjects = [
                             </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
@@ -1911,13 +1908,59 @@ const subjects = [
                         title: "Aula 10 — Fatoração e Produtos Notáveis 02",
                         
                         content: `
-                            
+                            <h2>Produtos Notáveis</h2>
+
+                            <h3>a) (<i>a</i> + <i>b</i>)² (Quadrado da Soma)</h3>
+
+                            <p>
+                                Este 2 é a potência, isso demontra uma quantidade de multiplicações que um número tem que fazer com ele mesmo:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)² = (a + b) * (a + b)
+                            </p>
+
+                            <p>
+                                Como funciona essa multiplicação?<br>
+                                Podemos substituir um (<i>a</i> + <i>b</i>) por um <i>x</i> e usar distributiva para demonstrar:
+                            </p>
+
+                            <p class="equation">
+                                (a + b) * <strong style="color: #00FF00">(a + b)</strong> = (a + b) * <strong style="color: #00FF00">x</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">x</strong> * a + <strong style="color: #00FF00">x</strong> * b = <strong style="color: #00FF00">(a + b)</strong> * a + <strong style="color: #00FF00">(a + b)</strong> * b<br>
+                                aa + ab + ab + bb = a² + 2ab + b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Então:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)² ≠ a² + b² &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (a + b)² = a² + 2ab + b²
+                            </p>
+
+                            <h3>b) (<i>a</i> - <i>b</i>)² (Quadrado da Diferença)</h3>
+
+                            <p>
+                                Para facilitar, você pode multiplicar cada termo por cada termo, ao invés de substituir e aplicar a distributiva:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(a - b)² = a * a + a * (-b) + (-b) * a + (-b) * (-b)<br>
+                                a² - ab - ab + b² = a² -2ab + b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Deu algo parecido com a primeira:
+                            </p>
+
+                            <p class="equation">
+                                (a - b)² = a² -2ab + b²
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
