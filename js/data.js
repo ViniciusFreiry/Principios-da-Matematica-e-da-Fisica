@@ -1998,13 +1998,65 @@ const subjects = [
                         title: "Aula 12 — Fatoração e Produtos Notáveis 03 (fazendo de trás pra frente)",
                         
                         content: `
-                            
+                            <h2>Complemento:</h2>
+
+                            <p>
+                                Vimos que <i style="color: #00FF00">a² - b²</i> é igual a <i style="color: #00FF00">(a + b) * (a - b)</i>, e conferimos que é verdadeiro.<br>
+                                Mas e se não soubessemos o resultado?
+                            </p>
+
+                            <p>
+                                Seja <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i>:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">a² - b²</strong> = (p + q)² - (p - q)²<br>
+                                (p² + 2pq + q²) - (p² - 2pq + q²) = <strong style="color: #00FF00">4pq</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim transformamos o <i style="color: #00FF00">a² - b²</i> em <i style="color: #00FF00">4pq</i><br>
+                                Agora vamos somar as equações que temos <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i>:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbspa = p + q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbspb = p - q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <br>
+                                a + b = p + q + p - q<br>
+                                a + b = <strong style="color: #00FF00">2p</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim chegamos ao valor de: <i style="color: #00FF00">p = <sup>a + b</sup>&frasl;<sub>2</sub></i><br>
+                                Agora vamos subtrair as equações <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i> para tentar obter o valor de <i style="color: #00FF00">q</i>:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbspa = p + q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbspb = p - q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <br>
+                                a - b = p + q - p + q<br>
+                                a - b = <strong style="color: #00FF00">2q</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim chegamos ao valor de: <i style="color: #00FF00">q = <sup>a - b</sup>&frasl;<sub>2</sub></i><br>
+                                E agora voltamos para o <i style="color: #00FF00">a² - b² = 4pq</i> que conseguimos antes e substituímos o <i style="color: #00FF00">4pq</i> pelos novos valores que conseguimos:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa + b &nbsp&nbspa - b &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <strong style="color: #00FF00">a² - b²</strong> = 4 * ————— * ————— = <strong style="color: #00FF00">(a + b) * (a - b)</strong><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                E aí finalmente chegamos no <i style="color: #00FF00">a² - b² = (a + b) * (a - b)</i>
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     }
                 ]
             },
@@ -2015,7 +2067,215 @@ const subjects = [
                 description: "Módulo sobre potenciação e conversão de unidades.",
 
                 lessons: [
-                    // Adicione as aulas aqui.
+                    {
+                        id: "powers-1",
+                        title: "Aula 1 — Propriedades da Potenciação",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-2",
+                        title: "Aula 2 — Radiciação: Exemplos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-3",
+                        title: "Aula 3 — Racionalização",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-4",
+                        title: "Aula 4 — Racionalização: Exercício",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-5",
+                        title: "Aula 5 — Aplicação: Conversão de Unidades",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-6",
+                        title: "Aula 6 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-7",
+                        title: "Aula 7 — Potenciação e Radiciação: Resumo Geral",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-8",
+                        title: "Aula 8 — Exemplos de Potenciação",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-9",
+                        title: "Aula 9 — Consequências das Regras 01: Elevar a Zero",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-10",
+                        title: "Aula 10 — Consequências das Regras 02: Elevar a Expoente Negativo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-11",
+                        title: "Aula 11 — Consequências das Regras 03: Elevar a Expoente Fracionário (Introdução à Radiciação)",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-12",
+                        title: "Aula 12 — Radiciação",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-13",
+                        title: "Aula 13 — Radiciação: as regras do jogo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-14",
+                        title: "Aula 14 — Radiciação: Interpretação Geométrica",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    },
+
+                    {
+                        id: "powers-15",
+                        title: "Aula 15 — Radiciação: Observação (raiz de índice par)",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: [
+                            "",
+                            ""
+                        ]
+                    }
                 ]
             },
 
