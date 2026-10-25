@@ -1968,13 +1968,29 @@ const subjects = [
                         title: "Aula 11 — Fatoração e Produtos Notáveis 03",
                         
                         content: `
-                            
+                            <h2>Produtos Notáveis</h2>
+
+                            <h3>c) <i>a</i>² - <i>b</i>² (Diferença dos Quadrados)</h3>
+
+                            <p>
+                                O resultado da Diferença dos Quadros é igual a: (a + b) * (a - b)<br>
+                                Vamos comprovar que isto é verdadeiro:
+                            </p>
+
+                            <p class="equation">
+                                (a + b) * (a - b) = a * a + a * (-b) + b * a + b * (-b)<br>
+                                a² - ab + ab - b² = a² - b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo de uso:</h3>
+
+                            <p class="equation">
+                                121² - 120² = (121 + 120) * (121 - 120)<br>
+                                &nbsp&nbsp&nbsp&nbsp241 * 1 = 241 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
