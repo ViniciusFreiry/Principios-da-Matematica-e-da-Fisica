@@ -2072,13 +2072,83 @@ const subjects = [
                         title: "Aula 1 — Propriedades da Potenciação",
                         
                         content: `
-                            
+                            <h2>Potenciação e Radiciação</h2>
+
+                            <h3>Potenciação</h3>
+
+                            <h3>Definição:</h3>
+
+                            <p class="equation">
+                                a<sup style="color: #00FF00">n</sup> = a * a * ... * a<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">n</strong> vezes &nbsp&nbsp&nbsp
+                            <p>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                2<sup style="color: #00FF00">5</sup> = 2 * 2 * 2 * 2 * 2
+                            </p>
+
+                            <h2>As regras do jogo</h2>
+
+                            <h3>a) <i>a</i><sup style="color: #FF0000"><i>m</i></sup> * <i>a</i><sup style="color: #00FF00"><i>n</i></sup> = <i>a</i><sup style="color: #FF0000"><i>m</i></sup><sup> + </sup><sup style="color: #00FF00"><i>n</i></sup></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                3<sup style="color: #FF0000">2</sup> * 3<sup style="color: #00FF00">5</sup> = <strong style="color: #FF0000">(</strong>3 * 3<strong style="color: #FF0000">)</strong> * <strong style="color: #00FF00">(</strong>3 * 3 * 3 * 3 * 3<strong style="color: #00FF00">)</strong> = 3<sup>7</sup>
+                            </p>
+
+                            <p>
+                                Ou seja, se a base é a mesma, podemos somar os expoentes.
+                            </p>
+
+                            <h3>b) (<i style="color: #FF0000">a</i> * <i style="color: #00FF00">b</i>)<sup><i>n</i></sup> = <i style="color: #FF0000">a</i><sup><i>n</i></sup> * <i style="color: #00FF00">b</i><sup><i>n</i></sup></h3>
+
+                            <p class="equation">
+                                (<strong style="color: #FF0000">5</strong> * <strong style="color: #00FF00">3</strong>)² = (15)² = 225 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (<strong style="color: #FF0000">5</strong> * <strong style="color: #00FF00">3</strong>)² = <strong style="color: #FF0000">5</strong>² * <strong style="color: #00FF00">3</strong>² = 25 * 9 = 225
+                            </p>
+
+                            <h3>c) (<i>a</i><sup style="color: #FF0000"><i>n</i></sup>)<sup style="color: #00FF00"><i>m</i></sup> = <i>a</i><sup><i style="color: #FF0000">n</i> * <i style="color: #00FF00">m</i></sup></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                (2<strong style="color: #FF0000"><sup>2</sup></strong>)<strong style="color: #00FF00"><sup>3</sup></strong> = (4)<strong style="color: #00FF00"><sup>3</sup></strong> = 64 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (2<strong style="color: #FF0000"><sup>2</sup></strong>)<strong style="color: #00FF00"><sup>3</sup></strong> = 2<sup><strong style="color: #FF0000">2</strong> * <strong style="color: #00FF00">3</strong></sup> = 2<sup>6</sup> = 64
+                            </p>
+
+                            <h3>d) (<i style="color: #FF0000"><sup>a</sup></i>&frasl;<i style="color: #00FF00"><sub>b</sub></i>)<sup><i>n</i></sup> = <sup><i style="color: #FF0000">a</i><sup><i>n</i></sup></sup>&frasl;<sub><i style="color: #00FF00">b</i><sup><i>n</i></sup></sub></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                (<strong style="color: #FF0000"><sup>12</sup></strong>&frasl;<strong style="color: #00FF00"><sub>3</sub></strong>)<sup>2</sup> = (4)<sup>2</sup> = 16 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (<strong style="color: #FF0000"><sup>12</sup></strong>&frasl;<strong style="color: #00FF00"><sub>3</sub></strong>)<sup>2</sup> = <sup><strong style="color: #FF0000">12</strong><sup>2</sup></sup>&frasl;<sub><strong style="color: #00FF00">3</strong><sup>2</sup></sub> = <sup>144</sup>&frasl;<sub>9</sub> = 16
+                            </p>
+
+                            <h3>e) <i><sup>a<sup style="color: #FF0000">m</sup></sup></i>&frasl;<i><sub>a<sup style="color: #00FF00">n</sup></sub></i> = <i>a</i><sup><i style="color: #FF0000">m</i> - <i style="color: #00FF00">n</i></sup></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                <sup>5<sup style="color: #FF0000">3</sup></sup>&frasl;<sub>5<sup style="color: #00FF00">2</sup></sub> = <sup><strong style="color: #FF0000">5</strong> * <strong style="color: #FF0000">5</strong> * <strong style="color: #FF0000">5</strong></sup>&frasl;<sub><strong style="color: #00FF00">5</strong> * <strong style="color: #00FF00">5</strong></sub> = <sup>125</sup>&frasl;<sub>25</sub> = 5<br>
+                                <sup>5<sup style="color: #FF0000">3</sup></sup>&frasl;<sub>5<sup style="color: #00FF00">2</sup></sub> = 5<sup><strong style="color: #FF0000">3</strong> - <strong style="color: #00FF00">2</strong></sup> = 5<sup>1</sup> = 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
