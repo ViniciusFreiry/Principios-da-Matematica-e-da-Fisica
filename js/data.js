@@ -2153,21 +2153,96 @@ const subjects = [
 
                     {
                         id: "powers-2",
-                        title: "Aula 2 — Radiciação: Exemplos",
+                        title: "Aula 2 — Exemplos de Potenciação",
                         
                         content: `
-                            
+                            <p>
+                                Vamos fazer alguns exemplos para treinar um pouco:
+                            </p>
+
+                            <h3>a) (-4)²</h3>
+
+                            <p class="equation">
+                                (-4)<sup>2</sup> = (-4) * (-4) = 16
+                            </p>
+
+                            <p>
+                                Vimos que - com - é +, então, qualquer número elevado a 2 vai ser positivo. Por regra, potências pares sempre dão um número positivo.
+                            </p>
+
+                            <h3>b) -4²</h3>
+
+                            <p class="equation">
+                                -4<sup>2</sup> = -(4 * 4) = -16
+                            </p>
+
+                            <p>
+                                Neste caso, o - não faz parte do 4 por não ter os parênteses.
+                            </p>
+
+                            <h3>c) (-3)³</h3>
+
+                            <p class="equation">
+                                (-3)<sup>3</sup> = (-3) * (-3) * (-3) = 9 * (-3) = -27
+                            </p>
+
+                            <p>
+                                Por regra, números negativos elevados a potências ímpares sempre serão negativos também.
+                            </p>
+
+                            <h3>d) (<sup>5</sup>&frasl;<sub>3</sub>)³</h3>
+
+                            <p class="equation">
+                                5<sup>3</sup> &nbsp&nbsp5 * 5 * 5 &nbsp&nbsp125<br>
+                                —— = ————————— = ———<br>
+                                3<sup>3</sup> &nbsp&nbsp3 * 3 * 3 &nbsp&nbsp&nbsp27
+                            </p>
+
+                            <h3>e) (-1)¹²</h3>
+
+                            <p class="equation">
+                                (-1)<sup>12</sup> = 1
+                            </p>
+
+                            <p>
+                                Como vimos, potência par sempre dará um número positivo.
+                            </p>
+
+                            <h3>f) (-1)³³</h3>
+
+                            <p class="equation">
+                                (-1)<sup>33</sup> = -1
+                            </p>
+
+                            <p>
+                                Como vimos, números negativos elevados a potências ímpares sempre serão negativos.
+                            </p>
+
+                            <h3>g) 7³ * 7¹²</h3>
+
+                            <p class="equation">
+                                7<sup>3</sup> * 7<sup>12</sup> = 7<sup>3 + 12</sup> = 7<sup>15</sup>
+                            </p>
+
+                            <p>
+                                Bases iguais multiplicando podem somar suas potências.
+                            </p>
+
+                            <h3>h) (<sup>7</sup>&frasl;<sub>3</sub>)²</h3>
+
+                            <p class="equation">
+                                7<sup>2</sup> &nbsp&nbsp7 * 7 &nbsp&nbsp49<br>
+                                —— = ————— = ——<br>
+                                3<sup>2</sup> &nbsp&nbsp3 * 3 &nbsp&nbsp&nbsp9
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-3",
-                        title: "Aula 3 — Racionalização",
+                        title: "Aula 3 — Consequências das Regras 01: Elevar a Zero",
                         
                         content: `
                             
@@ -2237,7 +2312,7 @@ const subjects = [
 
                     {
                         id: "powers-8",
-                        title: "Aula 8 — Exemplos de Potenciação",
+                        title: "Aula 8 — Radiciação: Exemplos",
                         
                         content: `
                             
@@ -2251,7 +2326,7 @@ const subjects = [
 
                     {
                         id: "powers-9",
-                        title: "Aula 9 — Consequências das Regras 01: Elevar a Zero",
+                        title: "Aula 9 — Racionalização",
                         
                         content: `
                             
