@@ -2245,18 +2245,53 @@ const subjects = [
                         title: "Aula 3 — Consequências das Regras 01: Elevar a Zero",
                         
                         content: `
-                            
+                            <h2>Consequências</h2>
+
+                            <h3>a) Elevar a zero:</h3>
+
+                            <p>
+                                Podemos usar uma propriedade que vimos nas aulas passadas: <i>a</i><sup style="color: #FF0000">m</sup> * <i>a</i><sup style="color: #00FF00">n</sup> = <i>a</i><sup style="color: #FF0000">m</sup><sup> + </sup><sup style="color: #00FF00">n</sup>
+                            </p>
+
+                            <p>
+                                Vamos usar <i>m</i> como zero:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #FF0000">0</sup> * a<sup style="color: #00FF00">n</sup> = a<sup style="color: #FF0000">0</sup><sup> + </sup><sup style="color: #00FF00">n</sup> = a<sup style="color: #00FF00">n</sup>
+                            </p>
+
+                            <p>
+                                Ou seja, <i>a</i><sup style="color: #FF0000">0</sup> * <i>a</i><sup style="color: #00FF00">n</sup> = <i>a</i><sup style="color: #00FF00">n</sup><br>
+                                Vimos nas aulas passadas outra propriedade, a Existência do Elemento Neutro, sabemos que: 1 * <i>a</i> = <i>a</i>
+                            </p>
+
+                            <p>
+                                Logo:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #FF0000">0</sup> * a<sup style="color: #00FF00">n</sup> = 1 * a<sup style="color: #00FF00">n</sup><br>
+                                &nbsp&nbsp&nbsp&nbspa<sup style="color: #FF0000">0</sup> = 1 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Conclusão: <i>a</i><sup>0</sup> = 1 (desde que a <i>a</i> ≠ 0)</h3>
+
+                            <h2>Exemplo:</h2>
+
+                            <p>
+                                7<sup>0</sup> = 1<br>
+                                (-3)<sup>0</sup> = 1<br>
+                                7,12<sup>0</sup> = 1
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-4",
-                        title: "Aula 4 — Racionalização: Exercício",
+                        title: "Aula 4 — Consequências das Regras 02: Elevar a Expoente Negativo",
                         
                         content: `
                             
@@ -2340,7 +2375,7 @@ const subjects = [
 
                     {
                         id: "powers-10",
-                        title: "Aula 10 — Consequências das Regras 02: Elevar a Expoente Negativo",
+                        title: "Aula 10 — Racionalização: Exercício",
                         
                         content: `
                             
