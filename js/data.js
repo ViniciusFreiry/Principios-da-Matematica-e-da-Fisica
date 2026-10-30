@@ -1353,7 +1353,424 @@ const subjects = [
 
                     {
                         id: "factorization-2",
-                        title: "Aula 02 — Fatoração e Produtos Notáveis: Exemplo Nível 01",
+                        title: "Aula 02 — Os Axiomas: Multiplicação e Divisão",
+                        
+                        content: `
+                            <h2>Multiplicação/Divisão</h2>
+
+                            <h3><i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> = <i style="color: #FF0000">b</i> * <i style="color: #0000FF">a</i> (Comutatividade)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000">3</strong> = <strong style="color: #FF0000">3</strong> * <strong style="color: #0000FF">7</strong> = 21
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> * <i style="color: #00FF00">c</i>) = (<i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i>) * <i style="color: #00FF00">c</i> (Associatividade)</h3>
+
+                            <p>
+                                Exemplo: <i style="color: #0000FF">5</i> * <i style="color: #FF0000">2</i> * <i style="color: #00FF00">3</i> = 10 * <i style="color: #00FF00">3</i> = 15 * <i style="color: #FF0000">2</i> = <i style="color: #0000FF">5</i> * 6 = 30
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * 1 = <i style="color: #0000FF">a</i> (Existência do Elemento Neutro)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">17,2</strong> * 1 = <strong style="color: #0000FF">17,2</strong>
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><strong style="color: #FF0000"><sup>-1</sup></strong> ) = <i style="color: #0000FF">a</i> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><i style="color: #0000FF"><sub>a</sub></i> = <strong style="color: #FF0000">1</strong> (Existência do Elemento Inverso)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #0000FF">7</strong><strong style="color: #FF0000"><sup>-1</sup></strong> = <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><strong style="color: #0000FF"><sub>7</sub></strong> = <strong style="color: #FF0000">1</strong><br>
+                                Todo <strong style="color: #0000FF">número</strong>, <i style="color: #00FF00">exeto o zero</i>, possui <strong style="color: #FF0000">inverso</strong>.
+                            </p>
+
+                            <h3><i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> + <i style="color: #00FF00">c</i>) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> + <i style="color: #0000FF">a</i> * <i style="color: #00FF00">c</i> (Distributividade)</h3>
+
+                            <p>
+                                Exemplo: <strong style="color: #0000FF">5</strong> * (<strong style="color: #FF0000">2</strong> + <strong style="color: #00FF00">3</strong>) = <strong style="color: #FF0000">10</strong> + <strong style="color: #00FF00">15</strong> = 25<br>
+                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #FF0000">2</strong> + <strong style="color: #00FF00">3</strong>) = <strong style="color: #0000FF">5</strong> * 5 = 25
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-3",
+                        title: "Aula 03 — Observação: Dividir vs Multiplicar",
+                        
+                        content: `
+                            <h2>Observação</h2>
+
+                            <p>
+                                Vimos a comutatividade na aula passada: <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> = <i style="color: #FF0000">b</i> * <i style="color: #0000FF">a</i>
+                            </p>
+
+                            <p>
+                                Porém, quem está mais atento pode perceber que na divisão não é exatamente assim: <strong style="color: #0000FF"><sup>18</sup></strong>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> ≠ <strong style="color: #FF0000"><sup>2</sup></strong>&frasl;<strong style="color: #0000FF"><sub>18</sub></strong>
+                            </p>
+
+                            <h2>Explicação</h2>
+
+                            <p>
+                                Dividir é o mesmo que multiplicar pelo inverso!
+                            </p>
+
+                            <p>
+                                Ou seja a divisão pode ser escrita dessa forma: <strong style="color: #0000FF"><sup>18</sup></strong>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> = <strong style="color: #0000FF">18</strong> * <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong><br>
+                                Agora a comutatividade se aplica: <strong style="color: #0000FF">18</strong> * <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> = <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> * <strong style="color: #0000FF">18</strong>
+                            </p>
+
+                            <h2>Conclusão</h2>
+
+                            <p>
+                                Concluímos então que os axiomas vistos na aula passada também funcionam com a divisão, sendo que ela é uma multiplicação do valor inverso.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-4",
+                        title: "Aula 04 — Aplicando as Regras (O elemento neutro)",
+                        
+                        content: `
+                            <h3>Usando as regras do jogo</h3>
+
+                            <h2>Exemplo #01:</h2>
+
+                            <p>
+                                <i style="color: #0000FF">a</i> * 1 = 1 * <i style="color: #0000FF">a</i> = <i style="color: #0000FF">a</i> (Existência do Elemento Neutro)<br>
+                                Ou seja:
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #0000FF">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">2</strong><br>
+                                <strong style="color: #0000FF">—</strong> * 1 = <strong style="color: #0000FF">—</strong><br>
+                                <strong style="color: #0000FF">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong>
+                            </p>
+
+                            <p>
+                                Este axioma já estava sendo usado até agora, quando precisávamos fazer soma ou subtração entre frações. Note que <strong style="color: #0000FF">1</strong> é a mesma coisa que <strong style="color: #0000FF"><sup>4</sup>&frasl;<sub>4</sub></strong>:
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #0000FF">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">2</strong> &nbsp&nbsp4 &nbsp&nbsp8&nbsp<br>
+                                <strong style="color: #0000FF">—</strong> * 1 = <strong style="color: #0000FF">—</strong> * — = ——<br>
+                                <strong style="color: #0000FF">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong> &nbsp&nbsp4 &nbsp&nbsp12
+                            </p>
+
+                            <h2>Exemplo #02:</h2>
+
+                            <p>
+                                <i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><strong style="color: #FF0000"><sup>-1</sup></strong> ) = <i style="color: #0000FF">a</i> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><i style="color: #0000FF"><sub>a</sub></i> = <strong style="color: #FF0000">-1</strong> (Existência do Elemento Inverso)
+                            </p>
+
+                            <p>
+                                Este axioma pode ser visto usando o elemento inverso:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">7</strong> &nbsp&nbsp1 &nbsp&nbsp22<br>
+                                7 + — = <strong style="color: #0000FF">3</strong> * <strong style="color: #FF0000">—</strong> + — = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong> &nbsp&nbsp3 &nbsp&nbsp&nbsp3
+                            </p>
+
+                            <p>
+                                Mas também pode ser visto usando o elemento neutro:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp1 &nbsp&nbsp22<br>
+                                <strong style="color: #0000FF">7</strong> * — + — = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp3 &nbsp&nbsp&nbsp3
+                            </p>
+
+                            <h2>Exemplo #03:</h2>
+
+                            <p>
+                                <i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> + <i style="color: #00FF00">c</i>) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> + <i style="color: #0000FF">a</i> * <i style="color: #00FF00">c</i> (Distributividade)<br>
+                                Vamos ver aqui a seguinte ideia: (+) * (-) = (-)
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong> + <strong style="color: #FF0000">3</strong>) = <strong style="color: #0000FF">5</strong> * 0 = 0<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong> + <strong style="color: #FF0000">3</strong>) = <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong>) + <strong style="color: #0000FF">5</strong> * <strong style="color: #FF0000">3</strong> = -15 + 15 = 0
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-5",
+                        title: "Aula 05 — Ordem das Operações",
+                        
+                        content: `
+                            <h2>A Ordem das Operções</h2>
+
+                            <p>
+                                Por convenção assume-se que a multiplicação/divisão devem ser feitas primeiro do que adição/subtração.
+                            </p>
+
+                            <h2>Exemplos:</h2>
+
+                            <p>
+                                i) 4 * 2 + 8, assumimos que seja (4 * 2) + 8, que é igual a 16<br>
+                                ii) 17 - 12 : 2, assumimos que seja 17 - (<sup>12</sup>&frasl;<sub>2</sub>), que é igual a 11
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-6",
+                        title: "Aula 06 — Fatoração e Produtos Notáveis 01",
+                        
+                        content: `
+                            <h2>Fatoração</h2>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p class="equation">
+                                7 * 72 + 56 * 18
+                            </p>
+
+                            <p>
+                                Podemos escrever o 72 como se fosse 18 * 4 e o 56 como 7 * 4 * 2:
+                            </p>
+
+                            <p class="equation">
+                                7 * 18 * 4 + 7 * 4 * 2 * 18
+                            </p>
+
+                            <p>
+                                Perceba que teremos uma pultiplicação de 4, 7 e 18 nos dois lados da soma, podemos então aplicar a distributiva:
+                            </p>
+
+                            <p class="equation">
+                                4 * 7 * 18 * (1 + 2) = 4 * 7 * 18 * 3
+                            </p>
+
+                            <p>
+                                Agora fica muito mais fácil fazer a multiplicação:
+                            </p>
+
+                            <p class="equation">
+                                4 * 7 * 18 * 3 = 72 * 21 = 1512
+                            </p>
+
+                            <h3>Exemplo #02:</h3>
+
+                            <p class="equation">
+                                6 * 12 + 24 * 7
+                            </p>
+
+                            <p>
+                                Novamente fatoramos os números, neste caso vamos fatorar o 6 e o 24:
+                            </p>
+
+                            <p class="equation">
+                                3 * 2 * 12 + 12 * 2 * 7
+                            </p>
+
+                            <p>
+                                E obtivemos o mesmo padrão de antes, ambos sendo multiplicados por mais de um número igual:
+                            </p>
+
+                            <p class="equation">
+                                2 * 12 * (3 + 7)
+                            </p>
+
+                            <p>
+                                E agora fica extremamente fácil de calcular:
+                            </p>
+
+                            <p class="equation">
+                                2 * 12 * (3 + 7) = 24 * 10 = 240
+                            </p>
+
+                            <h3>Exemplo #03:</h3>
+
+                            <p class="equation">
+                                6 * (x + 1) + 17y * (x + 1)
+                            </p>
+
+                            <p>
+                                É a mesma coisa, porém agora fatoramos com letras:
+                            </p>
+
+                            <p class="equation">
+                                (x + 1) * (6 + 17y)
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-7",
+                        title: "Aula 07 — Fatoração e Produtos Notáveis 02",
+                        
+                        content: `
+                            <h2>Produtos Notáveis</h2>
+
+                            <h3>a) (<i>a</i> + <i>b</i>)² (Quadrado da Soma)</h3>
+
+                            <p>
+                                Este 2 é a potência, isso demontra uma quantidade de multiplicações que um número tem que fazer com ele mesmo:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)² = (a + b) * (a + b)
+                            </p>
+
+                            <p>
+                                Como funciona essa multiplicação?<br>
+                                Podemos substituir um (<i>a</i> + <i>b</i>) por um <i>x</i> e usar distributiva para demonstrar:
+                            </p>
+
+                            <p class="equation">
+                                (a + b) * <strong style="color: #00FF00">(a + b)</strong> = (a + b) * <strong style="color: #00FF00">x</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">x</strong> * a + <strong style="color: #00FF00">x</strong> * b = <strong style="color: #00FF00">(a + b)</strong> * a + <strong style="color: #00FF00">(a + b)</strong> * b<br>
+                                aa + ab + ab + bb = a² + 2ab + b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Então:
+                            </p>
+
+                            <p class="equation">
+                                (a + b)² ≠ a² + b² &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (a + b)² = a² + 2ab + b²
+                            </p>
+
+                            <h3>b) (<i>a</i> - <i>b</i>)² (Quadrado da Diferença)</h3>
+
+                            <p>
+                                Para facilitar, você pode multiplicar cada termo por cada termo, ao invés de substituir e aplicar a distributiva:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(a - b)² = a * a + a * (-b) + (-b) * a + (-b) * (-b)<br>
+                                a² - ab - ab + b² = a² -2ab + b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Deu algo parecido com a primeira:
+                            </p>
+
+                            <p class="equation">
+                                (a - b)² = a² -2ab + b²
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-8",
+                        title: "Aula 08 — Fatoração e Produtos Notáveis 03",
+                        
+                        content: `
+                            <h2>Produtos Notáveis</h2>
+
+                            <h3>c) <i>a</i>² - <i>b</i>² (Diferença dos Quadrados)</h3>
+
+                            <p>
+                                O resultado da Diferença dos Quadros é igual a: (a + b) * (a - b)<br>
+                                Vamos comprovar que isto é verdadeiro:
+                            </p>
+
+                            <p class="equation">
+                                (a + b) * (a - b) = a * a + a * (-b) + b * a + b * (-b)<br>
+                                a² - ab + ab - b² = a² - b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Exemplo de uso:</h3>
+
+                            <p class="equation">
+                                121² - 120² = (121 + 120) * (121 - 120)<br>
+                                &nbsp&nbsp&nbsp&nbsp241 * 1 = 241 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-9",
+                        title: "Aula 09 — Fatoração e Produtos Notáveis 03 (fazendo de trás pra frente)",
+                        
+                        content: `
+                            <h2>Complemento:</h2>
+
+                            <p>
+                                Vimos que <i style="color: #00FF00">a² - b²</i> é igual a <i style="color: #00FF00">(a + b) * (a - b)</i>, e conferimos que é verdadeiro.<br>
+                                Mas e se não soubessemos o resultado?
+                            </p>
+
+                            <p>
+                                Seja <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i>:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">a² - b²</strong> = (p + q)² - (p - q)²<br>
+                                (p² + 2pq + q²) - (p² - 2pq + q²) = <strong style="color: #00FF00">4pq</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim transformamos o <i style="color: #00FF00">a² - b²</i> em <i style="color: #00FF00">4pq</i><br>
+                                Agora vamos somar as equações que temos <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i>:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbspa = p + q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbspb = p - q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <br>
+                                a + b = p + q + p - q<br>
+                                a + b = <strong style="color: #00FF00">2p</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim chegamos ao valor de: <i style="color: #00FF00">p = <sup>a + b</sup>&frasl;<sub>2</sub></i><br>
+                                Agora vamos subtrair as equações <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i> para tentar obter o valor de <i style="color: #00FF00">q</i>:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbspa = p + q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbspb = p - q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <br>
+                                a - b = p + q - p + q<br>
+                                a - b = <strong style="color: #00FF00">2q</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Assim chegamos ao valor de: <i style="color: #00FF00">q = <sup>a - b</sup>&frasl;<sub>2</sub></i><br>
+                                E agora voltamos para o <i style="color: #00FF00">a² - b² = 4pq</i> que conseguimos antes e substituímos o <i style="color: #00FF00">4pq</i> pelos novos valores que conseguimos:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa + b &nbsp&nbspa - b &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <strong style="color: #00FF00">a² - b²</strong> = 4 * ————— * ————— = <strong style="color: #00FF00">(a + b) * (a - b)</strong><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                E aí finalmente chegamos no <i style="color: #00FF00">a² - b² = (a + b) * (a - b)</i>
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "factorization-10",
+                        title: "Aula 10 — Fatoração e Produtos Notáveis: Exemplo Nível 01",
                         
                         content: `
                             <h2>Exemplo (Nível 01)</h2>
@@ -1392,8 +1809,8 @@ const subjects = [
                     },
 
                     {
-                        id: "factorization-3",
-                        title: "Aula 03 — Fatoração e Produtos Notáveis: Exemplo Nível 02",
+                        id: "factorization-11",
+                        title: "Aula 11 — Fatoração e Produtos Notáveis: Exemplo Nível 02",
                         
                         content: `
                             <h2>Exemplo (Nível 02)<br>IME</h2>
@@ -1480,8 +1897,8 @@ const subjects = [
                     },
 
                     {
-                        id: "factorization-4",
-                        title: "Aula 04 — Aprofundamento Produtos Notáveis Avançados",
+                        id: "factorization-12",
+                        title: "Aula 12 — Aprofundamento Produtos Notáveis Avançados",
                         
                         content: `
                             <h2>Produto Notável ao Cubo</h2>
@@ -1640,423 +2057,6 @@ const subjects = [
                         `,
 
                         exercises: []
-                    },
-
-                    {
-                        id: "factorization-5",
-                        title: "Aula 05 — Os Axiomas: Multiplicação e Divisão",
-                        
-                        content: `
-                            <h2>Multiplicação/Divisão</h2>
-
-                            <h3><i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> = <i style="color: #FF0000">b</i> * <i style="color: #0000FF">a</i> (Comutatividade)</h3>
-
-                            <p>
-                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000">3</strong> = <strong style="color: #FF0000">3</strong> * <strong style="color: #0000FF">7</strong> = 21
-                            </p>
-
-                            <h3><i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> * <i style="color: #00FF00">c</i>) = (<i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i>) * <i style="color: #00FF00">c</i> (Associatividade)</h3>
-
-                            <p>
-                                Exemplo: <i style="color: #0000FF">5</i> * <i style="color: #FF0000">2</i> * <i style="color: #00FF00">3</i> = 10 * <i style="color: #00FF00">3</i> = 15 * <i style="color: #FF0000">2</i> = <i style="color: #0000FF">5</i> * 6 = 30
-                            </p>
-
-                            <h3><i style="color: #0000FF">a</i> * 1 = <i style="color: #0000FF">a</i> (Existência do Elemento Neutro)</h3>
-
-                            <p>
-                                Exemplo: <strong style="color: #0000FF">17,2</strong> * 1 = <strong style="color: #0000FF">17,2</strong>
-                            </p>
-
-                            <h3><i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><strong style="color: #FF0000"><sup>-1</sup></strong> ) = <i style="color: #0000FF">a</i> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><i style="color: #0000FF"><sub>a</sub></i> = <strong style="color: #FF0000">1</strong> (Existência do Elemento Inverso)</h3>
-
-                            <p>
-                                Exemplo: <strong style="color: #0000FF">7</strong> * <strong style="color: #0000FF">7</strong><strong style="color: #FF0000"><sup>-1</sup></strong> = <strong style="color: #0000FF">7</strong> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><strong style="color: #0000FF"><sub>7</sub></strong> = <strong style="color: #FF0000">1</strong><br>
-                                Todo <strong style="color: #0000FF">número</strong>, <i style="color: #00FF00">exeto o zero</i>, possui <strong style="color: #FF0000">inverso</strong>.
-                            </p>
-
-                            <h3><i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> + <i style="color: #00FF00">c</i>) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> + <i style="color: #0000FF">a</i> * <i style="color: #00FF00">c</i> (Distributividade)</h3>
-
-                            <p>
-                                Exemplo: <strong style="color: #0000FF">5</strong> * (<strong style="color: #FF0000">2</strong> + <strong style="color: #00FF00">3</strong>) = <strong style="color: #FF0000">10</strong> + <strong style="color: #00FF00">15</strong> = 25<br>
-                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #FF0000">2</strong> + <strong style="color: #00FF00">3</strong>) = <strong style="color: #0000FF">5</strong> * 5 = 25
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-6",
-                        title: "Aula 06 — Observação: Dividir vs Multiplicar",
-                        
-                        content: `
-                            <h2>Observação</h2>
-
-                            <p>
-                                Vimos a comutatividade na aula passada: <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> = <i style="color: #FF0000">b</i> * <i style="color: #0000FF">a</i>
-                            </p>
-
-                            <p>
-                                Porém, quem está mais atento pode perceber que na divisão não é exatamente assim: <strong style="color: #0000FF"><sup>18</sup></strong>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> ≠ <strong style="color: #FF0000"><sup>2</sup></strong>&frasl;<strong style="color: #0000FF"><sub>18</sub></strong>
-                            </p>
-
-                            <h2>Explicação</h2>
-
-                            <p>
-                                Dividir é o mesmo que multiplicar pelo inverso!
-                            </p>
-
-                            <p>
-                                Ou seja a divisão pode ser escrita dessa forma: <strong style="color: #0000FF"><sup>18</sup></strong>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> = <strong style="color: #0000FF">18</strong> * <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong><br>
-                                Agora a comutatividade se aplica: <strong style="color: #0000FF">18</strong> * <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> = <sup>1</sup>&frasl;<strong style="color: #FF0000"><sub>2</sub></strong> * <strong style="color: #0000FF">18</strong>
-                            </p>
-
-                            <h2>Conclusão</h2>
-
-                            <p>
-                                Concluímos então que os axiomas vistos na aula passada também funcionam com a divisão, sendo que ela é uma multiplicação do valor inverso.
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-7",
-                        title: "Aula 07 — Aplicando as Regras (O elemento neutro)",
-                        
-                        content: `
-                            <h3>Usando as regras do jogo</h3>
-
-                            <h2>Exemplo #01:</h2>
-
-                            <p>
-                                <i style="color: #0000FF">a</i> * 1 = 1 * <i style="color: #0000FF">a</i> = <i style="color: #0000FF">a</i> (Existência do Elemento Neutro)<br>
-                                Ou seja:
-                            </p>
-
-                            <p class="equation">
-                                <strong style="color: #0000FF">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">2</strong><br>
-                                <strong style="color: #0000FF">—</strong> * 1 = <strong style="color: #0000FF">—</strong><br>
-                                <strong style="color: #0000FF">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong>
-                            </p>
-
-                            <p>
-                                Este axioma já estava sendo usado até agora, quando precisávamos fazer soma ou subtração entre frações. Note que <strong style="color: #0000FF">1</strong> é a mesma coisa que <strong style="color: #0000FF"><sup>4</sup>&frasl;<sub>4</sub></strong>:
-                            </p>
-
-                            <p class="equation">
-                                <strong style="color: #0000FF">2</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">2</strong> &nbsp&nbsp4 &nbsp&nbsp8&nbsp<br>
-                                <strong style="color: #0000FF">—</strong> * 1 = <strong style="color: #0000FF">—</strong> * — = ——<br>
-                                <strong style="color: #0000FF">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong> &nbsp&nbsp4 &nbsp&nbsp12
-                            </p>
-
-                            <h2>Exemplo #02:</h2>
-
-                            <p>
-                                <i style="color: #0000FF">a</i> * ( <i style="color: #0000FF">a</i><strong style="color: #FF0000"><sup>-1</sup></strong> ) = <i style="color: #0000FF">a</i> * <strong style="color: #FF0000"><sup>1</sup>&frasl;</strong><i style="color: #0000FF"><sub>a</sub></i> = <strong style="color: #FF0000">-1</strong> (Existência do Elemento Inverso)
-                            </p>
-
-                            <p>
-                                Este axioma pode ser visto usando o elemento inverso:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #FF0000">7</strong> &nbsp&nbsp1 &nbsp&nbsp22<br>
-                                7 + — = <strong style="color: #0000FF">3</strong> * <strong style="color: #FF0000">—</strong> + — = ——<br>
-                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #0000FF">3</strong> &nbsp&nbsp3 &nbsp&nbsp&nbsp3
-                            </p>
-
-                            <p>
-                                Mas também pode ser visto usando o elemento neutro:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp1 &nbsp&nbsp22<br>
-                                <strong style="color: #0000FF">7</strong> * — + — = ——<br>
-                                &nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp3 &nbsp&nbsp&nbsp3
-                            </p>
-
-                            <h2>Exemplo #03:</h2>
-
-                            <p>
-                                <i style="color: #0000FF">a</i> * (<i style="color: #FF0000">b</i> + <i style="color: #00FF00">c</i>) = <i style="color: #0000FF">a</i> * <i style="color: #FF0000">b</i> + <i style="color: #0000FF">a</i> * <i style="color: #00FF00">c</i> (Distributividade)<br>
-                                Vamos ver aqui a seguinte ideia: (+) * (-) = (-)
-                            </p>
-
-                            <p class="equation">
-                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong> + <strong style="color: #FF0000">3</strong>) = <strong style="color: #0000FF">5</strong> * 0 = 0<br>
-                                <br>
-                                ou<br>
-                                <br>
-                                <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong> + <strong style="color: #FF0000">3</strong>) = <strong style="color: #0000FF">5</strong> * (<strong style="color: #00FF00">-3</strong>) + <strong style="color: #0000FF">5</strong> * <strong style="color: #FF0000">3</strong> = -15 + 15 = 0
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-8",
-                        title: "Aula 08 — Ordem das Operações",
-                        
-                        content: `
-                            <h2>A Ordem das Operções</h2>
-
-                            <p>
-                                Por convenção assume-se que a multiplicação/divisão devem ser feitas primeiro do que adição/subtração.
-                            </p>
-
-                            <h2>Exemplos:</h2>
-
-                            <p>
-                                i) 4 * 2 + 8, assumimos que seja (4 * 2) + 8, que é igual a 16<br>
-                                ii) 17 - 12 : 2, assumimos que seja 17 - (<sup>12</sup>&frasl;<sub>2</sub>), que é igual a 11
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-9",
-                        title: "Aula 09 — Fatoração e Produtos Notáveis 01",
-                        
-                        content: `
-                            <h2>Fatoração</h2>
-
-                            <h3>Exemplo #01:</h3>
-
-                            <p class="equation">
-                                7 * 72 + 56 * 18
-                            </p>
-
-                            <p>
-                                Podemos escrever o 72 como se fosse 18 * 4 e o 56 como 7 * 4 * 2:
-                            </p>
-
-                            <p class="equation">
-                                7 * 18 * 4 + 7 * 4 * 2 * 18
-                            </p>
-
-                            <p>
-                                Perceba que teremos uma pultiplicação de 4, 7 e 18 nos dois lados da soma, podemos então aplicar a distributiva:
-                            </p>
-
-                            <p class="equation">
-                                4 * 7 * 18 * (1 + 2) = 4 * 7 * 18 * 3
-                            </p>
-
-                            <p>
-                                Agora fica muito mais fácil fazer a multiplicação:
-                            </p>
-
-                            <p class="equation">
-                                4 * 7 * 18 * 3 = 72 * 21 = 1512
-                            </p>
-
-                            <h3>Exemplo #02:</h3>
-
-                            <p class="equation">
-                                6 * 12 + 24 * 7
-                            </p>
-
-                            <p>
-                                Novamente fatoramos os números, neste caso vamos fatorar o 6 e o 24:
-                            </p>
-
-                            <p class="equation">
-                                3 * 2 * 12 + 12 * 2 * 7
-                            </p>
-
-                            <p>
-                                E obtivemos o mesmo padrão de antes, ambos sendo multiplicados por mais de um número igual:
-                            </p>
-
-                            <p class="equation">
-                                2 * 12 * (3 + 7)
-                            </p>
-
-                            <p>
-                                E agora fica extremamente fácil de calcular:
-                            </p>
-
-                            <p class="equation">
-                                2 * 12 * (3 + 7) = 24 * 10 = 240
-                            </p>
-
-                            <h3>Exemplo #03:</h3>
-
-                            <p class="equation">
-                                6 * (x + 1) + 17y * (x + 1)
-                            </p>
-
-                            <p>
-                                É a mesma coisa, porém agora fatoramos com letras:
-                            </p>
-
-                            <p class="equation">
-                                (x + 1) * (6 + 17y)
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-10",
-                        title: "Aula 10 — Fatoração e Produtos Notáveis 02",
-                        
-                        content: `
-                            <h2>Produtos Notáveis</h2>
-
-                            <h3>a) (<i>a</i> + <i>b</i>)² (Quadrado da Soma)</h3>
-
-                            <p>
-                                Este 2 é a potência, isso demontra uma quantidade de multiplicações que um número tem que fazer com ele mesmo:
-                            </p>
-
-                            <p class="equation">
-                                (a + b)² = (a + b) * (a + b)
-                            </p>
-
-                            <p>
-                                Como funciona essa multiplicação?<br>
-                                Podemos substituir um (<i>a</i> + <i>b</i>) por um <i>x</i> e usar distributiva para demonstrar:
-                            </p>
-
-                            <p class="equation">
-                                (a + b) * <strong style="color: #00FF00">(a + b)</strong> = (a + b) * <strong style="color: #00FF00">x</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                &nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">x</strong> * a + <strong style="color: #00FF00">x</strong> * b = <strong style="color: #00FF00">(a + b)</strong> * a + <strong style="color: #00FF00">(a + b)</strong> * b<br>
-                                aa + ab + ab + bb = a² + 2ab + b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <p>
-                                Então:
-                            </p>
-
-                            <p class="equation">
-                                (a + b)² ≠ a² + b² &nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                (a + b)² = a² + 2ab + b²
-                            </p>
-
-                            <h3>b) (<i>a</i> - <i>b</i>)² (Quadrado da Diferença)</h3>
-
-                            <p>
-                                Para facilitar, você pode multiplicar cada termo por cada termo, ao invés de substituir e aplicar a distributiva:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(a - b)² = a * a + a * (-b) + (-b) * a + (-b) * (-b)<br>
-                                a² - ab - ab + b² = a² -2ab + b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <p>
-                                Deu algo parecido com a primeira:
-                            </p>
-
-                            <p class="equation">
-                                (a - b)² = a² -2ab + b²
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-11",
-                        title: "Aula 11 — Fatoração e Produtos Notáveis 03",
-                        
-                        content: `
-                            <h2>Produtos Notáveis</h2>
-
-                            <h3>c) <i>a</i>² - <i>b</i>² (Diferença dos Quadrados)</h3>
-
-                            <p>
-                                O resultado da Diferença dos Quadros é igual a: (a + b) * (a - b)<br>
-                                Vamos comprovar que isto é verdadeiro:
-                            </p>
-
-                            <p class="equation">
-                                (a + b) * (a - b) = a * a + a * (-b) + b * a + b * (-b)<br>
-                                a² - ab + ab - b² = a² - b² &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <h3>Exemplo de uso:</h3>
-
-                            <p class="equation">
-                                121² - 120² = (121 + 120) * (121 - 120)<br>
-                                &nbsp&nbsp&nbsp&nbsp241 * 1 = 241 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-                        `,
-
-                        exercises: []
-                    },
-
-                    {
-                        id: "factorization-12",
-                        title: "Aula 12 — Fatoração e Produtos Notáveis 03 (fazendo de trás pra frente)",
-                        
-                        content: `
-                            <h2>Complemento:</h2>
-
-                            <p>
-                                Vimos que <i style="color: #00FF00">a² - b²</i> é igual a <i style="color: #00FF00">(a + b) * (a - b)</i>, e conferimos que é verdadeiro.<br>
-                                Mas e se não soubessemos o resultado?
-                            </p>
-
-                            <p>
-                                Seja <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i>:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong style="color: #00FF00">a² - b²</strong> = (p + q)² - (p - q)²<br>
-                                (p² + 2pq + q²) - (p² - 2pq + q²) = <strong style="color: #00FF00">4pq</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <p>
-                                Assim transformamos o <i style="color: #00FF00">a² - b²</i> em <i style="color: #00FF00">4pq</i><br>
-                                Agora vamos somar as equações que temos <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i>:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbspa = p + q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                &nbsp&nbsp&nbsp&nbspb = p - q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                <br>
-                                a + b = p + q + p - q<br>
-                                a + b = <strong style="color: #00FF00">2p</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <p>
-                                Assim chegamos ao valor de: <i style="color: #00FF00">p = <sup>a + b</sup>&frasl;<sub>2</sub></i><br>
-                                Agora vamos subtrair as equações <i style="color: #00FF00">a = p + q</i> e <i style="color: #00FF00">b = p - q</i> para tentar obter o valor de <i style="color: #00FF00">q</i>:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbspa = p + q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                &nbsp&nbsp&nbsp&nbspb = p - q &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                <br>
-                                a - b = p + q - p + q<br>
-                                a - b = <strong style="color: #00FF00">2q</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <p>
-                                Assim chegamos ao valor de: <i style="color: #00FF00">q = <sup>a - b</sup>&frasl;<sub>2</sub></i><br>
-                                E agora voltamos para o <i style="color: #00FF00">a² - b² = 4pq</i> que conseguimos antes e substituímos o <i style="color: #00FF00">4pq</i> pelos novos valores que conseguimos:
-                            </p>
-
-                            <p class="equation">
-                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa + b &nbsp&nbspa - b &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-                                <strong style="color: #00FF00">a² - b²</strong> = 4 * ————— * ————— = <strong style="color: #00FF00">(a + b) * (a - b)</strong><br>
-                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </p>
-
-                            <p>
-                                E aí finalmente chegamos no <i style="color: #00FF00">a² - b² = (a + b) * (a - b)</i>
-                            </p>
-                        `,
-
-                        exercises: []
                     }
                 ]
             },
@@ -2069,7 +2069,7 @@ const subjects = [
                 lessons: [
                     {
                         id: "powers-1",
-                        title: "Aula 1 — Propriedades da Potenciação",
+                        title: "Aula 01 — Propriedades da Potenciação",
                         
                         content: `
                             <h2>Potenciação e Radiciação</h2>
@@ -2153,7 +2153,7 @@ const subjects = [
 
                     {
                         id: "powers-2",
-                        title: "Aula 2 — Exemplos de Potenciação",
+                        title: "Aula 02 — Exemplos de Potenciação",
                         
                         content: `
                             <p>
@@ -2242,12 +2242,12 @@ const subjects = [
 
                     {
                         id: "powers-3",
-                        title: "Aula 3 — Consequências das Regras 01: Elevar a Zero",
+                        title: "Aula 03 — Consequências das Regras 01: Elevar a Zero",
                         
                         content: `
                             <h2>Consequências</h2>
 
-                            <h3>a) Elevar a zero:</h3>
+                            <h3>a) Elevar a Zero:</h3>
 
                             <p>
                                 Podemos usar uma propriedade que vimos nas aulas passadas: <i>a</i><sup style="color: #FF0000">m</sup> * <i>a</i><sup style="color: #00FF00">n</sup> = <i>a</i><sup style="color: #FF0000">m</sup><sup> + </sup><sup style="color: #00FF00">n</sup>
@@ -2291,21 +2291,128 @@ const subjects = [
 
                     {
                         id: "powers-4",
-                        title: "Aula 4 — Consequências das Regras 02: Elevar a Expoente Negativo",
+                        title: "Aula 04 — Consequências das Regras 02: Elevar a Expoente Negativo",
                         
                         content: `
-                            
+                            <h2>Consequências</h2>
+
+                            <h3>b) Elevar a Expoente Negativo:</h3>
+
+                            <p>
+                                ...algumas maneiras de pensar:
+                            </p>
+
+                            <h2>Primeira:</h2>
+
+                            <p>
+                                Propriedade <i>e</i>:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #0000FF">m</sup> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                —— = a<sup style="color: #0000FF">m</sup><sup> - </sup><sup style="color: #00FF00">n</sup><br>
+                                a<sup style="color: #00FF00">n</sup> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Então:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                a<sup style="color: #0000FF">m</sup> * —— = a<sup style="color: #0000FF">m</sup> * a<sup style="color: #00FF00">-n</sup><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbspa<sup style="color: #00FF00">n</sup> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Conclusão:
+                            </p>
+
+                            <p class="equation">
+                                1 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                —— = a<sup style="color: #00FF00">-n</sup><br>
+                                a<sup style="color: #00FF00">n</sup> &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h2>Segunda:</h2>
+
+                            <p>
+                                Propriedade <i>a</i>:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #0000FF">m</sup> * a<sup style="color: #00FF00">n</sup> = a<sup style="color: #0000FF">m</sup><sup> + </sup><sup style="color: #00FF00">n</sup>
+                            </p>
+
+                            <p>
+                                Então podemos ter:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #00FF00">-n</sup> * a<sup style="color: #00FF00">n</sup> = a<sup style="color: #00FF00">-n</sup><sup> + </sup><sup style="color: #00FF00">n</sup>
+                            </p>
+
+                            <p>
+                                Sabemos então que:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #00FF00">-n</sup> * a<sup style="color: #00FF00">n</sup> = a<sup>0</sup> = 1
+                            </p>
+
+                            <p>
+                                Ou seja, <i>a</i><sup style="color: #00FF00">-n</sup> * <i>a</i><sup style="color: #00FF00">n</sup> tem que ser igual a 1. E sabemos que da Existência do Elemento Inverso.
+                            </p>
+
+                            <p>
+                                Conclusão:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 <br>
+                                a<sup style="color: #00FF00">-n</sup> = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspa<sup style="color: #00FF00">n</sup>
+                            </p>
+
+                            <h2>Exemplos:</h2>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1<br>
+                                7<sup style="color: #00FF00">-1</sup> = —<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp7<br>
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1&nbsp&nbsp&nbsp&nbsp1&nbsp<br>
+                                (-2)<sup style="color: #00FF00">-3</sup> = ——— = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-2<sup style="color: #00FF00">3</sup>&nbsp&nbsp&nbsp-8
+                            </p>
+
+                            <p class="equation">
+                                (<sup>7</sup>&frasl;<sub>3</sub>)<sup style="color: #00FF00">-2</sup> = <sup>3<sup style="color: #00FF00">2</sup></sup>&frasl;<sub>7<sup style="color: #00FF00">2</sup></sub> = <sup>9</sup>&frasl;<sub>49</sub>
+                            </p>
+
+                            <p class="equation">
+                                (<sup>1</sup>&frasl;<sub>5</sub>)<sup style="color: #00FF00">-3</sup> = <sup>5<sup style="color: #00FF00">3</sup></sup>&frasl;<sub>1</sub> = 125
+                            </p>
+
+                            <p class="equation">
+                                (8<sup style="color: #00FF00">-1</sup>)<sup style="color: #00FF00">-2</sup> = (<sup>1</sup>&frasl;<sub>8</sub>)<sup style="color: #00FF00">-2</sup> = <sup>8<sup style="color: #00FF00">2</sup></sup>&frasl;<sub>1</sub> = 64
+                            </p>
+
+                            <p class="equation">
+                                &nbsp1 &nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp1 &nbsp&nbsp3 &nbsp&nbsp&nbsp<br>
+                                ——— = ——— = — * — = 3<br>
+                                3<sup style="color: #00FF00">-1</sup> &nbsp&nbsp&nbsp<sup>1</sup>&frasl;<sub>3</sub> &nbsp&nbsp1 &nbsp&nbsp1 &nbsp&nbsp&nbsp
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-5",
-                        title: "Aula 5 — Aplicação: Conversão de Unidades",
+                        title: "Aula 05 — Consequências das Regras 03: Elevar a Expoente Fracionário (Introdução à Radiciação)",
                         
                         content: `
                             
@@ -2319,7 +2426,7 @@ const subjects = [
 
                     {
                         id: "powers-6",
-                        title: "Aula 6 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
+                        title: "Aula 06 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
                         
                         content: `
                             
@@ -2333,7 +2440,7 @@ const subjects = [
 
                     {
                         id: "powers-7",
-                        title: "Aula 7 — Potenciação e Radiciação: Resumo Geral",
+                        title: "Aula 07 — Potenciação e Radiciação: Resumo Geral",
                         
                         content: `
                             
@@ -2347,7 +2454,7 @@ const subjects = [
 
                     {
                         id: "powers-8",
-                        title: "Aula 8 — Radiciação: Exemplos",
+                        title: "Aula 08 — Radiciação: Exemplos",
                         
                         content: `
                             
@@ -2361,7 +2468,7 @@ const subjects = [
 
                     {
                         id: "powers-9",
-                        title: "Aula 9 — Racionalização",
+                        title: "Aula 09 — Racionalização",
                         
                         content: `
                             
@@ -2389,7 +2496,7 @@ const subjects = [
 
                     {
                         id: "powers-11",
-                        title: "Aula 11 — Consequências das Regras 03: Elevar a Expoente Fracionário (Introdução à Radiciação)",
+                        title: "Aula 11 — Aplicação: Conversão de Unidades",
                         
                         content: `
                             
