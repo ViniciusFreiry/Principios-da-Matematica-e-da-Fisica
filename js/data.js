@@ -2415,18 +2415,70 @@ const subjects = [
                         title: "Aula 05 — Consequências das Regras 03: Elevar a Expoente Fracionário (Introdução à Radiciação)",
                         
                         content: `
-                            
+                            <h2>Consequências</h2>
+
+                            <h3>c) Elevar a Expoente Fracionário:</h3>
+
+                            <p>
+                                Vamos usar a propriedade <i>a</i>: <i>a</i><sup style="color: #FF0000"><i>m</i></sup> * <i>a</i><sup style="color: #00FF00"><i>n</i></sup> = <i>a</i><sup style="color: #FF0000"><i>m</i></sup><sup> + </sup><sup style="color: #00FF00"><i>n</i></sup><br>
+                                Usaremos <i>m</i> = <i>n</i> = <sup>1</sup>&frasl;<sub>2</sub>:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #FF0000"><sup>1</sup>&frasl;<sub>2</sub></sup> * a<sup style="color: #00FF00"><sup>1</sup>&frasl;<sub>2</sub></sup> = a<sup style="color: #FF0000"><sup>1</sup>&frasl;<sub>2</sub></sup><sup> + </sup><sup style="color: #00FF00"><sup>1</sup>&frasl;<sub>2</sub></sup><sup>
+                            </p>
+
+                            <p>
+                                Ou seja:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #FF0000"><sup>1</sup>&frasl;<sub>2</sub></sup> * a<sup style="color: #00FF00"><sup>1</sup>&frasl;<sub>2</sub></sup> = a<sup>1</sup> = a
+                            </p>
+
+                            <p>
+                                E também sabemos que:
+                            </p>
+
+                            <p class="equation">
+                                a<sup style="color: #FF0000"><sup>1</sup>&frasl;<sub>2</sub></sup> * a<sup style="color: #00FF00"><sup>1</sup>&frasl;<sub>2</sub></sup> = (a<sup><sup>1</sup>&frasl;<sub>2</sub></sup>)<sup>2</sup> = a<sup><sup>1</sup>&frasl;<sub>2</sub> * 2</sup> = a
+                            </p>
+
+                            <p>
+                                Elevar a <sup>1</sup>&frasl;<sub>2</sub> é uma operação (raiz quadrada) que é cancelada por elevar a 2. São operações inversas!
+                            </p>
+
+                            <h2>Exemplos:</h2>
+
+                            <p class="equation">
+                                <strong style="color: #00FF00">16</strong><sup><sup>1</sup>&frasl;<sub>2</sub></sup> = (<strong style="color: #00FF00">4<sup>2</sup></strong>)<sup><sup>1</sup>&frasl;<sub>2</sub></sup> = 4<sup>2 * <sup>1</sup>&frasl;<sub>2</sub></sup> = 4<sup>1</sup> = 4
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #00FF00">25</strong><sup><sup>1</sup>&frasl;<sub>2</sub></sup> = (<strong style="color: #00FF00">5<sup>2</sup></strong>)<sup><sup>1</sup>&frasl;<sub>2</sub></sup> = 5<sup>2 * <sup>1</sup>&frasl;<sub>2</sub></sup> = 5<sup>1</sup> = 5
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #00FF00">49</strong><sup><sup>-1</sup>&frasl;<sub>2</sub></sup> = (<strong style="color: #00FF00">7<sup>2</sup></strong>)<sup><sup>-1</sup>&frasl;<sub>2</sub></sup> = 7<sup>2 * (<sup>-1</sup>&frasl;<sub>2</sub>)</sup> = 7<sup>-1</sup> = <sup>1</sup>&frasl;<sub>7</sub>
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #00FF00">8</strong><sup><sup>1</sup>&frasl;<sub>3</sub></sup> = (<strong style="color: #00FF00">2<sup>3</sup></strong>)<sup><sup>1</sup>&frasl;<sub>3</sub></sup> = 2<sup>3 * <sup>1</sup>&frasl;<sub>3</sub></sup> = 2<sup>1</sup> = 2
+                            </p>
+
+                            <h2>Conclusão:</h2>
+
+                            <p class="equation result">
+                                a<sup><sup>1</sup>&frasl;<sub>n</sub></sup> = <sup>n</sup>&radic;a<sup>1</sup>
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-6",
-                        title: "Aula 06 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
+                        title: "Aula 06 — Radiciação",
                         
                         content: `
                             
@@ -2510,7 +2562,7 @@ const subjects = [
 
                     {
                         id: "powers-12",
-                        title: "Aula 12 — Radiciação",
+                        title: "Aula 12 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
                         
                         content: `
                             
