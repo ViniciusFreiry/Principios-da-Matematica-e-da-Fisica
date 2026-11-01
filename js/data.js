@@ -2481,18 +2481,71 @@ const subjects = [
                         title: "Aula 06 — Radiciação",
                         
                         content: `
-                            
+                            <h2>Radiciação</h2>
+
+                            <p>
+                                Inverso da Potência
+                            </p>
+
+                            <h2>Definição</h2>
+
+                            <p class="equation">
+                                <sup>n</sup>&radic;a = a<sup><sup>1</sup>&frasl;<sub>n</sub></sup>
+                            </p>
+
+                            <p>
+                                A raiz n-ésima de "<i>a</i>" (representada por <sup><i>n</i></sup>&radic;<i>a</i> ou <i>a</i><sup><sup>1</sup>&frasl;<sub><i>n</i></sub></sup>) é o número "<i>b</i>" tal que <i>b</i><sup><i>n</i></sup> = <i>a</i>.
+                            </p>
+
+                            <p class="equation">
+                                <sup>n</sup>&radic;a = b &nbsp<br>
+                                (a<sup><sup>1</sup>&frasl;<sub>n</sub></sup>)<sup>n</sup> = b<sup>n</sup> &nbsp&nbsp&nbsp<br>
+                                &nbspa = b<sup>n</sup>
+                            </p>
+
+                            <h3>Exemplos:</h3>
+
+                            <p class="equation">
+                                <sup>2</sup>&radic;100 = 100<sup><sup>1</sup>&frasl;<sub>2</sub></sup> = (10<sup>2</sup>)<sup><sup>1</sup>&frasl;<sub>2</sub></sup> = 10<sup>2 * <sup>1</sup>&frasl;<sub>2</sub></sup> = 10
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;8 = 8<sup><sup>1</sup>&frasl;<sub>3</sub></sup> = (2<sup>3</sup>)<sup><sup>1</sup>&frasl;<sub>3</sub></sup> = 2<sup>3 * <sup>1</sup>&frasl;<sub>3</sub></sup> = 2
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;(-8) = (-8)<sup><sup>1</sup>&frasl;<sub>3</sub></sup> = [(-2)<sup>3</sup>]<sup><sup>1</sup>&frasl;<sub>3</sub></sup> = (-2)<sup>3 * <sup>1</sup>&frasl;<sub>3</sub></sup> = -2
+                            </p>
+
+                            <p class="equation">
+                                <sup>4</sup>&radic;16 = 16<sup><sup>1</sup>&frasl;<sub>4</sub></sup> = (2<sup>4</sup>)<sup><sup>1</sup>&frasl;<sub>4</sub></sup> = 2<sup>4 * <sup>1</sup>&frasl;<sub>4</sub></sup> = 2
+                            </p>
+
+                            <p class="equation">
+                                <sup>17</sup>&radic;(5<sup>17</sup>) = (5<sup>17</sup>)<sup><sup>1</sup>&frasl;<sub>17</sub></sup> = 5<sup>17 * <sup>1</sup>&frasl;<sub>17</sub></sup> = 5
+                            </p>
+
+                            <p class="equation">
+                                &radic;(π<sup>2</sup>) = (π<sup>2</sup>)<sup><sup>1</sup>&frasl;<sub>2</sub></sup> = π<sup>2 * <sup>1</sup>&frasl;<sub>2</sub></sup> = π
+                            </p>
+
+                            <p class="equation">
+                                <sup>5</sup>&radic;32 = 32<sup><sup>1</sup>&frasl;<sub>5</sub></sup> = (2<sup>5</sup>)<sup><sup>1</sup>&frasl;<sub>5</sub></sup> = 2<sup>5 * <sup>1</sup>&frasl;<sub>5</sub></sup> = 2
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp1&nbsp&nbsp<br>
+                                (<sup>10</sup>&radic;32)<sup>-1</sup> = ————— = ———————— = ———— = ——<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>10</sup>&radic;32 &nbsp&nbsp(2<sup>5</sup>)<sup><sup>1</sup>&frasl;<sub>10</sub></sup>&nbsp&nbsp&nbsp&nbsp&nbsp2<sup><sup>1</sup>&frasl;<sub>2</sub></sup>&nbsp&nbsp&nbsp&radic;2
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-7",
-                        title: "Aula 07 — Potenciação e Radiciação: Resumo Geral",
+                        title: "Aula 07 — Radiciação: as regras do jogo",
                         
                         content: `
                             
@@ -2576,7 +2629,7 @@ const subjects = [
 
                     {
                         id: "powers-13",
-                        title: "Aula 13 — Radiciação: as regras do jogo",
+                        title: "Aula 13 — Potenciação e Radiciação: Resumo Geral",
                         
                         content: `
                             
