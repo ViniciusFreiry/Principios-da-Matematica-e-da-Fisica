@@ -2548,18 +2548,97 @@ const subjects = [
                         title: "Aula 07 — Radiciação: as regras do jogo",
                         
                         content: `
-                            
+                            <h2>As Regras do Jogo</h2>
+
+                            <p>
+                                As mesma da potenciação!
+                            </p>
+
+                            <h2>Alerta:</h2>
+
+                            <p class="equation">
+                                a<sup style="color: #0000FF">m</sup> * a<sup style="color: #00FF00">n</sup> = a<sup style="color: #0000FF">m</sup><sup> + </sup><sup style="color: #00FF00">n</sup> &nbsp&nbsp→ &nbsp&nbsp<sup style="color: #0000FF">m</sup>&radic;a * <sup style="color: #00FF00">n</sup>&radic;a <strong style="color: #FF0000">≠</strong> <sup style="color: #0000FF">m</sup><sup> + </sup><sup style="color: #00FF00">n</sup>&radic;a
+                            </p>
+
+                            <h3>Exemplo:</h3>
+
+                            <p class="equation">
+                                <sup style="color: #0000FF">2</sup>&radic;64 * <sup style="color: #00FF00">3</sup>&radic;64 = 8 * 4 = 32
+                            </p>
+
+                            <p>
+                                Usando a propriedade corretamente:
+                            </p>
+
+                            <p class="equation">
+                                <sup style="color: #0000FF">2</sup>&radic;64 * <sup style="color: #00FF00">3</sup>&radic;64 = 64<sup style="color: #0000FF"><sup>1</sup>&frasl;<sub>2</sub></sup><sup> + </sup><sup style="color: #00FF00"><sup>1</sup>&frasl;<sub>3</sub></sup> = 64<sup><sup>5</sup>&frasl;<sub>6</sub></sup>
+                            </p>
+
+                            <h2>Propriedades:</h2>
+
+                            <h3>a) <sup><i>n</i></sup>&radic;(<i style="color: #0000FF">a</i> * <i style="color: #00FF00">b</i>) = <sup><i>n</i></sup>&radic;<i style="color: #0000FF">a</i> * <sup><i>n</i></sup>&radic;<i style="color: #00FF00">b</i></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(<strong style="color: #0000FF">4</strong> * <strong style="color: #00FF00">25</strong>) = &radic;100 = 10<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                &radic;(<strong style="color: #0000FF">4</strong> * <strong style="color: #00FF00">25</strong>) = &radic;<strong style="color: #0000FF">4</strong> * &radic;<strong style="color: #00FF00">25</strong> = 2 * 5 = 10
+                            </p>
+
+                            <h3>b) <sup><i style="color: #0000FF">m</i></sup>&radic;(<sup><i style="color: #00FF00">n</i></sup>&radic;<i>a</i>) = <sup><strong style="color: #0000FF"><i>m</i></strong></sup><sup> * </sup><sup><strong style="color: #00FF00"><i>n</i></strong></sup>&radic;<i>a</i></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                <sup><strong style="color: #0000FF">3</strong></sup>&radic;(<sup><strong style="color: #00FF00">2</strong></sup>&radic;64) = <sup><strong style="color: #0000FF">3</strong></sup>&radic;8 = 2<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                <sup><strong style="color: #0000FF">3</strong></sup>&radic;(<sup><strong style="color: #00FF00">2</strong></sup>&radic;64) = <sup><strong style="color: #0000FF">3</strong></sup><sup> * </sup><sup><strong style="color: #00FF00">2</strong></sup>&radic;64 = <sup>6</sup>&radic;64 = 2
+                            </p>
+
+                            <h3>c) <sup><i>n</i></sup>&radic;<sup><i style="color: #0000FF">a</i></sup>&frasl;<sub><i style="color: #00FF00">b</i></sub> = <sup><sup><i>n</i></sup>&radic;<i style="color: #0000FF">a</i></sup>&frasl;<sub><sup><i>n</i></sup>&radic;<i style="color: #00FF00">b</i></sub></h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                &radic;<sup><strong style="color: #0000FF">100</strong></sup>&frasl;<sub><strong style="color: #00FF00">4</strong></sub> = &radic;25 = 5<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                &radic;<sup><strong style="color: #0000FF">100</strong></sup>&frasl;<sub><strong style="color: #00FF00">4</strong></sub> = <sup>&radic;<strong style="color: #0000FF">100</strong></sup>&frasl;<sub>&radic;<strong style="color: #00FF00">4</strong></sub> = <sup><strong style="color: #0000FF">10</strong></sup>&frasl;<sub><strong style="color: #00FF00">2</strong></sub> = 5
+                            </p>
+
+                            <h3>d) (<sup><i style="color: #00FF00">n</i></sup>&radic;<i>a</i>)<sup><i style="color: #0000FF">m</i></sup> = <sup><i style="color: #00FF00">n</i></sup>&radic;(<i>a</i><sup><i style="color: #0000FF">m</i></sup>)</h3>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                (<sup><strong style="color: #00FF00">3</strong></sup>&radic;8)<sup><strong style="color: #0000FF">2</strong></sup> = (2)<sup><strong style="color: #0000FF">2</strong></sup> = 4<br>
+                                <br>
+                                ou<br>
+                                <br>
+                                (<sup><strong style="color: #00FF00">3</strong></sup>&radic;8)<sup><strong style="color: #0000FF">2</strong></sup> = <sup><strong style="color: #00FF00">3</strong></sup>&radic;(8<sup><strong style="color: #0000FF">2</strong></sup>) = <sup><strong style="color: #00FF00">3</strong></sup>&radic;64 = 4
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-8",
-                        title: "Aula 08 — Radiciação: Exemplos",
+                        title: "Aula 08 — Radiciação: Interpretação Geométrica",
                         
                         content: `
                             
@@ -2643,7 +2722,7 @@ const subjects = [
 
                     {
                         id: "powers-14",
-                        title: "Aula 14 — Radiciação: Interpretação Geométrica",
+                        title: "Aula 14 — Radiciação: Exemplos",
                         
                         content: `
                             
