@@ -2641,18 +2641,61 @@ const subjects = [
                         title: "Aula 08 — Radiciação: Interpretação Geométrica",
                         
                         content: `
-                            
+                            <h2>Interpretação Geométrica</h2>
+
+                            <h3>a) <sup>2</sup>&radic; (Raiz Quadrada)</h3>
+
+                            <p>
+                                Imagine um quadrado de 4 por 4, ele terá uma área de 4² ou 16.<br>
+                                Então a raiz quadrada de 16 é 4.
+                            </p>
+
+                            <p class="equation">
+                                4 &nbspp o n t o s &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <br>
+                                p &nbsp<span style="color: #00FF00">• • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                o &nbsp<span style="color: #00FF00">• • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                n &nbsp<span style="color: #00FF00">• • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                t &nbsp<span style="color: #00FF00">• • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                o &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#92; &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                s &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>&radic;16 = <strong style="color: #00FF00">4</strong>&nbsp
+                            </p>
+
+                            <p>
+                                E isto é a mesma coisa com qualquer valor, por exemplo o 36 de área:
+                            </p>
+
+                            <p class="equation">
+                                6 &nbspp o n t o s &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <br>
+                                p &nbsp<span style="color: #00FF00">• • • • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                o &nbsp<span style="color: #00FF00">• • • • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                n &nbsp<span style="color: #00FF00">• • • • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                t &nbsp<span style="color: #00FF00">• • • • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                o &nbsp<span style="color: #00FF00">• • • • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                s &nbsp<span style="color: #00FF00">• • • • • •</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#92; &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>&radic;36 = <strong style="color: #00FF00">6</strong>&nbsp
+                            </p>
+
+                            <h3>b) <sup>3</sup>&radic; (Raiz Cúbica)</h3>
+
+                            <p>
+                                É quase a mesma coisa que a raiz quadrada porém, agora imagine um cubo, onde todas as faces (ou arestas) tenham 3 de largura, você precisa calcular a área de uma face e depois multiplicar pela largura do cubo, conseguindo assim o volume do cubo.<br>
+                                Ou seja, uma face tem 3² ou 9 de área, e o cubo inteiro tem 3³ ou 27 de volume.
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;v = aresta do cubo de volume v
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-9",
-                        title: "Aula 09 — Racionalização",
+                        title: "Aula 09 — Radiciação: Observação (raiz de índice par)",
                         
                         content: `
                             
@@ -2736,7 +2779,7 @@ const subjects = [
 
                     {
                         id: "powers-15",
-                        title: "Aula 15 — Radiciação: Observação (raiz de índice par)",
+                        title: "Aula 15 — Racionalização",
                         
                         content: `
                             
@@ -2746,7 +2789,7 @@ const subjects = [
                             "",
                             ""
                         ]
-                    }
+                    },
                 ]
             },
 
