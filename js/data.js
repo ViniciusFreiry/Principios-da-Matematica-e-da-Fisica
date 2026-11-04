@@ -2698,18 +2698,111 @@ const subjects = [
                         title: "Aula 09 — Radiciação: Observação (raiz de índice par)",
                         
                         content: `
-                            
+                            <h2>Observação</h2>
+
+                            <p class="equation">
+                                &radic;(a<sup>2</sup>) = |a| → módulo de "a"
+                            </p>
+
+                            <p>
+                                Isso se dá para eliminar a ambiguidade.
+                            </p>
+
+                            <h3>Exemplo:</h3>
+
+                            <p>
+                                Imagine a raiz de 16:
+                            </p>
+
+                            <p class="equation">
+                                &radic;16 = x &nbsp<br>
+                                x<sup>2</sup> = 16
+                            </p>
+
+                            <p>
+                                Sabemos que 4 vezes 4 é 16, porém, sabemos que -4 vezes -4 também é 16.<br>
+                                Isso gera uma ambiguidade, temos duas respostas para a mesma equação.<br>
+                                Esta ambiguidade acontece em qualquer raiz de índice par, e não acontece em raizes de índice ímpar.
+                            </p>
+
+                            <h3>Exemplo:</h3>
+
+                            <p>
+                                A raiz cúbica de 8:
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;8 = x &nbsp<br>
+                                x<sup>3</sup> = 8&nbsp<br>
+                                x = 2
+                            </p>
+
+                            <p>
+                                Neste caso não temos ambiguidade, pois se usarmos -2 teremos:
+                            </p>
+
+                            <p class="equation">
+                                (-2) * (-2) * (-2) = 4 * (-2) = -8
+                            </p>
+
+                            <p>
+                                Então -2 = <sup>3</sup>&radic;(-8).
+                            </p>
+
+                            <h2>Módulo</h2>
+
+                            <p>
+                                O módulo é o valor positivo daquele número.
+                            </p>
+
+                            <h3>Exemplo:</h3>
+
+                            <p class="equation">
+                                |5| = 5<br>
+                                |-5| = 5&nbsp
+                            </p>
+
+                            <p>
+                                Assim resolvemos a abiguidade da raiz de índice par eleminando o resultado negativo.
+                            </p>
+
+                            <h3>Exemplos:</h3>
+
+                            <p class="equation">
+                                &radic;25 = &radic;(5<sup>2</sup>) = |5| = 5
+                            </p>
+
+                            <p class="equation">
+                                &radic;4 = &radic;(2<sup>2</sup>) = |2| = 2
+                            </p>
+
+                            <p class="equation">
+                                &radic;[(-3)<sup>2</sup>] = |-3| = 3
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;(-8) = <sup>3</sup>&radic;[(-2)<sup>3</sup>] = -2
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;(-1) = <sup>3</sup>&radic;[(-1)<sup>3</sup>] = -1
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;1 = <sup>3</sup>&radic;(1<sup>3</sup>) = 1
+                            </p>
+
+                            <p>
+                                A raiz de índice par de um número NUNCA vai dar negativo por conta da regra do módulo.
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-10",
-                        title: "Aula 10 — Racionalização: Exercício",
+                        title: "Aula 10 — Radiciação: Exemplos",
                         
                         content: `
                             
@@ -2765,7 +2858,7 @@ const subjects = [
 
                     {
                         id: "powers-14",
-                        title: "Aula 14 — Radiciação: Exemplos",
+                        title: "Aula 14 — Racionalização: Exercício",
                         
                         content: `
                             
