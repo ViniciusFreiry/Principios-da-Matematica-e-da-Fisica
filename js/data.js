@@ -2805,18 +2805,30 @@ const subjects = [
                         title: "Aula 10 — Radiciação: Exemplos",
                         
                         content: `
-                            
+                            <h2>Exemplos:</h2>
+
+                            <p class="equation">
+                                &radic;(4 * 3<sup>2</sup>) = &radic;4 * &radic;(3<sup>2</sup>) = 2 * 3 = 6
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;(12 * 9 * 2) = <sup>3</sup>&radic;(2<sup>2</sup> * 3 * 3<sup>2</sup> * 2) = <sup>3</sup>&radic;(2<sup>3</sup>) * <sup>3</sup>&radic;(3<sup>3</sup>) = 2 * 3 = 6
+                            </p>
+
+                            <p class="equation">
+                                [&radic;(16 + 4 * 44)]<sup>3</sup> = [&radic;(4 * 4 + 4 * 44)]<sup>3</sup><br>
+                                = {&radic;[4 * (4 + 44)]}<sup>3</sup> = [&radic;(4 * 48)]<sup>3</sup><br>
+                                = [&radic;(2<sup>2</sup> * 2<sup>2</sup> * 2<sup>2</sup> * 3)]<sup>3</sup> = [&radic;(2<sup>6</sup> * 3)]<sup>3</sup><br>
+                                = &radic;(2<sup>18</sup>) * &radic;(3<sup>2</sup> * 3) = 2<sup>9</sup> * 3&radic;3
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-11",
-                        title: "Aula 11 — Aplicação: Conversão de Unidades",
+                        title: "Aula 11 — Racionalização",
                         
                         content: `
                             
@@ -2872,7 +2884,7 @@ const subjects = [
 
                     {
                         id: "powers-15",
-                        title: "Aula 15 — Racionalização",
+                        title: "Aula 15 — Aplicação: Conversão de Unidades",
                         
                         content: `
                             
@@ -2882,7 +2894,7 @@ const subjects = [
                             "",
                             ""
                         ]
-                    },
+                    }
                 ]
             },
 
