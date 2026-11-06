@@ -2831,18 +2831,94 @@ const subjects = [
                         title: "Aula 11 — Racionalização",
                         
                         content: `
-                            
+                            <h2>Racionalização de Frações</h2>
+
+                            <p>
+                                Sumir com o número irracional (raiz não exata) do denominador.
+                            </p>
+
+                            <h3>Relembrando:</h3>
+
+                            <p>
+                                Podemos usar as regras do jogo para modificar os números de uma fração:
+                            </p>
+
+                            <p class="equation">
+                                1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp3 &nbsp&nbsp3<br>
+                                — &nbsp&nbsp→ &nbsp&nbsp— * — = —<br>
+                                3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp3 &nbsp&nbsp9<br>
+                            </p>
+
+                            <p>
+                                Com esse mesmo princípio podemos sumir com o número irracional do denominador de uma fração:
+                            <p>
+
+                            <p class="equation">
+                                &nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp<sup>2</sup>&radic;2 &nbsp&nbsp&nbsp<sup>2</sup>&radic;2&nbsp&nbsp&nbsp&nbsp<sup>2</sup>&radic;2<br>
+                                ——— &nbsp&nbsp→ &nbsp&nbsp——— * ——— = ————— = ———<br>
+                                <sup>2</sup>&radic;2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>&radic;2 &nbsp&nbsp<sup>2</sup>&radic;2 &nbsp&nbsp(&radic;2)<sup>2</sup> &nbsp&nbsp&nbsp2&nbsp
+                            </p>
+
+                            <h3>Exemplos:</h3>
+
+                            <p class="equation">
+                                &nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp<sup>2</sup>&radic;5 &nbsp&nbsp&nbsp3&radic;5&nbsp&nbsp&nbsp&nbsp3&radic;5<br>
+                                ——— &nbsp&nbsp→ &nbsp&nbsp——— * ——— = ————— = ———<br>
+                                <sup>2</sup>&radic;5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>&radic;5 &nbsp&nbsp<sup>2</sup>&radic;5 &nbsp&nbsp(&radic;5)<sup>2</sup> &nbsp&nbsp&nbsp5&nbsp
+                            </p>
+
+                            <p class="equation">
+                                &nbsp3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp<sup>2</sup>&radic;5 &nbsp&nbsp&nbsp3&radic;5&nbsp&nbsp&nbsp&nbsp3&radic;5<br>
+                                ——— &nbsp&nbsp→ &nbsp&nbsp——— * ——— = ————— = ———<br>
+                                <sup>2</sup>&radic;5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>&radic;5 &nbsp&nbsp<sup>2</sup>&radic;5 &nbsp&nbsp(&radic;5)<sup>2</sup> &nbsp&nbsp&nbsp5&nbsp
+                            </p>
+
+                            <p class="equation">
+                                17 &nbsp&nbsp&radic;3 &nbsp&nbsp17&radic;3<br>
+                                —— * —— = ————<br>
+                                &radic;3 &nbsp&nbsp&radic;3 &nbsp&nbsp&nbsp&nbsp3&nbsp
+                            </p>
+
+                            <p>
+                                Com raizes não quadradas temos que completar o que falta dentro da raiz.<br>
+                                Por exemplo, para sumir com <sup>3</sup>&radic;5 multiplicamos por <sup>3</sup>&radic;(5<sup>2</sup>), gerando assim um <sup>3</sup>&radic;(5<sup>3</sup>) que é simplesmente igual a 5.
+                            </p>
+
+                            <p class="equation">
+                                &nbsp2 &nbsp&nbsp&nbsp<sup>3</sup>&radic;(5<sup>2</sup>) &nbsp&nbsp2<sup>3</sup>&radic;25 &nbsp&nbsp&nbsp2<sup>3</sup>&radic;25<br>
+                                ——— * —————— = —————— = —————<br>
+                                <sup>3</sup>&radic;5 &nbsp&nbsp<sup>3</sup>&radic;(5<sup>2</sup>) &nbsp&nbsp<sup>3</sup>&radic;(5<sup>3</sup>) &nbsp&nbsp&nbsp&nbsp5&nbsp&nbsp
+                            </p>
+
+                            <p class="equation">
+                                &nbsp2 &nbsp&nbsp&nbsp<sup>5</sup>&radic;(2<sup>4</sup>) &nbsp&nbsp2<sup>5</sup>&radic;16 &nbsp&nbsp&nbsp2<sup>5</sup>&radic;16<br>
+                                ——— * —————— = —————— = —————<br>
+                                <sup>5</sup>&radic;2 &nbsp&nbsp<sup>5</sup>&radic;(2<sup>4</sup>) &nbsp&nbsp<sup>5</sup>&radic;(2<sup>5</sup>) &nbsp&nbsp&nbsp&nbsp2&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Quando há diferença ou soma nas bases podemos usar a regra do (<i>a</i> - <i>b</i>) * (<i>a</i> + <i>b</i>) = <i>a</i><sup>2</sup> - <i>b</i><sup>2</sup>
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp1 &nbsp&nbsp&nbsp&nbsp&nbsp(&radic;3 + 1) &nbsp&nbsp&radic;3 + 1 &nbsp&nbsp&radic;3 + 1<br>
+                                ———————— * ———————— = —————— = ——————<br>
+                                (&radic;3 - 1) &nbsp&nbsp(&radic;3 + 1) &nbsp&nbsp&nbsp3 - 1 &nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(&radic;5 + &radic;2) &nbsp&nbsp2(&radic;5 + &radic;2) &nbsp&nbsp2(&radic;5 + &radic;2)<br>
+                                ————————— * ————————— = —————————— = ——————————<br>
+                                (&radic;5 - &radic;2) &nbsp&nbsp(&radic;5 + &radic;2) &nbsp&nbsp&nbsp&nbsp5 - 2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3 &nbsp&nbsp&nbsp&nbsp
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-12",
-                        title: "Aula 12 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
+                        title: "Aula 12 — Racionalização: Exercício",
                         
                         content: `
                             
@@ -2870,7 +2946,7 @@ const subjects = [
 
                     {
                         id: "powers-14",
-                        title: "Aula 14 — Racionalização: Exercício",
+                        title: "Aula 14 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
                         
                         content: `
                             
