@@ -2921,18 +2921,53 @@ const subjects = [
                         title: "Aula 12 — Racionalização: Exercício",
                         
                         content: `
-                            
+                            <h2>Exercício</h2>
+
+                            <p>
+                                Compare os números <sup>3</sup>&radic;5 e <sup>5</sup>&radic;7.
+                            </p>
+
+                            <p>
+                                Podemos transformar a raiz em uma potenciação e deixar o denominador igual para começar:
+                            </p>
+
+                            <p class="equation">
+                                <sup>3</sup>&radic;5 = 5<sup><sup>1</sup>&frasl;<sub>3</sub></sup> = 5<sup><sup>5</sup>&frasl;<sub>15</sub></sup><br>
+                                <br>
+                                <sup>5</sup>&radic;7 = 7<sup><sup>1</sup>&frasl;<sub>5</sub></sup> = 7<sup><sup>3</sup>&frasl;<sub>15</sub></sup>
+                            </p>
+
+                            <p>
+                                Assim você consegue ter uma raiz de mesmo índice:
+                            </p>
+
+                            <p class="equation">
+                                5<sup><sup>5</sup>&frasl;<sub>15</sub></sup> = (5<sup>5</sup>)<sup><sup>1</sup>&frasl;<sub>15</sub></sup> = <sup>15</sup>&radic;(5<sup>5</sup>)<br>
+                                <br>
+                                7<sup><sup>3</sup>&frasl;<sub>15</sub></sup> = (7<sup>3</sup>)<sup><sup>1</sup>&frasl;<sub>15</sub></sup> = <sup>15</sup>&radic;(7<sup>3</sup>)
+                            </p>
+
+                            <p>
+                                Agora basta comparar quem é maior dentro da raiz, se é o 5<sup>5</sup> ou o 7<sup>3</sup>
+                            </p>
+
+                            <p class="equation">
+                                5<sup>5</sup> = 3125<br>
+                                <br>
+                                7<sup>3</sup> = 343
+                            </p>
+
+                            <p>
+                                Como 3125 > 343, então <sup>3</sup>&radic;5 > <sup>5</sup>&radic;7. (">" significa "maior que")
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
                         id: "powers-13",
-                        title: "Aula 13 — Potenciação e Radiciação: Resumo Geral",
+                        title: "Aula 13 — Aplicação: Conversão de Unidades",
                         
                         content: `
                             
@@ -2960,7 +2995,7 @@ const subjects = [
 
                     {
                         id: "powers-15",
-                        title: "Aula 15 — Aplicação: Conversão de Unidades",
+                        title: "Aula 15 — Potenciação e Radiciação: Resumo Geral",
                         
                         content: `
                             
