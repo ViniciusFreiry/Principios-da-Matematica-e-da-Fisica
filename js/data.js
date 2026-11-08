@@ -2970,13 +2970,141 @@ const subjects = [
                         title: "Aula 13 — Aplicação: Conversão de Unidades",
                         
                         content: `
-                            
+                            <h2>Grandezas Simples</h2>
+
+                            <h3>Nomenclatura:</h3>
+
+                            <p class="equation">
+                                k: kilo → 10<sup>3</sup><br>
+                                h: hecto → 10<sup>2</sup><br>
+                                da: deca → 10<sup>1</sup>
+                            </p>
+
+                            <p>
+                                Isso serve como abreviação, por exemplo, 1m (1 metro), 1dam (1 decâmetro ou 10 metros), 1hm (1 hectômetro ou 100 metros) e 1km (1 kilômetro ou 1000 metros).
+                            </p>
+
+                            <p class="equation">
+                                d: deci → 10<sup>-1</sup> = <sup>1</sup>&frasl;<sub>10</sub><br>
+                                c: centi → 10<sup>-2</sup> = <sup>1</sup>&frasl;<sub>100</sub><br>
+                                m: mili → 10<sup>-3</sup> = <sup>1</sup>&frasl;<sub>1000</sub>
+                            </p>
+
+                            <p>
+                                Como exemplo, 1dm (1 decímetro ou 0,1 metro), 1cm (1 centímetro ou 0,01 metro) e 1mm (1 milímetro ou 0,001 metro).
+                            </p>
+
+                            <h2>Unidades Quadráticas</h2>
+
+                            <p>
+                                Vamos converter 1cm<sup>2</sup> em m<sup>2</sup>:
+                            </p>
+
+                            <p class="equation">
+                                1cm = 10<sup>-2</sup><br>
+                                (1cm)<sup>2</sup> = (10<sup>-2</sup>m)<sup>2</sup><br>
+                                1<sup>2</sup>cm<sup>2</sup> = 10<sup>-4</sup>m<sup>2</sup><br>
+                                1cm<sup>2</sup> = 10<sup>-4</sup>m<sup>2</sup>
+                            </p>
+
+                            <p>
+                                Ou seja, chegamos que um resultado padrão:
+                            </p>
+
+                            <p class="equation">
+                                m<sup>2</sup> = <sup>cm<sup>2</sup></sup>&frasl;<sub>10<sup>4</sup></sub><br>
+                                ou<br>
+                                m<sup>2</sup> = cm<sup>2</sup> * 0,0001
+                            </p>
+
+                            <p>
+                                A mesma lógica pode ser usada para outras formas de converções quadráticas. Usamos o 1 como base e descobrimos o quanto ele vale para as outras conversões.
+                            </p>
+
+                            <h2>Unidades Cúbicas</h2>
+
+                            <p>
+                                Vamos converter 1mm<sup>3</sup> em m<sup>3</sup>:
+                            </p>
+
+                            <p class="equation">
+                                1mm = 10<sup>-3</sup>m<br>
+                                (1mm)<sup>3</sup> = (10<sup>-3</sup>)<sup>3</sup><br>
+                                1<sup>3</sup>mm<sup>3</sup> = 10<sup>-9</sup>m<sup>3</sup><br>
+                                1mm<sup>3</sup> = 10<sup>-9</sup>m<sup>3</sup>
+                            </p>
+
+                            <p>
+                                Como podemos ver, usamos a mesma lógica de antes, usamos o 1 como base e elevamos ao cubo ao invés de elevar ao quadrado.
+                            </p>
+
+                            <p>
+                                Obtemos então o seguinte resultado:
+                            </p>
+
+                            <p class="equation">
+                                m<sup>3</sup> = <sup>mm<sup>3</sup></sup>&frasl;<sub>10<sup>9</sup></sub><br>
+                                ou<br>
+                                m<sup>3</sup> = mm<sup>3</sup> * 0,000000001
+                            </p>
+
+                            <h3>Observação: 1m<sup>3</sup> (1 metro cúbico) = 10<sup>3</sup>L (1000 litros)</h3>
+
+                            <h2>Exemplos:</h2>
+
+                            <p>
+                                12L para mL:
+                            </p>
+
+                            <p class="equation">
+                                1mL = 10<sup>-3</sup>L<br>
+                                1mL <strong style="color: #00FF00">* 10<sup>3</sup></strong> = 10<sup>-3</sup>L <strong style="color: #00FF00">* 10<sup>3</sup></strong><br>
+                                10<sup>3</sup>mL = 10<sup>(3 - 3)</sup>L<br>
+                                10<sup>3</sup>mL = 10<sup>0</sup>L<br>
+                                10<sup>3</sup>mL = 1L<br>
+                                10<sup>3</sup>mL <strong style="color: #00FF00">* 12</strong> = 1L <strong style="color: #00FF00">* 12</strong>
+                            </p>
+
+                            <p class="equation result">
+                                12L = 12 * 10<sup>3</sup>mL
+                            </p>
+
+                            <p>
+                                4cm<sup>3</sup> para m<sup>3</sup>
+                            </p>
+
+                            <p class="equation">
+                                1cm = 10<sup>-2</sup>m<br>
+                                (1cm)<sup style="color: #00FF00">3</sup> = (10<sup>-2</sup>m)<sup style="color: #00FF00">3</sup><br>
+                                1<sup>3</sup>cm<sup>3</sup> = 10<sup>-6</sup>m<sup>3</sup><br>
+                                1cm<sup>3</sup> = 10<sup>-6</sup>m<sup>3</sup><br>
+                                1cm<sup>3</sup> <strong style="color: #00FF00">* 4</strong> = 10<sup>-6</sup>m<sup>3</sup> <strong style="color: #00FF00">* 4</strong><br>
+                            </p>
+
+                            <p class="equation result">
+                                4cm<sup>3</sup> = 4 * 10<sup>-6</sup>m<sup>3</sup>
+                            </p>
+
+                            <p>
+                                7m<sup>2</sup> para mm<sup>2</sup>
+                            </p>
+
+                            <p class="equation">
+                                1mm = 10<sup>-3</sup>m<br>
+                                1mm <strong style="color: #00FF00">* 10<sup>3</sup></strong> = 10<sup>-3</sup>m <strong style="color: #00FF00">* 10<sup>3</sup></strong><br>
+                                10<sup>3</sup>mm = 10<sup>(3 - 3)</sup>m<br>
+                                10<sup>3</sup>mm = 1m<br>
+                                (10<sup>3</sup>mm)<sup style="color: #00FF00">2</sup> = (1m)<sup style="color: #00FF00">2</sup><br>
+                                10<sup>6</sup>mm<sup>2</sup> = 1<sup>2</sup>m<sup>2</sup><br>
+                                10<sup>6</sup>mm<sup>2</sup> <strong style="color: #00FF00">* 7</strong> = 1m<sup>2</sup> <strong style="color: #00FF00">* 7</strong>
+                            </p>
+
+                            <p class="equation result">
+                                7m<sup>2</sup> = 7 * 10<sup>6</sup>mm<sup>2</sup>
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
