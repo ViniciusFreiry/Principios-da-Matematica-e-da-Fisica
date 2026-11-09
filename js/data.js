@@ -3112,13 +3112,58 @@ const subjects = [
                         title: "Aula 14 — Aplicação: Conversão de Unidades (Grandezas Compostas)",
                         
                         content: `
-                            
+                            <h2>Grandezas Compostas</h2>
+
+                            <h3>Exemplos:</h3>
+
+                            <h3>a) 1<sup>m</sup>&frasl;<sub>s</sub> (1 metro por segundo) para <sup>k</sup>&frasl;<sub>h</sub> (kilômetros por hora):</h3>
+
+                            <p>
+                                Primeiro convertemos metros para kilômetros e segundos para horas:
+                            </p>
+
+                            <p class="equation">
+                                1<sup>m</sup>&frasl;<sub>s</sub> = 1 * <sup>(10<sup>-3</sup>km)</sup>&frasl;<sub>(<sup>1h</sup>&frasl;<sub>3600</sub>)</sub>
+                            </p>
+
+                            <p>
+                                Agora fazemos a divisão:
+                            </p>
+
+                            <p class="equation">
+                                1 * <sup>(10<sup>-3</sup>km)</sup>&frasl;<sub>(<sup>1h</sup>&frasl;<sub>3600</sub>)</sub> = 1 * 10<sup>-3</sup> * <sup>3600</sup>&frasl;<sub>1</sub> * <sup>km</sup>&frasl;<sub>h</sub><br>
+                                = <sup>1</sup>&frasl;<sub>1000</sub> * 3600 * <sup>km</sup>&frasl;<sub>h</sub> = 3,6<sup>km</sup>&frasl;<sub>h</sub>
+                            </p>
+
+                            <p>
+                                Ou seja, 1<sup>m</sup>&frasl;<sub>s</sub> = 3,6<sup>km</sup>&frasl;<sub>h</sub>
+                            </p>
+
+                            <h3>b) 180<sup>cm</sup>&frasl;<sub>min</sub> (180 centímetros por minuto) para <sup>m</sup>&frasl;<sub>s</sub> (metros por segundo):</h3>
+
+                            <p>
+                                Primeiro convertemos centímetros para metros e minutos para segundos:
+                            </p>
+
+                            <p class="equation">
+                                180<sup>cm</sup>&frasl;<sub>min</sub> = 180 * <sup>10<sup>-2</sup>m</sup>&frasl;<sub>60s</sub>
+                            </p>
+
+                            <p>
+                                Agora só precisamos simplificar a equação:
+                            </p>
+
+                            <p class="equation">
+                                180 * <sup>10<sup>-2</sup>m</sup>&frasl;<sub>60s</sub> = 3 * 10<sup>-2</sup> * <sup>m</sup>&frasl;<sub>s</sub><br>
+                                = <sup>3</sup>&frasl;<sub>100</sub> * <sup>m</sup>&frasl;<sub>s</sub> = 0,03<sup>m</sup>&frasl;<sub>s</sub>
+                            </p>
+
+                            <p>
+                                Ou seja, 180<sup>cm</sup>&frasl;<sub>min</sub> = 0,03<sup>m</sup>&frasl;<sub>s</sub>
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     },
 
                     {
