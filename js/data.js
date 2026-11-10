@@ -3171,13 +3171,62 @@ const subjects = [
                         title: "Aula 15 — Potenciação e Radiciação: Resumo Geral",
                         
                         content: `
-                            
+                            <h2>Resumo das Operações</h2>
+
+                            <h3>Adição/Subtração</h3>
+
+                            <p>
+                                + ←inversas→ -
+                            </p>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                7 <strong style="color: #00FF00">+ 3</strong> <strong style="color: #FF0000">- 3</strong> = 7
+                            </p>
+
+                            <h3>Multiplicação/Divisão</h3>
+
+                            <p>
+                                * ←inversas→ /
+                            </p>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                7 <strong style="color: #00FF00">* 3</strong> &nbsp&nbsp&nbsp<br>
+                                <strong style="color: #FF0000">—————</strong> = 7<br>
+                                &nbsp&nbsp<strong style="color: #FF0000">3</strong> &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <h3>Potenciação/Radiciação</h3>
+
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▢<sup><sup>1</sup>&frasl;<sub>n</sub></sup><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp↗<br>
+                                ▢<sup>n</sup> ←inversas<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp↘<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>n</sup>&radic;▢
+                            </p>
+
+                            <p>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #FF0000">(</strong>7<strong style="color: #00FF00"><sup>3</sup></strong><strong style="color: #FF0000">)<sup><sup>1</sup>&frasl;<sub>3</sub></sup></strong> = 7<sup>(<strong style="color: #00FF00">3</strong> * <strong style="color: #FF0000"><sup>1</sup>&frasl;<sub>3</sub></strong>)</sup> = 7
+                            </p>
+
+                            <p class="equation">
+                                <strong style="color: #FF0000"><sup>3</sup>&radic;(</strong>7<strong style="color: #00FF00"><sup>3</sup></strong><strong style="color: #FF0000">)</strong> = 7
+                            </p>
                         `,
 
-                        exercises: [
-                            "",
-                            ""
-                        ]
+                        exercises: []
                     }
                 ]
             },
