@@ -3237,7 +3237,248 @@ const subjects = [
                 description: "Módulo sobre equações e manipulações algébricas.",
 
                 lessons: [
-                    // Adicione as aulas aqui.
+                    {
+                        id: "equations-1",
+                        title: "Aula 01 — Equações do Primeiro Grau e Sistemas Lineares",
+                        
+                        content: `
+                            <h2>Equações</h2>
+
+                            <h3>Latim: Equatione (igualar, pesar)</h3>
+
+                            <p>
+                                Surgem com os egípcios no papiro de Rhind (1650 a.C.)
+                            </p>
+
+                            <p>
+                                Com os árabes (sec. IX) as equações adquirem o formalismo algébrico.
+                            </p>
+
+                            <h2>Equações do Primeiro Grau</h2>
+
+                            <p>
+                                <strong>Grau:</strong> maior potência da variável na equação.<br>
+                                Exemplo:
+                            </p>
+
+                            <p class="equation">
+                                3x<sup>2</sup> + 4x = 0 (2º grau)<br>
+                                2x<sup>3</sup> - x + 7 = 0 (3º grau)<br>
+                                -17x + 5 = 0 (1º grau)<br>
+                                4x<sup>6</sup> - 3x<sup>5</sup> + 1 = 0 (6º grau)
+                            </p>
+
+                            <h3>Regras do jogo para manipulação de equações:</h3>
+
+                            <p>
+                                Noções Comuns:
+                            </p>
+
+                            <p>
+                                - Coisas iguais adicionadas a coisas iguais formam coisas iguais.<br>
+                                - Coisas iguais subtraídas de coisas iguais formam coisas iguais.
+                            </p>
+
+                            <h2>Sistemas Lineares</h2>
+
+                            <h3>Exemplo #01:</h3>
+
+                            <p class="equation">
+                                / 2x + y = 7 (I)<br>
+                                &#92 x - y = 2 (II)
+                            </p>
+
+                            <p>
+                                Caminho 1:
+                            </p>
+
+                            <p class="equation">
+                                x - y = 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x - y + y = 2 + y&nbsp<br>
+                                x = 2 + y &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2x + y = 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2(2 + y) + y = 7 &nbsp<br>
+                                4 + 2y + y = 7 &nbsp&nbsp&nbsp<br>
+                                4 + 3y - 4 = 7 - 4<br>
+                                3y = 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                3y / 3 = 3 / 3 &nbsp&nbsp&nbsp<br>
+                                y = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x - y = 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x - 1 = 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x - 1 + 1 = 2 + 1&nbsp<br>
+                                x = 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Caminho 2:
+                            </p>
+
+                            <p class="equation">
+                                / 2x + y = 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &#92 x - y = 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (2x + y) + (x - y) = (7) + (2)<br>
+                                2x + x + y - y = 7 + 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                3x = 9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                3x / 3 = 9 / 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x = 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2x + y = 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (2 * 3) + y = 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                6 + y = 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                6 + y - 6 = 7 - 6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                y = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+
+                            <h3>Exemplo #02:</h3>
+
+                            <p class="equation">
+                                / 6x - 2y = 4 (I)<br>
+                                &#92 2x - y = 1 (II)
+                            </p>
+
+                            <p class="equation">
+                                / 6x - 2y = 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &#92 2x - y = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                / 6x - 2y = 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &#92 2(2x - y) = 2(1) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                / 6x - 2y = 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                &#92 4x - 2y = 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (6x - 2y) - (4x - 2y) = (4) - (2)<br>
+                                6x - 4x - 2y + 2y = 4 - 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2x = 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2x / 2 = 2 / 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                x = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2x - y = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (2 * 1) - y = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2 - y - 2 = 1 - 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                -y = -1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                -y * (-1) = -1 * (-1) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                y = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-2",
+                        title: "Aula 02 — Interpretação Geométrica do Sistema Linear",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-3",
+                        title: "Aula 03 — Equação do Segundo Grau",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-4",
+                        title: "Aula 04 — Equação do Segundo Grau: Dedução do Bháskara",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-5",
+                        title: "Aula 05 — Exemplos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-6",
+                        title: "Aula 06 — Relações de Girard (Soma e Produto)",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-7",
+                        title: "Aula 07 — Relações de Girard: Exemplos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-8",
+                        title: "Aula 08 — Equação Biquadrada",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-9",
+                        title: "Aula 09 — Outras Equações (Irracionais)",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-10",
+                        title: "Aula 10 — Exemplo 02",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-11",
+                        title: "Aula 11 — Discussão sobre criar raízes em uma equação",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "equations-12",
+                        title: "Aula 12 — Exemplo 03",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    }
                 ]
             },
 
