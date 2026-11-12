@@ -3364,7 +3364,438 @@ const subjects = [
                         title: "Aula 02 — Interpretação Geométrica do Sistema Linear",
                         
                         content: `
-                            
+                            <h2>Interpretação Geométrica</h2>
+
+                            <h3><strong style="color: #00FF00">y</strong> = 2x - 1</h3>
+
+                            <p>
+                                Vamos criar uma tabela com os possíveis valores:
+                            </p>
+
+                            <div class="table-container">
+                                <table class="study-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2" style="color: #00FF00">y</th>
+                                            <th colspan="2">x</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>-1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p>
+                                Vimos que a cada unidade que <i>x</i> aumenta, o <i>y</i> aumenta em duas unidades.
+                            </p>
+
+                            <h3><strong style="color: #FF0000">y</strong> = 6x - 2</h3>
+
+                            <p>
+                                Também vamos criar uma tabela com os possíveis valores:
+                            </p>
+
+                            <div class="table-container">
+                                <table class="study-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2" style="color: #FF0000">y</th>
+                                            <th colspan="2">x</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>-2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p>
+                                Vimos que a cada unidade que <i>x</i> aumenta, o <i>y</i> aumenta em seis unidades.
+                            </p>
+
+                            <p>
+                                Agora vamos adicionar esses resultados em um gráfico. Assim teremos uma representação geométrica.
+                            </p>
+
+                            <div class="graph-container">
+                                <svg
+                                    class="math-graph"
+                                    viewBox="0 0 640 440"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    role="img"
+                                    aria-label="Gráfico de duas retas com pontos para x de zero a quatro e ponto de interseção"
+                                >
+                                    <!-- Grid -->
+                                    <g stroke="#888888" stroke-opacity="0.2" stroke-width="1">
+                                        <path d="
+                                            M70 40 V400 M200 40 V400 M330 40 V400
+                                            M460 40 V400 M590 40 V400
+                                            M70 40 H590 M70 100 H590 M70 160 H590
+                                            M70 220 H590 M70 280 H590 M70 340 H590
+                                            M70 370 H590 M70 400 H590
+                                        "/>
+                                    </g>
+
+                                    <!-- Axes -->
+                                    <g stroke="currentColor" stroke-width="2">
+                                        <path d="M70 370 H600"/>
+                                        <path d="M70 410 V25"/>
+                                    </g>
+
+                                    <!-- Axis arrows -->
+                                    <g fill="currentColor">
+                                        <path d="M600 370 l-9 -5 v10 z"/>
+                                        <path d="M70 25 l-5 9 h10 z"/>
+                                    </g>
+
+                                    <!-- Axis labels -->
+                                    <g fill="currentColor" font-size="13">
+                                        <text x="605" y="389">x</text>
+                                        <text x="83" y="25">y</text>
+
+                                        <text x="65" y="389">0</text>
+                                        <text x="195" y="389">1</text>
+                                        <text x="325" y="389">2</text>
+                                        <text x="455" y="389">3</text>
+                                        <text x="585" y="389">4</text>
+
+                                        <text x="42" y="405">-2</text>
+                                        <text x="42" y="345">2</text>
+                                        <text x="42" y="285">6</text>
+                                        <text x="42" y="225">10</text>
+                                        <text x="42" y="165">14</text>
+                                        <text x="42" y="105">18</text>
+                                        <text x="42" y="45">22</text>
+                                    </g>
+
+                                    <!-- First equation: y = 2x - 1 -->
+                                    <line
+                                        x1="70" y1="385"
+                                        x2="590" y2="265"
+                                        stroke="#00FF00"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Second equation: y = 6x - 2 -->
+                                    <line
+                                        x1="70" y1="400"
+                                        x2="590" y2="40"
+                                        stroke="#FF0000"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Green points -->
+                                    <g fill="#00FF00" stroke="#111111" stroke-width="1.5">
+                                        <circle cx="70" cy="385" r="5"/>
+                                        <circle cx="200" cy="355" r="5"/>
+                                        <circle cx="330" cy="325" r="5"/>
+                                        <circle cx="460" cy="295" r="5"/>
+                                        <circle cx="590" cy="265" r="5"/>
+                                    </g>
+
+                                    <!-- Red points -->
+                                    <g fill="#FF0000" stroke="#111111" stroke-width="1.5">
+                                        <circle cx="70" cy="400" r="5"/>
+                                        <circle cx="200" cy="310" r="5"/>
+                                        <circle cx="330" cy="220" r="5"/>
+                                        <circle cx="460" cy="130" r="5"/>
+                                        <circle cx="590" cy="40" r="5"/>
+                                    </g>
+
+                                    <!-- Intersection guides -->
+                                    <g stroke="#2563EB" stroke-width="1.5" stroke-dasharray="5 5">
+                                        <path d="M102.5 377.5 V370"/>
+                                        <path d="M102.5 377.5 H70"/>
+                                    </g>
+
+                                    <!-- Intersection point -->
+                                    <circle
+                                        cx="102.5"
+                                        cy="377.5"
+                                        r="7"
+                                        fill="#2563EB"
+                                        stroke="white"
+                                        stroke-width="2"
+                                    />
+
+                                    <!-- Intersection label -->
+                                    <text
+                                        x="112"
+                                        y="350"
+                                        fill="currentColor"
+                                        font-size="13"
+                                        font-weight="bold"
+                                    >
+                                        (0,25; -0,5)
+                                    </text>
+                                </svg>
+                            </div>
+
+                            <div class="graph-legend">
+                                <span>
+                                    <span class="legend-color" style="background: #00FF00"></span>
+                                    y = 2x - 1
+                                </span>
+
+                                <span>
+                                    <span class="legend-color" style="background: #FF0000"></span>
+                                    y = 6x - 2
+                                </span>
+
+                                <span>
+                                    <span class="legend-color" style="background: #2563EB"></span>
+                                    Ponto de interseção
+                                </span>
+                            </div>
+
+                            <p>
+                                A solução de um sistema linear é o ponto de encontro das duas retas! 
+                            </p>
+
+                            <p>
+                                Agora vamos para um sistema linear impossível:
+                            </p>
+
+                            <p class="equation">
+                                / 2y + 4x = 10<br>
+                                &#92 2x + y = 4 &nbsp
+                            </p>
+
+                            <p>
+                                Isolando o <i>y</i>:
+                            </p>
+
+                            <p class="equation">
+                                / y = -2x + 5<br>
+                                &#92 y = -2x + 4
+                            </p>
+
+                            <p>
+                                Note que <i>x</i> em ambas as equações tem o mesmo multiplicador (-2), isso implica no quanto a reta ficará inclinada.
+                            </p>
+
+                            <h3><strong style="color: #00FF00">y</strong> = -2x + 5</h3>
+
+                            <div class="table-container">
+                                <table class="study-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2" style="color: #00FF00">y</th>
+                                            <th colspan="2">x</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-1</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-3</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3><strong style="color: #FF0000">y</strong> = -2x + 4</h3>
+
+                            <div class="table-container">
+                                <table class="study-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2" style="color: #FF0000">y</th>
+                                            <th colspan="2">x</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-4</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="graph-container">
+                                <svg
+                                    class="math-graph"
+                                    viewBox="0 0 640 440"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    role="img"
+                                    aria-label="Gráfico de duas retas paralelas, sem ponto de interseção"
+                                >
+                                    <!-- Grid -->
+                                    <g stroke="#888888" stroke-opacity="0.2" stroke-width="1">
+                                        <path d="
+                                            M70 40 V400 M200 40 V400 M330 40 V400
+                                            M460 40 V400 M590 40 V400
+
+                                            M70 40 H590 M70 70 H590 M70 100 H590
+                                            M70 130 H590 M70 160 H590 M70 190 H590
+                                            M70 220 H590 M70 250 H590 M70 280 H590
+                                            M70 310 H590 M70 340 H590 M70 370 H590
+                                        "/>
+                                    </g>
+
+                                    <!-- Axes -->
+                                    <g stroke="currentColor" stroke-width="2">
+                                        <path d="M70 220 H600"/>
+                                        <path d="M70 410 V25"/>
+                                    </g>
+
+                                    <!-- Axis arrows -->
+                                    <g fill="currentColor">
+                                        <path d="M600 220 l-9 -5 v10 z"/>
+                                        <path d="M70 25 l-5 9 h10 z"/>
+                                    </g>
+
+                                    <!-- Axis labels -->
+                                    <g fill="currentColor" font-size="13">
+                                        <text x="605" y="238">x</text>
+                                        <text x="83" y="25">y</text>
+
+                                        <text x="65" y="238">0</text>
+                                        <text x="195" y="238">1</text>
+                                        <text x="325" y="238">2</text>
+                                        <text x="455" y="238">3</text>
+                                        <text x="585" y="238">4</text>
+
+                                        <text x="42" y="44">6</text>
+                                        <text x="42" y="74">5</text>
+                                        <text x="42" y="104">4</text>
+                                        <text x="42" y="134">3</text>
+                                        <text x="42" y="164">2</text>
+                                        <text x="42" y="194">1</text>
+                                        <text x="42" y="254">-1</text>
+                                        <text x="42" y="284">-2</text>
+                                        <text x="42" y="314">-3</text>
+                                        <text x="42" y="344">-4</text>
+                                        <text x="42" y="374">-5</text>
+                                    </g>
+
+                                    <!-- First equation: y = -2x + 5 -->
+                                    <line
+                                        x1="70" y1="70"
+                                        x2="590" y2="310"
+                                        stroke="#00FF00"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Second equation: y = -2x + 4 -->
+                                    <line
+                                        x1="70" y1="100"
+                                        x2="590" y2="340"
+                                        stroke="#FF0000"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Green points -->
+                                    <g fill="#00FF00" stroke="#111111" stroke-width="1.5">
+                                        <circle cx="70" cy="70" r="5"/>
+                                        <circle cx="200" cy="130" r="5"/>
+                                        <circle cx="330" cy="190" r="5"/>
+                                        <circle cx="460" cy="250" r="5"/>
+                                        <circle cx="590" cy="310" r="5"/>
+                                    </g>
+
+                                    <!-- Red points -->
+                                    <g fill="#FF0000" stroke="#111111" stroke-width="1.5">
+                                        <circle cx="70" cy="100" r="5"/>
+                                        <circle cx="200" cy="160" r="5"/>
+                                        <circle cx="330" cy="220" r="5"/>
+                                        <circle cx="460" cy="280" r="5"/>
+                                        <circle cx="590" cy="340" r="5"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="graph-legend">
+                                <span>
+                                    <span class="legend-color" style="background: #00FF00"></span>
+                                    y = -2x + 5
+                                </span>
+
+                                <span>
+                                    <span class="legend-color" style="background: #FF0000"></span>
+                                    y = -2x + 4
+                                </span>
+                            </div>
+
+                            <p>
+                                Como as retas têm a mesma inclinação, ou seja, o <i>x</i> tem o mesmo multiplicador nas duas equações, elas nunca se encontrarão.<br>
+                                Isto é um sistema linear sem ponto de intercessão, sendo assim, o sistema é impossível e não tem resposta correta.
+                            </p>
                         `,
 
                         exercises: []

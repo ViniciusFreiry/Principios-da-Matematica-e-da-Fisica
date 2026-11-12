@@ -757,3 +757,44 @@ button {
 .study-table td:first-child {
     font-weight: 700;
 }
+
+
+.graph-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 24px auto;
+    padding: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.math-graph {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.graph-legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 16px 0;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.graph-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
