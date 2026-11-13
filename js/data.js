@@ -3806,7 +3806,69 @@ const subjects = [
                         title: "Aula 03 — Equação do Segundo Grau",
                         
                         content: `
-                            
+                            <h2>Equação do Segundo Grau</h2>
+
+                            <h3><i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> = 0 &nbsp&nbsp→ &nbsp&nbsp(a ≠ 0)</h3>
+
+                            <p>
+                                As soluções da equação do 2º grau são dadas pela fórmula de Bháskara:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp-b ± &radic;Δ<br>
+                                x = ———————<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2a &nbsp
+                            </p>
+
+                            <p>
+                                Em que Δ é o discriminante da equação, dado por: Δ = <i>b</i><sup>2</sup> - 4<i>ac</i>
+                            </p>
+
+                            <h3>Exemplo: <i>x</i><sup>2</sup> + <i>x</i> - 2 = 0</h3>
+
+                            <p>
+                                Botando de uma maneira mais fácil de visualizar:
+                            </p>
+
+                            <p class="equation">
+                                1x<sup>2</sup> + 1x - 2 = 0
+                            </p>
+
+                            <p>
+                                Agora aplicamos o Bháskara com a seguinte estrutura:
+                            </p>
+
+                            <p class="equation">
+                                a = 1&nbsp<br>
+                                b = 1&nbsp<br>
+                                c = -2
+                            </p>
+
+                            <p>
+                                Na equação:
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp-1 ± &radic;[1<sup>2</sup> - 4 * 1 * (-2)] &nbsp&nbsp-1 ± &radic;(1 + 8)<br>
+                                x = ————————————————————————— = —————————————<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 * 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p class="equation">
+                                &nbsp&nbsp&nbsp&nbsp-1 ± &radic;9 &nbsp&nbsp-1 ± 3<br>
+                                x = ——————— = ——————<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2 &nbsp
+                            </p>
+
+                            <p>
+                                A partir daí, podemos ter duas possibilidades de resposta:
+                            </p>
+
+                            <p class="equation">
+                                x<sub>1</sub> = <sup>(-1 + 3)</sup>&frasl;<sub>2</sub> = <sup>2</sup>&frasl;<sub>2</sub> = 1 &nbsp<br>
+                                <br>
+                                x<sub>2</sub> = <sup>(-1 - 3)</sup>&frasl;<sub>2</sub> = <sup>-4</sup>&frasl;<sub>2</sub> = -2
+                            </p>
                         `,
 
                         exercises: []
