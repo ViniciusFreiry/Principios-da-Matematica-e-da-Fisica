@@ -3976,7 +3976,105 @@ const subjects = [
                         title: "Aula 05 — Exemplos",
                         
                         content: `
-                            
+                            <h2>Exemplos:</h2>
+
+                            <h3>a) <i>x</i><sup>2</sup> - 6<i>x</i> + 9 = 0</h3>
+
+                            <p>
+                                Podemos fazer utilizando a equação de Bháskara:
+                            </p>
+
+                            <p class="equation">
+                                Δ = (-6)<sup>2</sup> - 4 * 1 * 9 = 36 - 36 = 0<br>
+                                ↓<br>
+                                &radic;Δ = &radic;0 = 0<br>
+                                ↓<br>
+                                x = <sup>(6 ± 0)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>6</sup>&frasl;<sub>2</sub> = 3
+                            </p>
+
+                            <p>
+                                Mas também podemos fazer utilizando produtos notáveis:
+                            </p>
+
+                            <p class="equation">
+                                (x - y)<sup>2</sup> = x<sup>2</sup> - 2xy + y<sup>2</sup> = x<sup>2</sup> - 6x + 9<br>
+                                ↓<br>
+                                -6x = -2xy &nbsp&nbspe &nbsp&nbsp9 = y<sup>2</sup><br>
+                                ↓<br>
+                                y = 3<br>
+                                ↓<br>
+                                (x - 3)<sup>2</sup> = x<sup>2</sup> - 6x + 9<br>
+                                ↓<br>
+                                (x - 3)<sup>2</sup> = 0<br>
+                                ↓<br>
+                                x - 3 = 0<br>
+                                ↓<br>
+                                x = 3
+                            </p>
+
+                            <h3>b) <i>x</i><sup>2</sup> - 15<i>x</i> = 0</h3>
+
+                            <p>
+                                Podemos fazer utilizando a equação de Bháskara:
+                            </p>
+
+                            <p class="equation">
+                                Δ = (-15)<sup>2</sup> - 4 * 1 * 0 = 225<br>
+                                ↓<br>
+                                &radic;Δ = &radic;225 = 15<br>
+                                ↓<br>
+                                x<sub>1</sub> = <sup>(15 + 15)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>30</sup>&frasl;<sub>2</sub> = 15<br>
+                                x<sub>2</sub> = <sup>(15 - 15)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>0</sup>&frasl;<sub>2</sub> = 0
+                            </p>
+
+                            <p>
+                                Mas podemos também botar o <i>x</i> em evidência:
+                            </p>
+
+                            <p class="equation">
+                                x<sup>2</sup> - 15x = x(x - 15) = 0<br>
+                                ↓<br>
+                                (x - 15) = 0 &nbsp&nbspe &nbsp&nbspx = 0<br>
+                                ↓<br>
+                                x<sub>1</sub> = 15<br>
+                                x<sub>2</sub> = 0
+                            </p>
+
+                            <h3>c) <i>x</i><sup>2</sup> - 10<i>x</i> + 24 = 0</h3>
+
+                            <p>
+                                Podemos fazer utilizando a equação de Bháskara:
+                            </p>
+
+                            <p class="equation">
+                                Δ = (-10)<sup>2</sup> - 4 * 1 * 24 = 100 - 96 = 4<br>
+                                ↓<br>
+                                &radic;Δ = &radic;4 = 2<br>
+                                ↓<br>
+                                x<sub>1</sub> = <sup>(10 + 2)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>12</sup>&frasl;<sub>2</sub> = 6<br>
+                                x<sub>2</sub> = <sup>(10 - 2)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>8</sup>&frasl;<sub>2</sub> = 4
+                            </p>
+
+                            <p>
+                                Mas podemos usar um produto notável:
+                            </p>
+
+                            <p class="equation">
+                                (x - ▢)<sup>2</sup> = x<sup>2</sup> - 2 * ▢ * x + ▢<sup>2</sup><br>
+                                ↓<br>
+                                (x - 5)<sup>2</sup> = x<sup>2</sup> - 10x + 25<br>
+                                ↓<br>
+                                x<sup>2</sup> - 10x + 24 = 0<br>
+                                ↓<br>
+                                x<sup>2</sup> - 10x + 24 <span style="color: #00FF00">+ 1</span> = 0 <span style="color: #00FF00">+ 1</span><br>
+                                ↓<br>
+                                (x - 5)<sup>2</sup> = 1<br>
+                                ↓<br>
+                                (x - 5) = 1 &nbsp&nbspe &nbsp&nbsp(x - 5) = -1<br>
+                                ↓<br>
+                                x<sub>1</sub> = 1 + 5 = 6<br>
+                                x<sub>2</sub> = -1 + 5 = 4
+                            </p>
                         `,
 
                         exercises: []
