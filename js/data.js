@@ -3879,7 +3879,93 @@ const subjects = [
                         title: "Aula 04 — Equação do Segundo Grau: Dedução do Bháskara",
                         
                         content: `
-                            
+                            <h2>A Dedução da Equação de Bháskara</h2>
+
+                            <p>
+                                Vamos usar a seguinte equação: <i>ax</i><sup>2</sup> + <i>bx</i> + c = 0<br>
+                                Queremos primeiro isolar o <i>x</i>, primeiro dividimos a equação por <i>a</i>:
+                            </p>
+
+                            <p class="equation">
+                                ax<sup>2</sup> + bx + c = 0<br>
+                                ↓<br>
+                                ÷a<br>
+                                ↓<br>
+                                x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x + <sup>c</sup>&frasl;<sub>a</sub> = 0
+                            </p>
+
+                            <p>
+                                Agora vamos transformar a equação em um produto notável.<br>
+                                Sabemos que: (<i>x</i> + ▢)<sup>2</sup> = <i>x</i><sup>2</sup> + 2 * ▢ * <i>x</i> + ▢<sup>2</sup><br>
+                                Então vamos tentar fazer a nossa equação ter esse formato:
+                            </p>
+
+                            <p class="equation">
+                                x<sup>2</sup> + <span style="color: #FF0000">(<sup>b</sup>&frasl;<sub>a</sub>)</span>x + <span style="color: #00FF00"><sup>c</sup>&frasl;<sub>a</sub></span> = 0<br>
+                                ↓<br>
+                                x<sup>2</sup> + <span style="color: #FF0000">2 * ▢</span> * x + <span style="color: #00FF00">▢<sup>2</sup></span> = 0<br>
+                                ↓<br>
+                                <sup>b</sup>&frasl;<sub>a</sub> = 2 * ▢<br>
+                                ↓<br>
+                                ▢ = <sup>b</sup>&frasl;<sub>2a</sub>
+                            </p>
+
+                            <p>
+                                Agora podemos fazer o (<i>x</i> + ▢)<sup>2</sup>:
+                            </p>
+
+                            <p class="equation">
+                                (x + <sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup> = x<sup>2</sup> + <span style="color: #FF0000">2 *</span> <sup>b</sup>&frasl;<sub><span style="color: #FF0000">2</span>a</sub> * x + (<sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup><br>
+                                ↓<br>
+                                (x + <sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup> = x<sup>2</sup> + <sup>b</sup>&frasl;<sub>a</sub> + (<sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup>
+                            </p>
+
+                            <p>
+                                Temos que transformar a nossa equação inicial neste reultado que obtemos:
+                            </p>
+
+                            <p class="equation">
+                                x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x + <sup>c</sup>&frasl;<sub>a</sub> = 0<br>
+                                ↓<br>
+                                x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x + <sup>c</sup>&frasl;<sub>a</sub> <span style="color: #FF0000">- <sup>c</sup>&frasl;<sub>a</sub></span> = 0 <span style="color: #FF0000">- <sup>c</sup>&frasl;<sub>a</sub></span><br>
+                                ↓<br>
+                                x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x = -<sup>c</sup>&frasl;<sub>a</sub><br>
+                                ↓<br>
+                                x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x + <span style="color: #00FF00">(<sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup></span> = <span style="color: #00FF00">(<sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup></span> - <sup>c</sup>&frasl;<sub>a</sub><br>
+                                ↓<br>
+                                x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x + (<sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup> = <sup>b<sup>2</sup></sup>&frasl;<sub>4a<sup>2</sup></sub> - <sup>c</sup>&frasl;<sub>a</sub>
+                            </p>
+
+                            <p>
+                                Agora podemos simplificar o nosso lado esquedo da equação com o nosso produto notável que descobrimos antes:
+                            </p>
+
+                            <p class="equation">
+                                <span style="color: #00FF00">x<sup>2</sup> + (<sup>b</sup>&frasl;<sub>a</sub>)x + (<sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup></span> = <sup>b<sup>2</sup></sup>&frasl;<sub>4a<sup>2</sup></sub> - <sup>c</sup>&frasl;<sub>a</sub><br>
+                                ↓<br>
+                                <span style="color: #00FF00">(x + <sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup></span> = <sup>b<sup>2</sup></sup>&frasl;<sub>4a<sup>2</sup></sub> - <sup>(c <span style="color: #FF0000">* 4a</span>)</sup>&frasl;<sub>(a <span style="color: #FF0000">* 4a</span>)</sub><br>
+                                ↓<br>
+                                (x + <sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup> = <sup>(b<sup>2</sup> - 4ac)</sup>&frasl;<sub>4a<sup>2</sup></sub>
+                            </p>
+
+                            <p>
+                                Perceba que na parte direita da equação nós temos "<i>b</i><sup>2</sup> - 4<i>ac</i>" que é justamente o Δ (delta) da Fórmula de Bháskara.<br>
+                                Podemos a partir daí, tirar a raiz quadrada dos dois lados:
+                            </p>
+
+                            <p class="equation">
+                                &radic;[(x + <sup>b</sup>&frasl;<sub>2a</sub>)<sup>2</sup>] = <sup>&radic;(b<sup>2</sup> - 4ac)</sup>&frasl;<sub>&radic;(4a<sup>2</sup>)</sub><br>
+                                ↓<br>
+                                x + <sup>b</sup>&frasl;<sub>2a</sub> = <sup>&radic;(b<sup>2</sup> - 4ac)</sup>&frasl;<sub>2a</sub><br>
+                                ↓<br>
+                                x + <sup>b</sup>&frasl;<sub>2a</sub> <span style="color: #FF0000">- <sup>b</sup>&frasl;<sub>2a</sub></span> = <sup>&radic;(b<sup>2</sup> - 4ac)</sup>&frasl;<sub>2a</sub> <span style="color: #FF0000">- <sup>b</sup>&frasl;<sub>2a</sub></span><br>
+                                ↓<br>
+                                x = <sup>[-b ± &radic;(b<sup>2</sup> - 4ac)]</sup>&frasl;<sub>2a</sub>
+                            </p>
+
+                            <p>
+                                E depois desse longo caminho, chegamos a nossa conhecida Fórmula de Bháskara.
+                            </p>
                         `,
 
                         exercises: []
