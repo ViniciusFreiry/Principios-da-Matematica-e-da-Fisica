@@ -4085,7 +4085,63 @@ const subjects = [
                         title: "Aula 06 — Relações de Girard (Soma e Produto)",
                         
                         content: `
-                            
+                            <h2>Relações de Girard</h2>
+
+                            <h3><i>ax</i><sup>2</sup> + <i>bx</i> + c = 0</h3>
+
+                            <p>
+                                a) Soma das raízes da equação do 2º grau:
+                            </p>
+
+                            <p class="equation">
+                                S = x<sub>1</sub> + x<sub>2</sub> = <sup>(-b + &radic;Δ - b - &radic;Δ)</sup>&frasl;<sub>2a</sub> = <sup>-2b</sup>&frasl;<sub>2a</sub> = <sup>-b</sup>&frasl;<sub>a</sub>
+                            </p>
+
+                            <p class="equation result">
+                                S = <sup>-b</sup>&frasl;<sub>a</sub>
+                            </p>
+
+                            <p>
+                                b) Produto das raízes da equação do 2º grau:
+                            </p>
+
+                            <p class="equation">
+                                P = x<sub>1</sub> * x<sub>2</sub> = <sup>(-b + &radic;Δ)</sup>&frasl;<sub>2a</sub> * <sup>(-b - &radic;Δ)</sup>&frasl;<sub>2a</sub><br>
+                                P = <sup>[(&radic;Δ - b) * (-1) * (&radic;Δ + b)]</sup>&frasl;<sub>4a<sup>2</sup></sub> = <sup>-(Δ - b<sup>2</sup>)</sup>&frasl;<sub>4a<sup>2</sup></sub><br>
+                                P = <sup>-(b<sup>2</sup> - 4ac - b<sup>2</sup>)</sup>&frasl;<sub>4a<sup>2</sup></sub> = <sup>4ac</sup>&frasl;<sub>4a<sup>2</sup></sub> = <sup>c</sup>&frasl;<sub>a</sub>
+                            </p>
+
+                            <p class="equation result">
+                                P = <sup>c</sup>&frasl;<sub>a</sub>
+                            </p>
+
+                            <h3>Exemplo:</h3>
+
+                            <p>
+                                <i>x</i><sup>2</sup> - 7<i>x</i> + 10 = 0
+                            </p>
+
+                            <p class="equation result">
+                                S = <sup>7</sup>&frasl;<sub>1</sub> = 7
+                            </p>
+                        
+                            <p class="equation result">
+                                P = <sup>10</sup>&frasl;<sub>1</sub> = 10
+                            </p>
+
+                            <p class="equation">
+                                x<sub>1</sub> + x<sub>2</sub> = 7<br>
+                                x<sub>1</sub> * x<sub>2</sub> = 10
+                            </p>
+
+                            <p>
+                                A partir daí já podemos presumir que <i>x</i><sub>1</sub> = 2 e que <i>x</i><sub>2</sub> = 5:
+                            </p>
+
+                            <p class="equation">
+                                x<sub>1</sub> + x<sub>2</sub> = 2 + 5 = 7<br>
+                                x<sub>1</sub> * x<sub>2</sub> = 2 * 5 = 10
+                            </p>
                         `,
 
                         exercises: []
