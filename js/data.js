@@ -4152,7 +4152,43 @@ const subjects = [
                         title: "Aula 07 — Relações de Girard: Exemplos",
                         
                         content: `
-                            
+                            <h2>Exemplo:</h2>
+
+                            <p>
+                                <strong>(Fuvest)</strong> Se <i>m</i> e <i>n</i> são raízes de <strong><i>x</i><sup>2</sup> - 6<i>x</i> + 10 = 0</strong>, então <strong><sup>1</sup>&frasl;<sub>m</sub> + <sup>1</sup>&frasl;<sub>n</sub></strong> vale:<br>
+                                <br>
+                                a) 6<br>
+                                b) 2<br>
+                                c) 1<br>
+                                d) <sup>3</sup>&frasl;<sub>5</sub><br>
+                                e) <sup>1</sup>&frasl;<sub>6</sub>
+                            </p>
+
+                            <h3>Resolução:</h3>
+
+                            <p class="equation">
+                                1 &nbsp&nbsp1 &nbsp&nbsp1 * n &nbsp&nbsp1 * m &nbsp&nbspm + n<br>
+                                — + — = ————— + ————— = —————<br>
+                                m &nbsp&nbspn &nbsp&nbspm * n &nbsp&nbspn * m &nbsp&nbspm * n
+                            </p>
+
+                            <p class="equation result">
+                                m + n = <sup>-b</sup>&frasl;<sub>a</sub> = <sup>-(-6)</sup>&frasl;<sub>1</sub> = 6
+                            </p>
+
+                            <p class="equation result">
+                                m * n = <sup>c</sup>&frasl;<sub>a</sub> = <sup>10</sup>&frasl;<sub>1</sub> = 10
+                            </p>
+
+                            <p class="equation">
+                                m + n &nbsp&nbsp6 &nbsp&nbsp&nbsp3<br>
+                                ————— = —— = —<br>
+                                m * n &nbsp&nbsp10 &nbsp&nbsp5
+                            </p>
+
+                            <p>
+                                Resposta: "d) <sup>3</sup>&frasl;<sub>5</sub>"
+                            </p>
                         `,
 
                         exercises: []
