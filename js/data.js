@@ -4199,7 +4199,68 @@ const subjects = [
                         title: "Aula 08 — Equação Biquadrada",
                         
                         content: `
-                            
+                            <h2>Equação Biquadrada</h2>
+
+                            <h3>Exemplo:</h3>
+
+                            <p>
+                                <i>x</i><sup>4</sup> - 13<i>x</i><sup>2</sup> + 36 = 0
+                            </p>
+
+                            <p>
+                                Podemos converter ela em uma equação do segundo grau:
+                            </p>
+
+                            <p class="equation">
+                                x<sup>2</sup> = y<br>
+                                <span style="color: #00FF00">(</span>x<sup>2</sup><span style="color: #00FF00">)<sup>2</sup></span> = <span style="color: #00FF00">(</span>y<span style="color: #00FF00">)<sup>2</sup></span><br>
+                                x<sup>4</sup> = y<sup>2</sup>
+                            </p>
+
+                            <p class="equation">
+                                x<sup>4</sup> - 13x<sup>2</sup> + 36 = 0<br>
+                                ↓<br>
+                                y<sup>2</sup> - 13y + 36 = 0
+                            </p>
+
+                            <p>
+                                Agora resolvemos a equação <i>y</i><sup>2</sup> - 13<i>y</i> + 36 = 0:
+                            </p>
+
+                            <p class="equation">
+                                Δ = (-13)<sup>2</sup> - 4 * 1 * 36 = 169 - 144 = 25<br>
+                                &radic;Δ = &radic;25 = 5
+                            </p>
+
+                            <p class="equation result">
+                                y<sub>1</sub> = <sup>(13 + 5)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>18</sup>&frasl;<sub>2</sub> = 9<br>
+                                y<sub>2</sub> = <sup>(13 - 5)</sup>&frasl;<sub>(2 * 1)</sub> = <sup>8</sup>&frasl;<sub>2</sub> = 4
+                            </p>
+
+                            <p>
+                                Descobrimos o valor de <i>y</i>, porém, <i>y</i> = <i>x</i><sup>2</sup>, então:
+                            </p>
+
+                            <p class="equation">
+                                y<sub>1</sub> = 9 = x<sup>2</sup><br>
+                                x<sub>1</sub> = 3<br>
+                                x<sub>2</sub> = -3<br>
+                                ↓<br>
+                                y<sub>2</sub> = 4 = x<sup>2</sup><br>
+                                x<sub>3</sub> = 2<br>
+                                x<sub>4</sub> = -2
+                            </p>
+
+                            <p>
+                                Assim conseguimos os 4 valores que satisfazem  equação <i>x</i><sup>4</sup> - 13<i>x</i><sup>2</sup> + 36 = 0:
+                            </p>
+
+                            <p class="equation result">
+                                x<sub>1</sub> = 3<br>
+                                x<sub>2</sub> = -3<br>
+                                x<sub>3</sub> = 2<br>
+                                x<sub>4</sub> = -2
+                            </p>
                         `,
 
                         exercises: []
