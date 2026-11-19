@@ -4273,10 +4273,10 @@ const subjects = [
                         content: `
                             <h2>Equações Irracionais</h2>
 
-                            <h3>Exemplos</h3>
+                            <h3>Exemplo</h3>
 
                             <p>
-                                a) &radic;(<i>x</i> - 5) - 4 = 0
+                                &radic;(<i>x</i> - 5) - 4 = 0
                             </p>
 
                             <p>
@@ -4359,7 +4359,83 @@ const subjects = [
                         title: "Aula 10 — Exemplo 02",
                         
                         content: `
-                            
+                            <h3>Exemplo</h3>
+
+                            <p>
+                                &radic;(<i>x</i> + 4) - 2 = x
+                            </p>
+
+                            <p>
+                                Começamos novamente isolando a raiz de um lado:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x + 4) - 2 = x<br>
+                                ↓<br>
+                                &radic;(x + 4) - 2 <span style="color: #00FF00">+ 2</span> = x <span style="color: #00FF00">+ 2</span><br>
+                                ↓<br>
+                                &radic;(x + 4) = x + 2
+                            </p>
+
+                            <p>
+                                Agora elevamos os dois lados ao quadrado também:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x + 4) = x + 2<br>
+                                ↓<br>
+                                <span style="color: #00FF00">[</span>&radic;(x + 4)<span style="color: #00FF00">]<sup>2</sup></span> = <span style="color: #00FF00">(</span>x + 2<span style="color: #00FF00">)<sup>2</sup></span><br>
+                                ↓<br>
+                                x + 4 = x<sup>2</sup> + 4x + 4<br>
+                                ↓<br>
+                                x + 4 <span style="color: #FF0000">- x - 4</span> = x<sup>2</sup> + 4x + 4 <span style="color: #FF0000">- x - 4</span><br>
+                                ↓<br>
+                                0 = x<sup>2</sup> + 3x<br>
+                            </p>
+
+                            <p>
+                                Podemos assim aplicar a distributiva:
+                            </p>
+
+                            <p class="equation">
+                                0 = x<sup>2</sup> + 3x<br>
+                                ↓<br>
+                                0 = x(x + 3)
+                            </p>
+
+                            <p>
+                                Com isso já sabemos qual os possíveis valores de <i>x</i>:
+                            </p>
+
+                            <p class="equation">
+                                x(x + 3) = 0<br>
+                                ↓<br>
+                                x<sub>1</sub> = 0<br>
+                                x<sub>2</sub> = 0 - 3 = -3
+                            </p>
+
+                            <p>
+                                Com os possíveis resultados em mente, temos que testá-los na equação inicial:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x<sub>1</sub> + 4) - 2 = x<sub>1</sub><br>
+                                &radic;(0 + 4) - 2 = 0 &nbsp<br>
+                                &radic;4 - 2 = 0 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                2 - 2 = 0 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x<sub>2</sub> + 4) - 2 = x<sub>2</sub><br>
+                                &radic;(-3 + 4) - 2 = -3<br>
+                                &radic;1 - 2 = -3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                1 - 2 = -3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                <span style="color: #FF0000">-1 ≠ -3</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Obviamente -1 é diferente de -3, então o -3 não é uma resposta válida, nos deixa apenas com o 0 como resposta correta.
+                            </p>
                         `,
 
                         exercises: []
