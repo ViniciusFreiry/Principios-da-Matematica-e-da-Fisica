@@ -4271,7 +4271,84 @@ const subjects = [
                         title: "Aula 09 — Outras Equações (Irracionais)",
                         
                         content: `
-                            
+                            <h2>Equações Irracionais</h2>
+
+                            <h3>Exemplos</h3>
+
+                            <p>
+                                a) &radic;(<i>x</i> - 5) - 4 = 0
+                            </p>
+
+                            <p>
+                                O primeiro passo é isolar a raiz:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x - 5) - 4 = 0<br>
+                                ↓<br>
+                                &radic;(x - 5) - 4 <span style="color: #00FF00">+ 4</span> = 0 <span style="color: #00FF00">+ 4</span><br>
+                                ↓<br>
+                                &radic;(x - 5) = 4
+                            </p>
+
+                            <p>
+                                Assim podemos elevar os dois lados ao quadrado:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x - 5) = 4<br>
+                                ↓<br>
+                                <span style="color: #00FF00">[</span>&radic;(x - 5)<span style="color: #00FF00">]<sup>2</sup></span> = 4<span style="color: #00FF00"><sup>2</sup></span><br>
+                                ↓<br>
+                                x - 5 = ±16
+                            </p>
+
+                            <p>
+                                Depois, basta resolver a equação normalmente:
+                            </p>
+
+                            <p class="equation">
+                                x - 5 = ±16<br>
+                                ↓<br>
+                                x - 5 <span style="color: #00FF00">+ 5</span> = ±16 <span style="color: #00FF00">+ 5</span><br>
+                                ↓<br>
+                                x = 5 ± 16
+                            </p>
+
+                            <p class="equation result">
+                                x<sub>1</sub> = 5 + 16 = 21<br>
+                                x<sub>2</sub> = 5 - 16 = -11
+                            </p>
+
+                            <p>
+                                Com essas duas respostas precisamos ainda validar elas na equação original:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x<sub>1</sub> - 5) - 4 = 0<br>
+                                &radic;(21 - 5) - 4 = 0<br>
+                                &radic;16 - 4 = 0 &nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                4 - 4 = 0 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x<sub>2</sub> - 5) - 4 = 0&nbsp<br>
+                                &radic;(-11 - 5) - 4 = 0<br>
+                                <span style="color: #FF0000">&radic;(-16)</span> - 4 = 0 &nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Neste segundo caso chegamos em &radic;(-16), um valor que não existe. Não um único valor que elevado ao quadrado resulte em -16 (pelo menos não no campo dos números reais).
+                            </p>
+
+                            <p class="equation result">
+                                4<sup>2</sup> = 16<br>
+                                (-4)<sup>2</sup> = 16
+                            </p>
+
+                            <p>
+                                Logo, nossa única resposta para este problema é o <i>x</i><sub>1</sub>, ou seja, 21.
+                            </p>
                         `,
 
                         exercises: []
