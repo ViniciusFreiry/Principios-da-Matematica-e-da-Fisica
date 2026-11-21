@@ -4362,7 +4362,7 @@ const subjects = [
                             <h3>Exemplo</h3>
 
                             <p>
-                                &radic;(<i>x</i> + 4) - 2 = x
+                                &radic;(<i>x</i> + 4) - 2 = <i>x</i>
                             </p>
 
                             <p>
@@ -4446,7 +4446,52 @@ const subjects = [
                         title: "Aula 11 — Discussão sobre criar raízes em uma equação",
                         
                         content: `
-                            
+                            <h3>Cuidado ao criar raízes nas manipulações!</h3>
+
+                            <p>
+                                Na aula passada resolvemos a equação: &radic;(<i>x</i> + 4) - 2 = <i>x</i><br>
+                                Vimos que ela tem apenas uma resposta possível, o zero, mas também chegamos em uma raiz intrusa, o -3.
+                            </p>
+
+                            <p>
+                                Na etapa &radic;(<i>x</i> + 4) = <i>x</i> + 2, o <i>x</i> = -3 ainda não é válido:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x + 4) = x + 2 &nbsp<br>
+                                &radic;(-3 + 4) ≠ -3 + 2<br>
+                                &radic;1 ≠ -1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                1 ≠ -1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                            </p>
+
+                            <p>
+                                Mas quando elevamos os dois lados ao quadrado o -3 se torna possível:
+                            </p>
+
+                            <p class="equation">
+                                [&radic;(x + 4)]<sup>2</sup> = (x + 2)<sup>2</sup> &nbsp<br>
+                                [&radic;(-3 + 4)]<sup>2</sup> = (-3 + 2)<sup>2</sup><br>
+                                (&radic;1)<sup>2</sup> = (-1)<sup>2</sup> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                (1)<sup>2</sup> = (-1)<sup>2</sup> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                1 = 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Quando elevamos os dois lados ao quadrado essa ambiguidade pode aparecer. Olhe o (<i>x</i> + 2)<sup>2</sup>:
+                            </p>
+
+                            <p class="equation">
+                                (x + 2)<sup>2</sup> = [(-1) * (x + 2)]<sup>2</sup><br>
+                                (x + 2)<sup>2</sup> = (-1)<sup>2</sup> * (x + 2)<sup>2</sup>&nbsp<br>
+                                (x + 2)<sup>2</sup> = 1 * (x + 2)<sup>2</sup> &nbsp&nbsp&nbsp&nbsp<br>
+                                (x + 2)<sup>2</sup> = (x + 2)<sup>2</sup> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Veja que mesmo multiplicando o (<i>x</i> + 2) por -1 antes de elevar ele ao quadrado não temos alteração no valor.<br>
+                                Quando elevamos 3 ao quadrado por exemplo, teremos 9, mas se elevarmos -3 ao quadrado também teremos 9, ou seja, quando elevamos algo ao quadrado sempre teremos duas opções que vão satisfazer aquele resultado.<br>
+                                Por isso é importante testar as raízes quando fizermos uma elevação de índice par.
+                            </p>
                         `,
 
                         exercises: []
