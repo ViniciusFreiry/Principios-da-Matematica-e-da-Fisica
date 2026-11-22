@@ -4502,7 +4502,93 @@ const subjects = [
                         title: "Aula 12 — Exemplo 03",
                         
                         content: `
-                            
+                            <h3>Exemplo</h3>
+
+                            <p>
+                                &radic;<i>x</i> = &radic;(<i>x</i> - 5) + 1
+                            </p>
+
+                            <p>
+                                Vamos primeiro subtrair 1 de cada lado:
+                            </p>
+
+                            <p class="equation">
+                                &radic;x = &radic;(x - 5) + 1<br>
+                                ↓<br>
+                                &radic;(x) <span style="color: #FF0000">- 1</span> = &radic;(x - 5) + 1 <span style="color: #FF0000">- 1</span><br>
+                                ↓<br>
+                                &radic;(x) - 1 = &radic;(x - 5)
+                            </p>
+
+                            <p>
+                                Agora elevamos os dois lados ao quadrado:
+                            </p>
+
+                            <p class="equation">
+                                &radic;(x) - 1 = &radic;(x - 5)<br>
+                                ↓<br>
+                                <span style="color: #00FF00">[</span>&radic;(x) - 1<span style="color: #00FF00">]<sup>2</sup></span> = <span style="color: #00FF00">[</span>&radic;(x - 5)<span style="color: #00FF00">]<sup>2</sup></span><br>
+                                ↓<br>
+                                x - 2&radic;(x) + 1<sup>2</sup> = x - 5
+                            </p>
+
+                            <p>
+                                Agora simplificamos:
+                            </p>
+
+                            <p class="equation">
+                                x - 2&radic;(x) + 1 <span style="color: #FF0000">- x</span> = x - 5 <span style="color: #FF0000">- x</span><br>
+                                ↓<br>
+                                -2&radic;(x) + 1 = -5<br>
+                                ↓<br>
+                                -2&radic;(x) + 1 <span style="color: #FF0000">- 1</span> = -5 <span style="color: #FF0000">- 1</span><br>
+                                ↓<br>
+                                -2&radic;(x) = -6
+                            </p>
+
+                            <p>
+                                Podemos elevar os dois lados ao quadrado de novo:
+                            </p>
+
+                            <p class="equation">
+                                -2&radic;(x) = -6<br>
+                                ↓<br>
+                                <span style="color: #00FF00">[</span>-2&radic;(x)<span style="color: #00FF00">]<sup>2</sup></span> = <span style="color: #00FF00">(</span>-6<span style="color: #00FF00">)<sup>2</sup></span><br>
+                                ↓<br>
+                                4 * x = 36
+                            </p>
+
+                            <p>
+                                E agora terminamos simplificando novamente:
+                            </p>
+
+                            <p class="equation">
+                                4x = 36<br>
+                                ↓<br>
+                                4x <span style="color: #FF0000">/ 4</span> = 36 <span style="color: #FF0000">/ 4</span><br>
+                                ↓<br>
+                                x = 9
+                            </p>
+
+                            <p>
+                                Vamos testar na equação inicial se esta é uma raiz válida:
+                            </p>
+
+                            <p class="equation">
+                                &radic;x = &radic;(x - 5) + 1<br>
+                                ↓<br>
+                                &radic;9 = &radic;(9 - 5) + 1<br>
+                                ↓<br>
+                                3 = &radic;(4) + 1<br>
+                                ↓<br>
+                                3 = 2 + 1<br>
+                                ↓<br>
+                                3 = 3
+                            </p>
+
+                            <p>
+                                Ou seja, a única raiz que esta função nos retorna está correta.
+                            </p>
                         `,
 
                         exercises: []
