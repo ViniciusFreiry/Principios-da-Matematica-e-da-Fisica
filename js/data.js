@@ -4680,7 +4680,153 @@ const subjects = [
                         title: "Aula 02 — O que é um ângulo?",
                         
                         content: `
-                            
+                            <h2>Observação:</h2>
+
+                            <h3>O que é um ângulo?</h3>
+
+                            <p>
+                                É a medida da abertura entre duas retas.
+                            </p>
+
+                            <p>
+                                A base para a medida dos ângulos é a circunferência. Uma circunferência contêm 360°.
+                            </p>
+
+                            <div class="graph-container">
+                                <svg
+                                    class="math-graph"
+                                    viewBox="0 0 500 400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    role="img"
+                                    aria-label="Circunferência com duas semirretas formando um ângulo de 35 graus"
+                                >
+                                    <!-- Circle -->
+                                    <circle
+                                        cx="230"
+                                        cy="200"
+                                        r="140"
+                                        fill="none"
+                                        stroke="#888888"
+                                        stroke-width="2"
+                                        stroke-opacity="0.6"
+                                    />
+
+                                    <!-- Horizontal reference line -->
+                                    <line
+                                        x1="230"
+                                        y1="200"
+                                        x2="390"
+                                        y2="200"
+                                        stroke="#2563EB"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Inclined line -->
+                                    <line
+                                        x1="230"
+                                        y1="200"
+                                        x2="360"
+                                        y2="109"
+                                        stroke="#FF0000"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Angle arc: 0 to 35 degrees -->
+                                    <path
+                                        d="M 290 200
+                                        A 60 60 0 0 0 279.15 165.59"
+                                        fill="none"
+                                        stroke="#D69E36"
+                                        stroke-width="3"
+                                    />
+
+                                    <!-- Theta label -->
+                                    <text
+                                        x="300"
+                                        y="174"
+                                        fill="#D69E36"
+                                        font-size="20"
+                                        font-weight="bold"
+                                    >
+                                        θ
+                                    </text>
+
+                                    <!-- Center point -->
+                                    <circle
+                                        cx="230"
+                                        cy="200"
+                                        r="5"
+                                        fill="currentColor"
+                                    />
+
+                                    <!-- Line labels -->
+                                    <text
+                                        x="400"
+                                        y="205"
+                                        fill="#2563EB"
+                                        font-size="18"
+                                        font-weight="bold"
+                                    >
+                                        s
+                                    </text>
+
+                                    <text
+                                        x="368"
+                                        y="105"
+                                        fill="#FF0000"
+                                        font-size="18"
+                                        font-weight="bold"
+                                    >
+                                        r
+                                    </text>
+
+                                    <!-- Zero degree label -->
+                                    <text
+                                        x="390"
+                                        y="225"
+                                        fill="currentColor"
+                                        font-size="14"
+                                    >
+                                        0°
+                                    </text>
+
+                                    <!-- Angle value -->
+                                    <text
+                                        x="230"
+                                        y="375"
+                                        text-anchor="middle"
+                                        fill="currentColor"
+                                        font-size="15"
+                                    >
+                                        θ = 35°
+                                    </text>
+                                </svg>
+                            </div>
+
+                            <div class="graph-legend">
+                                <span>
+                                    <span class="legend-color" style="background: #FF0000"></span>
+                                    Reta r
+                                </span>
+
+                                <span>
+                                    <span class="legend-color" style="background: #2563EB"></span>
+                                    Reta s (0°)
+                                </span>
+
+                                <span>
+                                    <span class="legend-color" style="background: #D69E36"></span>
+                                    Ângulo θ
+                                </span>
+                            </div>
+
+                            <p>
+                                O ângulo ser dividido em 360° ajuda, pois ele é divísivel por vários números base.<br>
+                                Se colocarmos duas retas dividindo a circunferência exatamente ao meio teremos dois ângulos de 180° (ângulo raso).<br>
+                                Dividindo em 4 ficam 4 ângulos retos de 90° (ângulo reto).<br>
+                                Duvidido em 3 partes, ficam 3 ângulos de 120°.<br>
+                                Em 8 seriam ângulos de 45°.
+                            </p>
                         `,
 
                         exercises: []
