@@ -4602,7 +4602,364 @@ const subjects = [
                 description: "Módulo sobre geometria e trigonometria.",
 
                 lessons: [
-                    // Adicione as aulas aqui.
+                    {
+                        id: "geometry-1",
+                        title: "Aula 01 — Postulados e Axiomas",
+                        
+                        content: `
+                            <h2>Módulo 06: Noções de Geometria e Trigonometria</h2>
+
+                            <h2>Parte 01: Geometria</h2>
+
+                            <h3>As Regras do Jogo: Noções Comuns</h3>
+
+                            <p>
+                                Já vimos sobre o livro "Os Elementos" e as "Noções Comuns" que estão presentes nele, elas são válidas para toda dos os campos da matemática.<br>
+                                Uma dessas noções é:
+                            </p>
+
+                            <p>
+                                As coisas que se ajustam uma à outra são iguais entre si.
+                            </p>
+
+                            <p>
+                                Esta noção é relacionada a congruência e semelhança de triângulos.
+                            </p>
+
+                            <h3>As Regras do Jogo: Postulados</h3>
+
+                            <p>
+                                No livro "Os Elementos" temos também os "Postulados" que são específicos da geometria.
+                            </p>
+
+                            <p>
+                                1. Fique postulado traçar uma reta a partir de todo ponto até todo ponto.<br>
+                                2. Também prolongar uma reta limitada, continuamente, sobre uma reta.<br>
+                                3. E, com todo centro e distância, descrever um círculo.<br>
+                                4. E serem iguais entre si todos os ângulos retos.<br>
+                                5. E, caso uma reta, caindo sobre duas retas, faça os ângulos interiores e de mesmo lado menores do que dois retos, sendo prolongadas as duas retas, ilimitadamente, encontrarem-se no lado no qual estão os menores do que dois retos.
+                            </p>
+
+                            <h3>Postulado 1</h3>
+
+                            <p>
+                                Basicamente fala que sempre podemos traçar uma reta de um ponto a outro.
+                            </p>
+
+                            <h3>Postulado 2</h3>
+
+                            <p>
+                                O segundo fala que podemos prolongar uma reta limitada já traçada, para qualquer lado, o quanto quisermos.
+                            </p>
+
+                            <h3>Postulado 3</h3>
+
+                            <p>
+                                Este fala que se tivermos um centro e uma distância (raio), conseguimos construir um círculo através disso.
+                            </p>
+
+                            <h3>Postulado 4</h3>
+
+                            <p>
+                                Fala sobre os ângulos retos sempre serem iguais entre si. Um ângulo reto sempre tem 90 graus em uma superfície plana.
+                            </p>
+
+                            <h3>Postulado 5</h3>
+
+                            <p>
+                                A mais complexa fala que se traçarmos uma reta cortando outras duas retas ilimitadas e, gerar dois ângulos somados menores que 180 graus, estas retas ilimitadas irão se encontrar, formando assim um triângulo.<br>
+                                Se gerar apenas ângulos somados iguais a 180, as duas retas são paralelas e nunca irão se encontrar.
+                            </p>
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-2",
+                        title: "Aula 02 — O que é um ângulo?",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-3",
+                        title: "Aula 03 — Congruência de triângulos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-4",
+                        title: "Aula 04 — Semelhança de Triângulos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-5",
+                        title: "Aula 05 — Paralelismo e ângulos internos de um triângulo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-6",
+                        title: "Aula 06 — Ângulos Internos de um triângulo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-7",
+                        title: "Aula 07 — Ângulos Internos de um triângulo: Exemplos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-8",
+                        title: "Aula 08 — Teorema do Ângulo Externo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-9",
+                        title: "Aula 09 — Exercício 01",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-10",
+                        title: "Aula 10 — Exercício 02",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-11",
+                        title: "Aula 11 — Exercício 03",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-12",
+                        title: "Aula 12 — Teorema de Pitágoras",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-13",
+                        title: "Aula 13 — Teorema de Pitágoras: Exemplos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-14",
+                        title: "Aula 14 — Triângulos Pitagóricos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-15",
+                        title: "Aula 15 — Triângulo Isósceles e ângulos internos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-16",
+                        title: "Aula 16 — Altura no Triângulo Isósceles",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-17",
+                        title: "Aula 17 — As funções trigonométricas no triângulo retângulo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-18",
+                        title: "Aula 18 — Seno e Cossenos Propriedades do Ângulos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-19",
+                        title: "Aula 19 — Exemplo",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-20",
+                        title: "Aula 20 — Arcos Notáveis",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-21",
+                        title: "Aula 21 — Exemplos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-22",
+                        title: "Aula 22 — Por que o triângulo é retângulo?",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-23",
+                        title: "Aula 23 — Trigonometria com ângulos estranhos",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-24",
+                        title: "Aula 24 — Ciclo Trigonométrico",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-25",
+                        title: "Aula 25 — Ciclo Trigonométrico: Tangente",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-26",
+                        title: "Aula 26 — Relação Fundamental da Trigonometria: Exemplos 01",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    },
+
+                    {
+                        id: "geometry-27",
+                        title: "Aula 27 — Relação Fundamental da Trigonometria: Exemplos 02",
+                        
+                        content: `
+                            
+                        `,
+
+                        exercises: []
+                    }
                 ]
             },
 
