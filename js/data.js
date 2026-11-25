@@ -4837,7 +4837,36 @@ const subjects = [
                         title: "Aula 03 — Congruência de triângulos",
                         
                         content: `
-                            
+                            <h2>Congruência de triângulos</h2>
+
+                            <p>
+                                Dois triângulos são ditos congruentes (iguais) se eles são idênticos em suas medidas (ângulos todos iguais e lados todos iguais).
+                            </p>
+
+                            <h3>Caso 1: L.A.L. (Lado Ângulo Lado)</h3>
+
+                            <p>
+                                Não precisamos de fato verificar os 3 lados e os 3 ângulos para validar se dois triângulos são iguais, basta verificar dois lados e qual o ângulos entre eles.<br>
+                                Se estes dois lados forem iguais e o ângulo entre eles forem iguais, é impossível o terceiro lado ter um valor diferente e, por consequência, os outros dois ângulos também.
+                            </p>
+
+                            <h3>Caso 2: A.L.A. (Ângulo Lado Ângulo)</h3>
+
+                            <p>
+                                Da mesma forma que o L.A.L. podemos só analizar dois ângulos e o lado entre eles, assim, obrigatoriamente o terceiro ângulo tem um valor fixo e, a distância da interceção dos outros dois lados que sobram, sempre será a mesma.
+                            </p>
+
+                            <h3>Caso 3: L.L.L. (Lado Lado Lado)</h3>
+
+                            <p>
+                                Caso dois triângulos tenham 3 lados iguais obrigatoriamente os três ângulos deles tâmbem vão ser iguais.
+                            </p>
+
+                            <h3>Caso 4: L.A.Aop. (Lado Ângulo Ângulo Oposto)</h3>
+
+                            <p>
+                                Podemos ter um lado e um ângulo juntos e um ângulo que aponte para esse lado. Pelo mesmo princípio do A.L.A. o terceiro ângulo sempre terá o mesmo grau, então obrigatoriamente os outros dois lados terão os mesmos tamanhos.
+                            </p>
                         `,
 
                         exercises: []
