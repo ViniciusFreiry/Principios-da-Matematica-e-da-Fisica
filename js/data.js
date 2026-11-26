@@ -4877,7 +4877,50 @@ const subjects = [
                         title: "Aula 04 — Semelhança de Triângulos",
                         
                         content: `
-                            
+                            <h2>Semelhança de Triângulos</h2>
+
+                            <p>
+                                Semelhança de trinângulos é diferente de congruência de triângulos.<br>
+                                Em quanto na congruência os 3 lados e 3 ângulos precisem ser iguais, na semelhança, apenas os 3 ângulos precisam ser iguais.<br>
+                                Na semelhança, os triângulos vão ser iguais de aparência entre si, porém, terão escalas de tamanho diferente. Por exemplo, um triângulos de lados 3, 4 e 5 é semelhante a um triângulo de lados 6, 8 e 10, eles terão os mesmo ângulos porém um é duas vezes maior que o outro.<br>
+                                Os lados correspondentes as suas verções escaladas são chamados de lados homólogos, neste exemplo, 3 é homólogo a 6, 4 é homólogo a 8 e 5 é homólogo a 10.
+                            </p>
+
+                            <p>
+                                Os triângulos ΔABC e ΔA'B'C' são semelhantes se:
+                            </p>
+
+                            <p class="equation">
+                                a &nbsp&nbsp&nbspb &nbsp&nbsp&nbspc &nbsp&nbsp&nbsp&nbsp<br>
+                                —— = —— = —— = k<br>
+                                a' &nbsp&nbspb' &nbsp&nbspc' &nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                Onde <i>k</i> é a razão de semelhança, no exemplo de cima este <i>k</i> seria igual a 0,5:
+                            </p>
+
+                            <p class="equation">
+                                3 &nbsp&nbsp4 &nbsp&nbsp5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                — = — = —— = 0,5<br>
+                                6 &nbsp&nbsp8 &nbsp&nbsp10 &nbsp&nbsp&nbsp&nbsp&nbsp
+                            </p>
+
+                            <p>
+                                No caso da congruência de triângulos este <i>k</i>, a razão de semelhança, vai ser igual a 1.
+                            </p>
+
+                            <h2>Casos de Semelhanças de Triângulos</h2>
+
+                            <p>
+                                Os casos de semelhança de triângulos são os mesmos casos de congruência.<br>
+                                A congruência de triângulos é uma semelhança de triângulos com razão de semelhança igual a 1.
+                            </p>
+
+                            <p>
+                                Vejamos por exemplo o caso 1 das congruências, o L.A.L. (Lado Ângulo Lado), temos que ter dois lados com a proporção correta, por exemplo um triângulo com lado 2 e 4, enquanto o outro tem lados 4 e 8, tendo tambêm uma razão de semelhança de 0,5. E além disso, o ângulo entre esses dois lados precisam ser iguais nos dois triângulos.<br>
+                                Para todos os casos (L.A.L., A.L.A., L.L.L. e L.A.Aop.) a regra é exatamente a mesma, os lados envolvidos no calculo precisam bater com a razão de semelhança.
+                            </p>
                         `,
 
                         exercises: []
