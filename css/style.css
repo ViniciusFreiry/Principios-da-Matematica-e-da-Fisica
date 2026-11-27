@@ -798,3 +798,177 @@ button {
     height: 13px;
     border-radius: 50%;
 }
+
+.parallel-demo {
+    width: 100%;
+    margin: 30px 0;
+    padding: 22px;
+    border: 1px solid var(--border-color, #383838);
+    border-radius: 12px;
+    background: transparent;
+    color: inherit;
+}
+
+.parallel-demo h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.parallel-demo-intro {
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.parallel-demo-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.parallel-demo-button {
+    padding: 10px 16px;
+    border: 1px solid var(--border-color, #444);
+    border-radius: 8px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.parallel-demo-button:hover {
+    border-color: #e0a43b;
+}
+
+.parallel-demo-button.active {
+    background: #e0a43b;
+    border-color: #e0a43b;
+    color: #171717;
+}
+
+.parallel-demo-canvas {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.parallel-demo-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.parallel-line {
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.parallel-r {
+    stroke: #ed5b5b;
+}
+
+.parallel-s {
+    stroke: #4b9de5;
+}
+
+.parallel-mark {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.transversal {
+    stroke: #a0a0a0;
+    stroke-width: 3;
+    stroke-linecap: round;
+    cursor: grab;
+}
+
+.transversal:active {
+    cursor: grabbing;
+}
+
+.intersection {
+    fill: currentColor;
+}
+
+.line-label {
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.label-r {
+    fill: #ed5b5b;
+}
+
+.label-s {
+    fill: #4b9de5;
+}
+
+.label-t {
+    fill: #a0a0a0;
+}
+
+.angle-numbers text {
+    font-size: 19px;
+    font-weight: 600;
+    fill: currentColor;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+}
+
+.angle-highlight {
+    fill: rgba(224, 164, 59, 0.28);
+    stroke: #e0a43b;
+    stroke-width: 2;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.parallel-demo-adjust {
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+.parallel-demo-adjust label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.parallel-demo-adjust input {
+    display: block;
+    width: 100%;
+    accent-color: #e0a43b;
+    cursor: pointer;
+}
+
+.parallel-demo-info {
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid var(--border-color, #383838);
+    border-radius: 10px;
+    background: transparent;
+}
+
+.parallel-demo-info h4 {
+    margin-top: 0;
+    color: #e0a43b;
+}
+
+.parallel-demo-info p {
+    line-height: 1.6;
+}
+
+.parallel-demo-equation {
+    margin-top: 12px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #e0a43b;
+    text-align: center;
+}

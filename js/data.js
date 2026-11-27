@@ -4931,7 +4931,190 @@ const subjects = [
                         title: "Aula 05 — Paralelismo e ângulos internos de um triângulo",
                         
                         content: `
-                            
+                            <h2>Paralelismo de Retas</h2>
+
+                            <p>
+                                Suponha que temos duas retas, a reta <i>r</i> e a retas <i>s</i>.<br>
+                                Podemos dizer que essas duas retas são paralelas com a seguinte notação: <i>r//s</i>.
+                            </p>
+
+                            <p>
+                                Retas paralelas são retas com a mesma angulação, ou seja, que nunca se encontram, independente do tamanho delas.
+                            </p>
+
+                            <section class="parallel-demo">
+                                <h3>Relações entre ângulos</h3>
+
+                                <p class="parallel-demo-intro">
+                                    Duas retas paralelas são cortadas por uma reta transversal.
+                                    Selecione uma relação para visualizar os ângulos destacados.
+                                </p>
+
+                                <div class="parallel-demo-controls">
+                                    <button class="parallel-demo-button active"
+                                            data-mode="alternate">
+                                        Alternos internos
+                                    </button>
+
+                                    <button class="parallel-demo-button"
+                                            data-mode="corresponding">
+                                        Correspondentes
+                                    </button>
+                                </div>
+
+                                <div class="parallel-demo-canvas">
+                                    <svg class="parallel-demo-svg"
+                                        viewBox="0 0 700 480"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Retas paralelas r e s cortadas por uma transversal t">
+
+                                        <!-- Parallel lines -->
+                                        <line x1="55" y1="140" x2="645" y2="140"
+                                            class="parallel-line parallel-r"/>
+
+                                        <line x1="55" y1="340" x2="645" y2="340"
+                                            class="parallel-line parallel-s"/>
+
+                                        <!-- Parallel markers -->
+                                        <path d="M 100 132 L 108 148 M 108 132 L 116 148"
+                                            class="parallel-mark"/>
+
+                                        <path d="M 100 332 L 108 348 M 108 332 L 116 348"
+                                            class="parallel-mark"/>
+
+                                        <!-- Transversal -->
+                                        <line class="transversal"
+                                            x1="0" y1="0" x2="0" y2="480"/>
+
+                                        <!-- Highlighted angle sectors -->
+                                        <path class="angle-highlight" id="sector-a"/>
+                                        <path class="angle-highlight" id="sector-b"/>
+
+                                        <!-- Intersection points -->
+                                        <circle class="intersection" id="point-a" r="4"/>
+                                        <circle class="intersection" id="point-b" r="4"/>
+
+                                        <!-- Angle numbers -->
+                                        <g class="angle-numbers">
+                                            <text id="number-1">1</text>
+                                            <text id="number-2">2</text>
+                                            <text id="number-3">3</text>
+                                            <text id="number-4">4</text>
+                                            <text id="number-5">5</text>
+                                            <text id="number-6">6</text>
+                                            <text id="number-7">7</text>
+                                            <text id="number-8">8</text>
+                                        </g>
+
+                                        <!-- Line labels -->
+                                        <text x="660" y="147" class="line-label label-r">r</text>
+                                        <text x="660" y="347" class="line-label label-s">s</text>
+                                        <text x="0" y="0" class="line-label label-t" id="label-t">t</text>
+                                    </svg>
+                                </div>
+
+                                <div class="parallel-demo-adjust">
+                                    <label for="transversal-angle">
+                                        Inclinação da transversal
+                                    </label>
+                                    <input type="range"
+                                        id="transversal-angle"
+                                        min="-0.8"
+                                        max="0.8"
+                                        step="0.01"
+                                        value="0.6"/>
+                                </div>
+
+                                <div class="parallel-demo-info" aria-live="polite">
+                                    <h4 id="parallel-demo-title">Ângulos alternos internos</h4>
+
+                                    <p id="parallel-demo-description">
+                                        Os ângulos 3 e 5 estão entre as retas paralelas
+                                        e em lados opostos da transversal.
+                                    </p>
+
+                                    <div class="parallel-demo-equation" id="parallel-demo-equation">
+                                        ∠3 = ∠5
+                                    </div>
+                                </div>
+                            </section>
+
+                            <p>
+                                Quando duas retas paralelas (<i>r//s</i>) são cortadas por uma transversal (<i>t</i>) os seguintes ângulos são congruentes:
+                            </p>
+
+                            <div class="graph-container">
+                                <svg 
+                                    class="math-graph"
+                                    viewBox="0 0 600 400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+
+                                    <!-- Parallel lines -->
+                                    <line x1="60" y1="120" x2="540" y2="120"
+                                        stroke="#e74c3c" stroke-width="3"/>
+
+                                    <line x1="60" y1="280" x2="540" y2="280"
+                                        stroke="#3498db" stroke-width="3"/>
+
+                                    <!-- Transversal -->
+                                    <line x1="160" y1="350" x2="440" y2="50"
+                                        stroke="currentColor" stroke-width="2.5"/>
+
+                                    <!-- Upper intersection -->
+                                    <circle cx="374" cy="120" r="3" fill="currentColor"/>
+
+                                    <!-- Lower intersection -->
+                                    <circle cx="224" cy="280" r="3" fill="currentColor"/>
+
+                                    <!-- Angle a -->
+                                    <path d="M 374 120 L 406 120 A 32 32 0 0 0 396 97 Z"
+                                        fill="#e5a93d" fill-opacity="0.3"
+                                        stroke="#e5a93d" stroke-width="2"/>
+
+                                    <!-- Angle b -->
+                                    <path d="M 374 120 L 342 120 A 32 32 0 0 0 352 143 Z"
+                                        fill="#54b8e8" fill-opacity="0.3"
+                                        stroke="#54b8e8" stroke-width="2"/>
+
+                                    <!-- Angle c -->
+                                    <path d="M 224 280 L 256 280 A 32 32 0 0 0 246 257 Z"
+                                        fill="#e5a93d" fill-opacity="0.3"
+                                        stroke="#e5a93d" stroke-width="2"/>
+
+                                    <!-- Angle d -->
+                                    <path d="M 224 280 L 192 280 A 32 32 0 0 0 202 303 Z"
+                                        fill="#54b8e8" fill-opacity="0.3"
+                                        stroke="#54b8e8" stroke-width="2"/>
+
+                                    <!-- Angle labels -->
+                                    <g font-size="20" font-weight="bold" text-anchor="middle">
+                                        <text x="415" y="110" fill="#e5a93d">A</text>
+                                        <text x="333" y="148" fill="#54b8e8">B</text>
+                                        <text x="265" y="270" fill="#e5a93d">C</text>
+                                        <text x="183" y="308" fill="#54b8e8">D</text>
+                                    </g>
+
+                                    <!-- Line labels -->
+                                    <g font-size="21" font-weight="bold">
+                                        <text x="550" y="126" fill="#e74c3c">r</text>
+                                        <text x="550" y="286" fill="#3498db">s</text>
+                                        <text x="445" y="45" fill="currentColor">t</text>
+                                    </g>
+
+                                </svg>
+
+                                <p class="graph-legend">
+                                    A = B = C = D
+                                </p>
+                            </div>
+
+                            <p>
+                                Ângulos Correspondentes: <i style="color: #E5A93D">A</i> e <i style="color: #E5A93D">C</i>, mas também, <i style="color: #54B8E8">B</i> e <i style="color: #54B8E8">D</i><br>
+                                Ângulos Opostos Pelo Vértice: <i style="color: #E5A93D">A</i> e <i style="color: #54B8E8">B</i>, mas também, <i style="color: #E5A93D">C</i> e <i style="color: #54B8E8">D</i><br>
+                                Ângulos Alternos Internos: <i style="color: #54B8E8">B</i> e <i style="color: #E5A93D">C</i>
+                            </p>
                         `,
 
                         exercises: []
