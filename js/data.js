@@ -5125,7 +5125,155 @@ const subjects = [
                         title: "Aula 06 — Ângulos Internos de um triângulo",
                         
                         content: `
-                            
+                            <h2>Aplicação</h2>
+
+                            <p>
+                                Soma dos ângulos internos de um Δ:
+                            </p>
+
+                            <div class="graph-container">
+                                <svg
+                                    class="math-graph"
+                                    viewBox="0 0 600 420"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    role="img"
+                                    aria-label="Triângulo entre duas retas paralelas, demonstrando a soma dos ângulos internos por alternos internos"
+                                >
+                                    <!-- Parallel lines -->
+                                    <g stroke-width="3" fill="none">
+                                        <line x1="45" y1="110" x2="555" y2="110"
+                                            stroke="#FF0000"/>
+                                        <line x1="45" y1="320" x2="555" y2="320"
+                                            stroke="#2563EB"/>
+                                    </g>
+
+                                    <!-- Parallel line labels -->
+                                    <g font-size="19" font-weight="bold">
+                                        <text x="560" y="116" fill="#FF0000">r</text>
+                                        <text x="560" y="326" fill="#2563EB">s</text>
+                                    </g>
+
+                                    <!-- Triangle -->
+                                    <path
+                                        d="M150 320 L300 110 L450 320 Z"
+                                        fill="#888888"
+                                        fill-opacity="0.08"
+                                        stroke="currentColor"
+                                        stroke-width="2.5"
+                                    />
+
+                                    <!-- Alternate interior angle arcs at the base -->
+                                    <g fill="none" stroke-width="3">
+                                        <!-- Alpha at A -->
+                                        <path
+                                            d="M195 320 A45 45 0 0 0 175.7 283.4"
+                                            stroke="#00A86B"
+                                        />
+
+                                        <!-- Gamma at B -->
+                                        <path
+                                            d="M405 320 A45 45 0 0 1 424.3 283.4"
+                                            stroke="#D69E36"
+                                        />
+                                    </g>
+
+                                    <!-- Angles transferred to parallel line r -->
+                                    <g fill="none" stroke-width="3">
+                                        <!-- Alpha at C -->
+                                        <path
+                                            d="M255 110 A45 45 0 0 0 274.3 146.6"
+                                            stroke="#00A86B"
+                                            stroke-dasharray="5 3"
+                                        />
+
+                                        <!-- Gamma at C -->
+                                        <path
+                                            d="M325.7 146.6 A45 45 0 0 0 345 110"
+                                            stroke="#D69E36"
+                                            stroke-dasharray="5 3"
+                                        />
+
+                                        <!-- Beta at C -->
+                                        <path
+                                            d="M274.3 146.6 A45 45 0 0 0 325.7 146.6"
+                                            stroke="#8B5CF6"
+                                        />
+                                    </g>
+
+                                    <!-- Angle labels at base -->
+                                    <g font-size="19" font-weight="bold">
+                                        <text x="195" y="300" fill="#00A86B">α</text>
+                                        <text x="392" y="300" fill="#D69E36">γ</text>
+                                    </g>
+
+                                    <!-- Angle labels at the top -->
+                                    <g font-size="18" font-weight="bold">
+                                        <text x="240" y="139" fill="#00A86B">α</text>
+                                        <text x="295" y="175" fill="#8B5CF6">β</text>
+                                        <text x="347" y="139" fill="#D69E36">γ</text>
+                                    </g>
+
+                                    <!-- Vertex labels -->
+                                    <g fill="currentColor" font-size="16" font-weight="bold">
+                                        <text x="135" y="344">A</text>
+                                        <text x="295" y="91">C</text>
+                                        <text x="455" y="344">B</text>
+                                    </g>
+
+                                    <!-- Parallel indicator -->
+                                    <g stroke="currentColor" stroke-width="1.5" fill="none">
+                                        <path d="M80 103 L88 117 M88 103 L96 117"/>
+                                        <path d="M80 313 L88 327 M88 313 L96 327"/>
+                                    </g>
+
+                                    <!-- Explanation -->
+                                    <text
+                                        x="300"
+                                        y="385"
+                                        text-anchor="middle"
+                                        fill="currentColor"
+                                        font-size="16"
+                                        font-weight="bold"
+                                    >
+                                        α + β + γ = 180°
+                                    </text>
+                                </svg>
+                            </div>
+
+                            <div class="graph-legend">
+                                <span>
+                                    <span class="legend-color" style="background: #FF0000"></span>
+                                    Reta r
+                                </span>
+                                <span>
+                                    <span class="legend-color" style="background: #2563EB"></span>
+                                    Reta s
+                                </span>
+                                <span>
+                                    <span class="legend-color" style="background: #00A86B"></span>
+                                    Ângulo α
+                                </span>
+                                <span>
+                                    <span class="legend-color" style="background: #D69E36"></span>
+                                    Ângulo γ
+                                </span>
+                                <span>
+                                    <span class="legend-color" style="background: #8B5CF6"></span>
+                                    Ângulo β
+                                </span>
+                            </div>
+
+                            <p>
+                                Como podemos ver nessa demonstração, se colocamos este ΔABC no meio de duas retas paralelas, conseguimos ver os ângulos <i>α</i> e <i>γ</i> como ângulos alternos internos.<br>
+                                O ângulo <i>β</i> somado aos ângulos <i>α</i> e <i>γ</i> formam uma meia esfera, como pode-se observar na figura. Uma esfera completa como vimos é igual a 360°, então uma meia esfera contém 180°.<br>
+                                Todo e qualquer triângulo em uma superficie plana pode passar por esse mesmo experimento, e todos eles possuem 180° em seus ângulos internos somados.
+                            </p>
+
+                            <h3>Conclusão</h3>
+
+                            <p>
+                                Se dois Δ's tem dois ângulos iguais eles serão <strong>semelhantes</strong>.
+                            </p>
                         `,
 
                         exercises: []
